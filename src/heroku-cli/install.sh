@@ -52,7 +52,7 @@ rm -f /usr/local/bin/heroku
 
 # resolve download url based on version, this is not documented and prune to break if heroku change their naming convensions
 if [ "${HEROKU_CLI_VERSION}" == "latest" ]; then
-	DOWNLOAD_URL=https://cli-assets.heroku.com/heroku-linux-$ARCH.tar.gz
+	DOWNLOAD_URL=https://cli-assets.heroku.com/channels/stable/heroku-linux-$ARCH.tar.gz
 else
 	DOWNLOAD_URL=https://cli-assets.heroku.com/heroku-v${HEROKU_CLI_VERSION}/heroku-v${HEROKU_CLI_VERSION}-linux-${ARCH}.tar.gz
 fi
