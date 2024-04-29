@@ -9,6 +9,7 @@ ADJUST_BASHRC="${ADJUSTBASH:-"true"}"
 
 INSTALL_STACK_GHCUP_HOOK="${INSTALLSTACKGHCUPHOOK:-"true"}"
 CABAL_INSTALLS=`echo "${GLOBALPACKAGES:-""}" | tr ',' ' '`
+CABAL_INSTALLS_LIBS=`echo "${GLOBALLIBRARIES:-""}" | tr ',' ' '`
 
 # Clean up
 rm -rf /var/lib/apt/lists/*
@@ -85,8 +86,15 @@ sudo -iu "$_REMOTE_USER" <<EOF
 		fi
 	fi
 
-	if [[ ! -z "${CABAL_INSTALLS}" ]]; then
-		cabal update && echo "${CABAL_INSTALLS}" | xargs cabal install
+	# Install packages & libraries with Cabal
+	if [[ -n "${CABAL_INSTALLS}${CABAL_INSTALLS_LIBS}" ]]; then
+		cabal update
+		if [[ -n "${CABAL_INSTALLS}" ]]; then
+			echo "${CABAL_INSTALLS}" | xargs cabal install
+		fi
+		if [[ -n "${CABAL_INSTALLS_LIBS}" ]]; then
+			echo "${CABAL_INSTALLS_LIBS}" | xargs cabal install --lib
+		fi
 	fi
 EOF
 
