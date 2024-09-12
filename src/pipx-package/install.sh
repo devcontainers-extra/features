@@ -149,7 +149,7 @@ install_via_pipx() {
 		injections_array_length="${#injections_array[@]}"
 
 		for ((i = 0; i < ${injections_array_length}; i++)); do
-			${pipx_bin} inject "$PACKAGE" --pip-args '--no-cache-dir --force-reinstall' -f "${injections_array[$i]}"
+			${pipx_bin} inject --pip-args '--no-cache-dir --force-reinstall' -f "$PACKAGE" "${injections_array[$i]}"
 		done
 
 		# cleaning pipx to save disk space
