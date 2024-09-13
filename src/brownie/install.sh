@@ -30,7 +30,7 @@ $nanolayer_location \
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.7" \
+    "ghcr.io/devcontainers-extra/features/pipx-package:1.1.8" \
     --option package='eth-brownie' --option version="$VERSION"
     
 

@@ -14,7 +14,7 @@ ensure_nanolayer nanolayer_location "v0.5.0"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.7" \
+    "ghcr.io/devcontainers-extra/features/pipx-package:1.1.8" \
     --option package='dbt-coverage' --option version="$VERSION"
     
 

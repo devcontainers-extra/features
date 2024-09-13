@@ -7,7 +7,7 @@ Installs a pipx package.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/pipx-package:1": {}
+    "ghcr.io/devcontainers-extra/features/pipx-package:1": {}
 }
 ```
 

@@ -16,7 +16,7 @@
     },
     "installsAfter": [
         "ghcr.io/devcontainers-contrib/features/apt-get-packages",
-        "ghcr.io/devcontainers-contrib/features/pipx-package",
+        "ghcr.io/devcontainers-extra/features/pipx-package",
         "ghcr.io/devcontainers/features/python"
     ],
     "entrypoint": "/usr/local/share/docker-init.sh",

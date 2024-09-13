@@ -38,7 +38,7 @@ $nanolayer_location \
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.5" \
+    "ghcr.io/devcontainers-extra/features/pipx-package:1.1.5" \
     --option package='localstack[runtime]' --option version="$VERSION" --option includeDeps='true' --option interpreter='/usr/local/python/3.10.8/bin/python3'
     
 
