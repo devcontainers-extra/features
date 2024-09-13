@@ -63,26 +63,28 @@ jobs:
       - name: "resolving features to test"
         id: resolve_features
         run: |
-          if [ ${{ github.event_name	}} == 'pull_request' ]; then
+          if [ ${{ github.event_name }} == 'pull_request' ]; then
             echo 'features_to_test=${{ needs.find-features.outputs.changed-features }}' >> $GITHUB_OUTPUT
 
-          elif [ ${{ github.event_name	}} == 'push' ]; then
+          elif [ ${{ github.event_name }} == 'push' ]; then
             echo 'features_to_test=${{ needs.find-features.outputs.changed-features }}' >> $GITHUB_OUTPUT
           
-          elif [ ${{ github.event_name	}} == 'workflow_dispatch' ]; then
-
+          elif [ ${{ github.event_name }} == 'workflow_dispatch' ]; then
             if [ ${{ inputs.on_changes_only }} == 'true' ]; then
               echo 'features_to_test=${{ needs.find-features.outputs.changed-features }}' >> $GITHUB_OUTPUT
             else
               echo 'features_to_test=${{ needs.find-features.outputs.all-features }}' >> $GITHUB_OUTPUT
             fi
           
-          elif [ ${{ github.event_name	}} == 'workflow_call' ]; then
+          elif [ ${{ github.event_name }} == 'workflow_call' ]; then
             if [ ${{ inputs.on_changes_only }} == 'true' ]; then
               echo 'features_to_test=${{ needs.find-features.outputs.changed-features }}' >> $GITHUB_OUTPUT
             else
               echo 'features_to_test=${{ needs.find-features.outputs.all-features }}' >> $GITHUB_OUTPUT
-            fi          
+            fi
+
+          elif [ ${{ github.event_name }} == 'schedule' ]; then
+            echo 'features_to_test=${{ needs.find-features.outputs.all-features }}' >> $GITHUB_OUTPUT
           fi
 
       - name: binning
