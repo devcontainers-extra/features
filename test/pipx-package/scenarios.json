@@ -31,12 +31,24 @@
     "install_black_custom_interpreter": {
         "image": "debian:bullseye",
         "features": {
-            "ghcr.io/devcontainers/features/python:1": {"version": "3.8.10"},
+            "ghcr.io/devcontainers/features/python:1": {
+                "version": "3.8.10"
+            },
             "pipx-package": {
                 "interpreter": "/usr/local/python/3.8.10/bin/python3",
                 "version": "latest",
                 "package": "black",
                 "injections": "tqdm pylint"
+            }
+        }
+    },
+    "install_ansible_specific_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+        "features": {
+            "pipx-package": {
+                "version": "2.16.11",
+                "package": "ansible-core",
+                "injections": "ansible"
             }
         }
     }

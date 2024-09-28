@@ -7,7 +7,7 @@ INJECTIONS=${INJECTIONS:-""}
 INCLUDEDEPS=${INCLUDEDEPS:-"false"}
 INTERPRETER=${INTERPRETER:-""}
 
-#  PEP 668  compatibility 
+#  PEP 668  compatibility
 export PIP_BREAK_SYSTEM_PACKAGES=1
 
 # Clean up
@@ -25,7 +25,7 @@ if [ "$(id -u)" -ne 0 ]; then
 fi
 
 updaterc() {
-	if cat /etc/os-release | grep "ID_LIKE=.*alpine.*\|ID=.*alpine.*" ; then
+	if cat /etc/os-release | grep "ID_LIKE=.*alpine.*\|ID=.*alpine.*"; then
 		echo "Updating /etc/profile"
 		echo -e "$1" >>/etc/profile
 	fi
@@ -55,7 +55,7 @@ install_via_pipx() {
 	else
 		local _interpreter="python3"
 	fi
-	
+
 	if [ -z "$INTERPRETER" ]; then # if interpreter selected manually - it should exists (validated above)
 
 		if [ "$_interpreter" = "python3" ]; then
@@ -112,12 +112,11 @@ install_via_pipx() {
 		updaterc "if [[ \"\${PATH}\" != *\"\${PIPX_BIN_DIR}\"* ]]; then export PATH=\"\${PATH}:\${PIPX_BIN_DIR}\"; fi"
 	}
 
-	
-	if  $_interpreter -m pip list | grep pipx >/dev/null 2>&1; then
+	if $_interpreter -m pip list | grep pipx >/dev/null 2>&1; then
 		# if pipx exists in the selected interpreter - use it
 		pipx_bin="$_interpreter -m pipx"
 	elif [ -n "$INTERPRETER" ]; then
-		# if interpreter was *explicitely* selected, 
+		# if interpreter was *explicitely* selected,
 		# and pipx is not installed with it - install it
 		_install_pipx
 		pipx_bin="$_interpreter -m pipx"
@@ -129,7 +128,6 @@ install_via_pipx() {
 		_install_pipx
 		pipx_bin=$PYTHONUSERBASE/bin/pipx
 	fi
-
 
 	if [ "$(${pipx_bin} list --short | grep "$PACKAGE")" != "" ]; then
 		echo "$PACKAGE  already exists - skipping installation"
@@ -148,8 +146,13 @@ install_via_pipx() {
 		injections_array=($INJECTIONS)
 		injections_array_length="${#injections_array[@]}"
 
+		# Save the main package info (with version) to a temporary requirements file
+		# Used in inject command to prevent altering the main package version
+		tmp_requirements_file="/tmp/requirements.txt"
+		echo "$pipx_installation" >$tmp_requirements_file
+
 		for ((i = 0; i < ${injections_array_length}; i++)); do
-			${pipx_bin} inject --pip-args '--no-cache-dir --force-reinstall' -f "$PACKAGE" "${injections_array[$i]}"
+			${pipx_bin} inject --pip-args "--no-cache-dir --force-reinstall -r ${tmp_requirements_file}" -f "$PACKAGE" "${injections_array[$i]}"
 		done
 
 		# cleaning pipx to save disk space
