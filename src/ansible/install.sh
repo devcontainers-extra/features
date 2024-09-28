@@ -12,7 +12,7 @@ ensure_nanolayer nanolayer_location "v0.5.0"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/pipx-package:1.1.8" \
+    "ghcr.io/devcontainers-extra/features/pipx-package:1.1.9" \
     --option package='ansible-core' --option injections='ansible' --option version="$VERSION"
 
 echo 'Done!'
