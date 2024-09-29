@@ -1,3 +1,5 @@
+output/
+
 # bellow is merge of vscode and node git ignores
 
 .vscode/*
