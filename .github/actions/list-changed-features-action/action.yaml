@@ -30,16 +30,16 @@ runs:
       with:
         list-files: json
         filters: |
-          src: 
+          src:
             - src/**/*.sh
-          test: 
+          test:
             - test/**/*.sh
 
     - id: feature-finder
       shell: bash
       run: |
         echo '${{ steps.filter.outputs.changes }}'
-        
+
         # prepare all features
         all_features=$(sudo tree -J -d  ./src | sudo jq -c '.[0].contents | map(.name)')
 
@@ -52,7 +52,7 @@ runs:
         jq -sc '.[0] + .[1] | unique'  changed_src_features.json changed_test_features.json > changed_features.json
         changed_features=$(cat changed_features.json)
 
-        # outputs 
+        # outputs
         echo "all_features=$all_features" >> $GITHUB_OUTPUT
         echo "changed_features=$changed_features" >> $GITHUB_OUTPUT
 

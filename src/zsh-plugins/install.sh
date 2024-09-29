@@ -22,7 +22,7 @@ check_packages git ca-certificates
 # ensure zsh is installed
 if ! type zsh >/dev/null 2>&1; then
     check_packages zsh
-fi 
+fi
 
 if [ "$USERNAME" = "root" ]; then
   USER_LOCATION="/root"
@@ -56,7 +56,7 @@ cd "$currdir" || exit
 # create configuration file if not exists
 if ! [ -f "$ZSH_CONFIG" ]; then
   mkdir -p "$(dirname "$ZSH_CONFIG")" && touch "$ZSH_CONFIG"
-fi 
+fi
 
 # Activate zsh plugins from PLUGINS
 sed -i -e "s/plugins=.*/plugins=(git ${PLUGINS})/g" "$ZSH_CONFIG"

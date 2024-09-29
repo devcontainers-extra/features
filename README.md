@@ -16,7 +16,7 @@
 
 💻 Works with devcontainers  \
 ☁️ Works with GitHub Codespaces \
-👀 Don't see your feature here?   [🔥Suggest a new feature!🔥](https://github.com/devcontainers-contrib/features/issues/new?template=suggest-feature.yaml) 
+👀 Don't see your feature here?   [🔥Suggest a new feature!🔥](https://github.com/devcontainers-contrib/features/issues/new?template=suggest-feature.yaml)
 
 
 ## Usage

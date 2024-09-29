@@ -70,7 +70,7 @@ find_version_from_git_tags() {
 }
 
 # make sure we have curl
-check_packages ca-certificates curl 
+check_packages ca-certificates curl
 
 # make sure version is available
 find_version_from_git_tags ARGOCD_VERSION 'https://github.com/argoproj/argo-cd'

@@ -6,8 +6,8 @@ source ./library_scripts.sh
 
 # nanolayer is a cli utility which keeps container layers as small as possible
 # source code: https://github.com/devcontainers-contrib/nanolayer
-# `ensure_nanolayer` is a bash function that will find any existing nanolayer installations, 
-# and if missing - will download a temporary copy that automatically get deleted at the end 
+# `ensure_nanolayer` is a bash function that will find any existing nanolayer installations,
+# and if missing - will download a temporary copy that automatically get deleted at the end
 # of the script
 ensure_nanolayer nanolayer_location "v0.4.39"
 
@@ -22,7 +22,7 @@ $nanolayer_location \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0" \
     --option command='curl -L https://cdn.porter.sh/latest/install-linux.sh | PORTER_VERSION=$VERSION PORTER_HOME=/usr/local/porter bash -s -- -x'
-    
+
 
 if [ -n "$TERRAFORMMIXINVERSION" ] ; then
     $nanolayer_location \
@@ -39,7 +39,7 @@ if [ -n "$AZMIXINVERSION" ] ; then
         devcontainer-feature \
         "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0" \
         --option command='/usr/local/porter/porter mixin install az --version $AZMIXINVERSION'
-fi    
+fi
 
 if [ -n "$AWSMIXINVERSION" ] ; then
     $nanolayer_location \
@@ -47,7 +47,7 @@ if [ -n "$AWSMIXINVERSION" ] ; then
         devcontainer-feature \
         "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0" \
         --option command='/usr/local/porter/porter mixin install aws --version $AWSMIXINVERSION'
-fi    
+fi
 
 if [ -n "$DOCKERMIXINVERSION" ] ; then
     $nanolayer_location \
@@ -55,7 +55,7 @@ if [ -n "$DOCKERMIXINVERSION" ] ; then
         devcontainer-feature \
         "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0" \
         --option command='/usr/local/porter/porter mixin install docker --version $DOCKERMIXINVERSION'
-fi    
+fi
 
 if [ -n "$DOCKERCOMPOSEMIXINVERSION" ] ; then
     $nanolayer_location \
@@ -63,7 +63,7 @@ if [ -n "$DOCKERCOMPOSEMIXINVERSION" ] ; then
         devcontainer-feature \
         "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0" \
         --option command='/usr/local/porter/porter mixin install docker-compose --version $DOCKERCOMPOSEMIXINVERSION'
-fi    
+fi
 
 if [ -n "$GCLOUDMIXINVERSION" ] ; then
     $nanolayer_location \
@@ -71,7 +71,7 @@ if [ -n "$GCLOUDMIXINVERSION" ] ; then
         devcontainer-feature \
         "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0" \
         --option command='/usr/local/porter/porter mixin install gcloud --version $GCLOUDMIXINVERSION'
-fi    
+fi
 
 if [ -n "$HELMMIXINVERSION" ] ; then
     $nanolayer_location \
@@ -79,7 +79,7 @@ if [ -n "$HELMMIXINVERSION" ] ; then
         devcontainer-feature \
         "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0" \
         --option command='/usr/local/porter/porter mixin install helm --version $HELMMIXINVERSION'
-fi    
+fi
 
 if [ -n "$ARMMIXINVERSION" ] ; then
     $nanolayer_location \
@@ -87,7 +87,7 @@ if [ -n "$ARMMIXINVERSION" ] ; then
         devcontainer-feature \
         "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0" \
         --option command='/usr/local/porter/porter mixin install arm --version $ARMMIXINVERSION'
-fi    
+fi
 
 if [ -n "$AZUREPLUGINVERSION" ] ; then
     $nanolayer_location \
@@ -95,7 +95,7 @@ if [ -n "$AZUREPLUGINVERSION" ] ; then
         devcontainer-feature \
         "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0" \
         --option command='/usr/local/porter/porter plugin install azure --version $AZUREPLUGINVERSION'
-fi    
+fi
 
 if [ -n "$KUBERNETESPLUGINVERSION" ] ; then
     $nanolayer_location \
@@ -103,7 +103,7 @@ if [ -n "$KUBERNETESPLUGINVERSION" ] ; then
         devcontainer-feature \
         "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0" \
         --option command='/usr/local/porter/porter plugin install kubernetes --version $KUBERNETESPLUGINVERSION'
-fi    
+fi
 
 $nanolayer_location \
     install \

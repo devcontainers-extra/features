@@ -1,3 +1,4 @@
 {
     "bashIde.explainshellEndpoint": "http://localhost:5000",
+    "diffEditor.ignoreTrimWhitespace": false
 }

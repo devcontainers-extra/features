@@ -29,11 +29,11 @@ on:
     - cron:  '0 1 * * *'
 
   pull_request:
-  
+
   push:
     branches:
       - main
-      
+
 jobs:
 
   find-features:
@@ -44,10 +44,10 @@ jobs:
       all-features: ${{ steps.list-features.outputs.all_features }}
       changed-features: ${{ steps.list-features.outputs.changed_features }}
     steps:
-      - uses: actions/checkout@v3   
+      - uses: actions/checkout@v3
       - run: |
           echo ${{ inputs.enabled  }}
-          echo ${{ github.event_name  }} 
+          echo ${{ github.event_name  }}
 
       - id: list-features
         uses: ./.github/actions/list-changed-features-action
@@ -68,14 +68,14 @@ jobs:
 
           elif [ ${{ github.event_name }} == 'push' ]; then
             echo 'features_to_test=${{ needs.find-features.outputs.changed-features }}' >> $GITHUB_OUTPUT
-          
+
           elif [ ${{ github.event_name }} == 'workflow_dispatch' ]; then
             if [ ${{ inputs.on_changes_only }} == 'true' ]; then
               echo 'features_to_test=${{ needs.find-features.outputs.changed-features }}' >> $GITHUB_OUTPUT
             else
               echo 'features_to_test=${{ needs.find-features.outputs.all-features }}' >> $GITHUB_OUTPUT
             fi
-          
+
           elif [ ${{ github.event_name }} == 'workflow_call' ]; then
             if [ ${{ inputs.on_changes_only }} == 'true' ]; then
               echo 'features_to_test=${{ needs.find-features.outputs.changed-features }}' >> $GITHUB_OUTPUT
@@ -142,12 +142,12 @@ jobs:
 
           # install shellcheck
           comma_separated_features=${{ matrix.features }}
-          
-          for i in ${comma_separated_features//,/ } 
+
+          for i in ${comma_separated_features//,/ }
           do
-            shellcheck --severity=error -e SC2148 src/"$i"/*.sh 
+            shellcheck --severity=error -e SC2148 src/"$i"/*.sh
           done
-        
+
   test-global:
     runs-on: ubuntu-latest
     continue-on-error: true
