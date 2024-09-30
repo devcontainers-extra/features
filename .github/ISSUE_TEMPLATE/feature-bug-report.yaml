@@ -1,4 +1,4 @@
-name: 🐞Bug Report🐞
+name: 🐞 Bug Report 🐞
 description: File a bug report
 title: "[Bug]: "
 labels: ["bug", "triage"]
@@ -11,13 +11,13 @@ body:
     id: version
     attributes:
       label: Feature id and version
-      description: "For example: ghcr.io/devcontainers-contrib/features/deno:1.0.2"
+      description: "For example: ghcr.io/devcontainers-extra/features/deno:1.0.2"
     validations:
       required: false
   - type: input
     id: image
     attributes:
-      label: Devcontainer base Image
+      label: Dev Container base Image
       description: "For example: mcr.microsoft.com/devcontainers/base:ubuntu"
     validations:
       required: false
