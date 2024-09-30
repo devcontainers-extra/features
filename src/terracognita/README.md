@@ -3,11 +3,11 @@
 
 TerraCognita is open-source software that quickly and automatically creates Terraform from all of your manually-provisioned resources.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/terracognita:1": {}
+    "ghcr.io/devcontainers-extra/features/terracognita:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ TerraCognita is open-source software that quickly and automatically creates Terr
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

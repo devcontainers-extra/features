@@ -3,11 +3,11 @@
 
 tfsec is a static analysis security scanner for your Terraform code. Designed to run locally and in your CI pipelines, developer-friendly output and fully documented checks mean detection and remediation can take place as quickly and efficiently as possible
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/tfsec:1": {}
+    "ghcr.io/devcontainers-extra/features/tfsec:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ tfsec is a static analysis security scanner for your Terraform code. Designed to
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

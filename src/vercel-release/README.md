@@ -3,11 +3,11 @@
 
 Release is a command line tool to automatically generate a new GitHub Release and populates it with the changes (commits) made since the last release.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/vercel-release:1": {}
+    "ghcr.io/devcontainers-extra/features/vercel-release:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Release is a command line tool to automatically generate a new GitHub Release an
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

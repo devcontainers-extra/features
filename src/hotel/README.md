@@ -3,11 +3,11 @@
 
 hotel is a simple process manager for developers. Start apps from your browser and access them using local domains.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/hotel:1": {}
+    "ghcr.io/devcontainers-extra/features/hotel:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ hotel is a simple process manager for developers. Start apps from your browser a
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

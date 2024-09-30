@@ -5,11 +5,11 @@ Apache Maven is a software project management and comprehension tool. Based on
 the concept of a project object model (POM), Maven can manage a project's build,
 reporting and documentation from a central piece of information.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/maven-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/maven-sdkman:2": {}
 }
 ```
 
@@ -22,3 +22,7 @@ reporting and documentation from a central piece of information.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

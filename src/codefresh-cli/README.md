@@ -3,11 +3,11 @@
 
 Codefresh CLI provides a full and flexible interface to interact with Codefresh.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/codefresh-cli:1": {}
+    "ghcr.io/devcontainers-extra/features/codefresh-cli:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Codefresh CLI provides a full and flexible interface to interact with Codefresh.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

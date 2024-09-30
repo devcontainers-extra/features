@@ -8,11 +8,11 @@ Consistent set of matchers and testing concepts work across all testing layers.
 Use REPL mode to speed-up tests development. Leverage rich reporting to
 significantly cut down failure investigation time.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/webtau-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/webtau-sdkman:2": {}
 }
 ```
 
@@ -25,3 +25,7 @@ significantly cut down failure investigation time.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

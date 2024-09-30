@@ -3,11 +3,11 @@
 
 projen synthesizes project configuration files such as package.json, tsconfig.json, .gitignore, GitHub Workflows, eslint, jest, etc from a well-typed definition written in JavaScript.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/projen:1": {}
+    "ghcr.io/devcontainers-extra/features/projen:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ projen synthesizes project configuration files such as package.json, tsconfig.js
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

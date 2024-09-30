@@ -3,11 +3,11 @@
 
 jake is a tool to check your Python environments for vulnerable Open Source packages with OSS Index or Sonatype Nexus Lifecycle.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/jake:1": {}
+    "ghcr.io/devcontainers-extra/features/jake:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ jake is a tool to check your Python environments for vulnerable Open Source pack
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

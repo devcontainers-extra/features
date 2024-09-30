@@ -3,11 +3,11 @@
 
 The memcached exporter exports metrics from a memcached server for consumption by Prometheus.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/memcached-exporter:1": {}
+    "ghcr.io/devcontainers-extra/features/memcached-exporter:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ The memcached exporter exports metrics from a memcached server for consumption b
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -3,11 +3,11 @@
 
 Jenkins X CLI is the modular command line CLI for Jenkins X 3.x
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/jenkinsx-cli:1": {}
+    "ghcr.io/devcontainers-extra/features/jenkinsx-cli:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Jenkins X CLI is the modular command line CLI for Jenkins X 3.x
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

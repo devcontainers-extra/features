@@ -4,11 +4,11 @@
 Sshoogr is a Groovy based DSL and command line tool for working with remote
 servers through SSH.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/sshoogr-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/sshoogr-sdkman:2": {}
 }
 ```
 
@@ -21,3 +21,7 @@ servers through SSH.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

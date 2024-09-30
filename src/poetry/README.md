@@ -3,11 +3,11 @@
 
 Poetry is a tool for dependency management and packaging in Python.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/poetry:2": {}
+    "ghcr.io/devcontainers-extra/features/poetry:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Poetry is a tool for dependency management and packaging in Python.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -3,11 +3,11 @@
 
 Terramate adds powerful capabilities such as code generation, stacks, orchestration, change detection, data sharing and more to Terraform.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/terramate:1": {}
+    "ghcr.io/devcontainers-extra/features/terramate:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Terramate adds powerful capabilities such as code generation, stacks, orchestrat
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

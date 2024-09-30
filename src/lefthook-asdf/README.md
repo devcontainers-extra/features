@@ -3,11 +3,11 @@
 
 Lefthook is the fastest polyglot Git hooks manager out there.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/lefthook-asdf:1": {}
+    "ghcr.io/devcontainers-extra/features/lefthook-asdf:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Lefthook is the fastest polyglot Git hooks manager out there.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -3,11 +3,11 @@
 
 tox is a generic virtual environment management and test command line tool.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/tox:2": {}
+    "ghcr.io/devcontainers-extra/features/tox:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ tox is a generic virtual environment management and test command line tool.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

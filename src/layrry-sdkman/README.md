@@ -8,11 +8,11 @@ module layers, allowing multiple versions of one module to be used within an
 application at the same time, as well as dynamically adding and removing modules
 at application runtime.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/layrry-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/layrry-sdkman:2": {}
 }
 ```
 
@@ -25,3 +25,7 @@ at application runtime.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

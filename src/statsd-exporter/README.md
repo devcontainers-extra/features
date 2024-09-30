@@ -3,11 +3,11 @@
 
 The StatsD exporter is a drop-in replacement for StatsD. This exporter translates StatsD metrics to Prometheus metrics via configured mapping rules.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/statsd-exporter:1": {}
+    "ghcr.io/devcontainers-extra/features/statsd-exporter:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ The StatsD exporter is a drop-in replacement for StatsD. This exporter translate
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

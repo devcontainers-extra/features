@@ -4,11 +4,11 @@
 Pomchecker - Checks that POM files comply with the minimum rules required for
 publication to Maven Central. It can also check if a POM is a valid BOM file.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/pomchecker-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/pomchecker-sdkman:2": {}
 }
 ```
 
@@ -21,3 +21,7 @@ publication to Maven Central. It can also check if a POM is a valid BOM file.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -3,11 +3,11 @@
 
 Xonsh is a Python-powered, cross-platform, Unix-gazing shell language and command prompt.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/xonsh:1": {}
+    "ghcr.io/devcontainers-extra/features/xonsh:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Xonsh is a Python-powered, cross-platform, Unix-gazing shell language and comman
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

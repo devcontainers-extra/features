@@ -3,11 +3,11 @@
 
 Sentinel is an embeddable policy as code framework to enable fine-grained, logic-based policy decisions that can be extended to source external information to make decisions.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/sentinel-asdf:2": {}
+    "ghcr.io/devcontainers-extra/features/sentinel-asdf:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Sentinel is an embeddable policy as code framework to enable fine-grained, logic
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

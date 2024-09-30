@@ -3,11 +3,11 @@
 
 Nestjs is a progressive Node.js framework for building efficient, reliable and scalable server-side applications.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/nestjs-cli:2": {}
+    "ghcr.io/devcontainers-extra/features/nestjs-cli:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Nestjs is a progressive Node.js framework for building efficient, reliable and s
 | version | Select the version of NestJS CLI to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

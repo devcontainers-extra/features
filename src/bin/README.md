@@ -3,11 +3,11 @@
 
 bin is an effortless binary manager. It manages binary files downloaded from different sources.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/bin:1": {}
+    "ghcr.io/devcontainers-extra/features/bin:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ bin is an effortless binary manager. It manages binary files downloaded from dif
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

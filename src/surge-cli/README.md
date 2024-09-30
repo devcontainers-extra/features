@@ -3,11 +3,11 @@
 
 Publish HTML, CSS, and JS for free, without leaving the command line.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/surge-cli:1": {}
+    "ghcr.io/devcontainers-extra/features/surge-cli:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Publish HTML, CSS, and JS for free, without leaving the command line.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -7,7 +7,7 @@ Terrascan is a static code analyzer for Infrastructure as Code.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/terrascan:1": {}
+    "ghcr.io/devcontainers-extra/features/terrascan:1": {}
 }
 ```
 
@@ -21,4 +21,4 @@ Terrascan is a static code analyzer for Infrastructure as Code.
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/terrascan/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -5,11 +5,11 @@ GroovyServ reduces startup time of the JVM for runnning Groovy significantly. It
 depends on your environments, but in most cases, it’s 10 to 20 times faster than
 regular Groovy.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/groovyserv-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/groovyserv-sdkman:2": {}
 }
 ```
 
@@ -22,3 +22,7 @@ regular Groovy.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

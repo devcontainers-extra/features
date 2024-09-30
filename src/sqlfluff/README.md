@@ -3,11 +3,11 @@
 
 Fluff is an extensible and modular linter designed to help you write good SQL and catch errors and bad SQL before it hits your database.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/sqlfluff:1": {}
+    "ghcr.io/devcontainers-extra/features/sqlfluff:1": {}
 }
 ```
 
@@ -19,3 +19,7 @@ Fluff is an extensible and modular linter designed to help you write good SQL an
 | plugins | A space delimitered list of sqlfluff plugins (will be injected into the sqlfluff pipx env). See proposals for examples. | string | - |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

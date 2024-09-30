@@ -3,11 +3,11 @@
 
 Ory Kratos is the developer-friendly, security-hardened and battle-test Identity, User Management and Authentication system for the Cloud.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/ory-kratos:1": {}
+    "ghcr.io/devcontainers-extra/features/ory-kratos:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Ory Kratos is the developer-friendly, security-hardened and battle-test Identity
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

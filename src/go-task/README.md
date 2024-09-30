@@ -3,11 +3,11 @@
 
 Task is a task runner / build tool that aims to be simpler and easier to use than, for example, GNU Make.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/go-task:1": {}
+    "ghcr.io/devcontainers-extra/features/go-task:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Task is a task runner / build tool that aims to be simpler and easier to use tha
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

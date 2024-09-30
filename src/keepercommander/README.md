@@ -3,11 +3,11 @@
 
 Keeper Commander is a command-line and SDK interface to Keeper® Password Manager. Commander can be used to access and control your Keeper vault, perform administrative functions (such as end-user onboarding and data import/export), launch remote sessions, rotate passwords, eliminate hardcoded passwords and more.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/keepercommander:1": {}
+    "ghcr.io/devcontainers-extra/features/keepercommander:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Keeper Commander is a command-line and SDK interface to Keeper® Password Manage
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

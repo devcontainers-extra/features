@@ -3,11 +3,11 @@
 
 Ruff is an extremely fast Python linter, written in Rust.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/ruff:1": {}
+    "ghcr.io/devcontainers-extra/features/ruff:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Ruff is an extremely fast Python linter, written in Rust.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

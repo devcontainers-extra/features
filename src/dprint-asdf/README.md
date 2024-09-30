@@ -3,11 +3,11 @@
 
 dprint is a pluggable and configurable code formatting platform written in Rust.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/dprint-asdf:2": {}
+    "ghcr.io/devcontainers-extra/features/dprint-asdf:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ dprint is a pluggable and configurable code formatting platform written in Rust.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

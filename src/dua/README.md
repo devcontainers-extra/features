@@ -3,11 +3,11 @@
 
 dua (Disk Usage Analyzer) is a tool to conveniently learn about the usage of disk space of a given directory. It's parallel by default and will max out your SSD, providing relevant information as fast as possible. Optionally delete superfluous data, and do so more quickly than rm.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/dua:1": {}
+    "ghcr.io/devcontainers-extra/features/dua:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ dua (Disk Usage Analyzer) is a tool to conveniently learn about the usage of dis
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

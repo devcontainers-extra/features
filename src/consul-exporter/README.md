@@ -3,11 +3,11 @@
 
 Prometheus exporter for Consul metrics.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/consul-exporter:1": {}
+    "ghcr.io/devcontainers-extra/features/consul-exporter:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Prometheus exporter for Consul metrics.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -4,11 +4,11 @@
 Scala CLI is a command-line tool to interact with the Scala language. It lets
 you compile, run, test, and package your Scala code (and more!)
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/scalacli-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/scalacli-sdkman:2": {}
 }
 ```
 
@@ -21,3 +21,7 @@ you compile, run, test, and package your Scala code (and more!)
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

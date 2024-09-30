@@ -6,11 +6,11 @@ architecture plus some additional automation. The basis of docToolchain is the
 philosophy that software documentation should be treated in the same way as code
 together with the arc42 template for software architecture.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/doctoolchain-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/doctoolchain-sdkman:2": {}
 }
 ```
 
@@ -23,3 +23,7 @@ together with the arc42 template for software architecture.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

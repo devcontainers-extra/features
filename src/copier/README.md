@@ -3,11 +3,11 @@
 
 copier creates projects from project templates.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/copier:7": {}
+    "ghcr.io/devcontainers-extra/features/copier:7": {}
 }
 ```
 
@@ -18,3 +18,7 @@ copier creates projects from project templates.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

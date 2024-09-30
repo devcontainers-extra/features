@@ -3,11 +3,11 @@
 
 The oclif generator creates a CLI project in TypeScript to get you started quickly. It requires very few runtime dependencies and has extremely minimal overhead.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/oclif:1": {}
+    "ghcr.io/devcontainers-extra/features/oclif:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ The oclif generator creates a CLI project in TypeScript to get you started quick
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

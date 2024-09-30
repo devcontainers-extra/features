@@ -3,11 +3,11 @@
 
 apko is an apk-based OCI image builder
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/apko:1": {}
+    "ghcr.io/devcontainers-extra/features/apko:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ apko is an apk-based OCI image builder
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

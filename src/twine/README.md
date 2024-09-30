@@ -3,11 +3,11 @@
 
 Twine is a utility for publishing Python packages on PyPI.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/twine:2": {}
+    "ghcr.io/devcontainers-extra/features/twine:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Twine is a utility for publishing Python packages on PyPI.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

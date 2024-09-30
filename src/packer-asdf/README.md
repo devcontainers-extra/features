@@ -3,11 +3,11 @@
 
 Packer is a free and open source tool for creating golden images for multiple platforms from a single source configuration.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/packer-asdf:2": {}
+    "ghcr.io/devcontainers-extra/features/packer-asdf:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Packer is a free and open source tool for creating golden images for multiple pl
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

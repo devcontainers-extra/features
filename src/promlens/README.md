@@ -3,11 +3,11 @@
 
 PromLens is a web-based PromQL query builder, analyzer, and visualizer.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/promlens:1": {}
+    "ghcr.io/devcontainers-extra/features/promlens:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ PromLens is a web-based PromQL query builder, analyzer, and visualizer.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

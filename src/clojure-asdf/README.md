@@ -3,11 +3,11 @@
 
 Clojure is a dialect of Lisp, and shares with Lisp the code-as-data philosophy and a powerful macro system.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/clojure-asdf:2": {}
+    "ghcr.io/devcontainers-extra/features/clojure-asdf:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Clojure is a dialect of Lisp, and shares with Lisp the code-as-data philosophy a
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

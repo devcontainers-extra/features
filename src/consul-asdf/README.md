@@ -3,11 +3,11 @@
 
 Consul is a service networking solution to automate network configurations, discover services, and enable secure connectivity across any cloud or runtime.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/consul-asdf:2": {}
+    "ghcr.io/devcontainers-extra/features/consul-asdf:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Consul is a service networking solution to automate network configurations, disc
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

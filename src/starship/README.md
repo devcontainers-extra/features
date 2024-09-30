@@ -3,11 +3,11 @@
 
 Starship is fast and highly customizable cross-shell prompt that can display contextual information.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/starship:1": {}
+    "ghcr.io/devcontainers-extra/features/starship:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Starship is fast and highly customizable cross-shell prompt that can display con
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

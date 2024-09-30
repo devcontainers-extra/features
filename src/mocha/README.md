@@ -3,11 +3,11 @@
 
 Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/mocha:2": {}
+    "ghcr.io/devcontainers-extra/features/mocha:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Mocha is a feature-rich JavaScript test framework running on Node.js and in the 
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

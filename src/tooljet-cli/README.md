@@ -3,11 +3,11 @@
 
 ToolJet is an open-source low-code framework to build and deploy internal tools quickly with minimal engineering effort.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/tooljet-cli:1": {}
+    "ghcr.io/devcontainers-extra/features/tooljet-cli:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ ToolJet is an open-source low-code framework to build and deploy internal tools 
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

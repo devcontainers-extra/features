@@ -3,11 +3,11 @@
 
 mkcert is a simple tool for making locally-trusted development certificates.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/mkcert:1": {}
+    "ghcr.io/devcontainers-extra/features/mkcert:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ mkcert is a simple tool for making locally-trusted development certificates.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

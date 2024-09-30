@@ -3,11 +3,11 @@
 
 The Expo CLI is a command-line tool that is the primary interface between a developer and other Expo tools.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/expo-cli:1": {}
+    "ghcr.io/devcontainers-extra/features/expo-cli:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ The Expo CLI is a command-line tool that is the primary interface between a deve
 | version | Select the version of Expo CLI to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

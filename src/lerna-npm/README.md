@@ -3,11 +3,11 @@
 
 Lerna is a fast modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/lerna-npm:1": {}
+    "ghcr.io/devcontainers-extra/features/lerna-npm:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Lerna is a fast modern build system for managing and publishing multiple JavaScr
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

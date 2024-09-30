@@ -3,11 +3,11 @@
 
 buku is a powerful bookmark manager and a personal textual mini-web.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/buku:1": {}
+    "ghcr.io/devcontainers-extra/features/buku:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ buku is a powerful bookmark manager and a personal textual mini-web.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

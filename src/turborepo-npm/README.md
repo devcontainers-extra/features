@@ -3,11 +3,11 @@
 
 Turborepo is a high-performance build system for JavaScript and TypeScript codebases.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/turborepo-npm:1": {}
+    "ghcr.io/devcontainers-extra/features/turborepo-npm:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Turborepo is a high-performance build system for JavaScript and TypeScript codeb
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

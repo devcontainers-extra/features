@@ -3,11 +3,11 @@
 
 duf is a better 'df' alternative.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/duf:1": {}
+    "ghcr.io/devcontainers-extra/features/duf:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ duf is a better 'df' alternative.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

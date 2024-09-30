@@ -3,11 +3,11 @@
 
 Execute commands with Datadog from within your Continuous Integration/Continuous Deployment scripts to perform end-to-end tests of your application before applying your changes or deploying. datadog-ci allows you to run Continuous Testing tests and wait for the results.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/datadog-ci-cli:1": {}
+    "ghcr.io/devcontainers-extra/features/datadog-ci-cli:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Execute commands with Datadog from within your Continuous Integration/Continuous
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -3,11 +3,11 @@
 
 Kubernetes Operations (kOps) - Production Grade k8s Installation, Upgrades and Management.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/kops:1": {}
+    "ghcr.io/devcontainers-extra/features/kops:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Kubernetes Operations (kOps) - Production Grade k8s Installation, Upgrades and M
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

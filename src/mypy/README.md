@@ -3,11 +3,11 @@
 
 Mypy is a static type checker for Python.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/mypy:2": {}
+    "ghcr.io/devcontainers-extra/features/mypy:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Mypy is a static type checker for Python.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -3,11 +3,11 @@
 
 Flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/flake8:2": {}
+    "ghcr.io/devcontainers-extra/features/flake8:2": {}
 }
 ```
 
@@ -19,3 +19,7 @@ Flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and t
 | plugins | A space delimitered list of flake8 plugins (will be injected into the flake8 pipx env). see proposals for examples | string | - |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

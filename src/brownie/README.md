@@ -3,11 +3,11 @@
 
 Brownie is a Python-based development and testing framework for smart contracts targeting the Ethereum Virtual Machine.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/brownie:2": {}
+    "ghcr.io/devcontainers-extra/features/brownie:2": {}
 }
 ```
 
@@ -19,3 +19,7 @@ Brownie is a Python-based development and testing framework for smart contracts 
 | pythonVersion | Select the version to install. | string | os-provided |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

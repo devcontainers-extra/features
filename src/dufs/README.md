@@ -3,11 +3,11 @@
 
 Dufs is a distinctive utility file server that supports static serving, uploading, searching, accessing control, webdav and more.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/dufs:1": {}
+    "ghcr.io/devcontainers-extra/features/dufs:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Dufs is a distinctive utility file server that supports static serving, uploadin
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

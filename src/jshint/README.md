@@ -3,11 +3,11 @@
 
 JSHint is a tool that helps to detect errors and potential problems in your JavaScript code.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/jshint:2": {}
+    "ghcr.io/devcontainers-extra/features/jshint:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ JSHint is a tool that helps to detect errors and potential problems in your Java
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

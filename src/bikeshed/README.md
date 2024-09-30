@@ -3,11 +3,11 @@
 
 A preprocessor for anyone writing specifications that converts source files into actual specs.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/bikeshed:2": {}
+    "ghcr.io/devcontainers-extra/features/bikeshed:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ A preprocessor for anyone writing specifications that converts source files into
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

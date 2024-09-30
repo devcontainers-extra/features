@@ -3,11 +3,11 @@
 
 sfdx provide you with the ability to develop and test your apps more easily on Salesforce Platform.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/salesforce-sfdx:1": {}
+    "ghcr.io/devcontainers-extra/features/salesforce-sfdx:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ sfdx provide you with the ability to develop and test your apps more easily on S
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

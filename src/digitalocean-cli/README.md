@@ -7,7 +7,7 @@ DigitalOcean CLI allows you to interact with the DigitalOcean API via the comman
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/digitalocean-cli:1": {}
+    "ghcr.io/devcontainers-extra/features/digitalocean-cli:1": {}
 }
 ```
 
@@ -21,4 +21,4 @@ DigitalOcean CLI allows you to interact with the DigitalOcean API via the comman
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/digitalocean-cli/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

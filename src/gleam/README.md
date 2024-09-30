@@ -3,11 +3,11 @@
 
 Gleam is a friendly language for building type-safe, scalable systems. (Gleam compiles to Erlang code, so Erlang needs to be installed to run Gleam code.)
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/gleam:1": {}
+    "ghcr.io/devcontainers-extra/features/gleam:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Gleam is a friendly language for building type-safe, scalable systems. (Gleam co
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

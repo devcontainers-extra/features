@@ -3,11 +3,11 @@
 
 UPX is a free, secure, portable, extendable, high-performance executable packer for several executable formats.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/upx:1": {}
+    "ghcr.io/devcontainers-extra/features/upx:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ UPX is a free, secure, portable, extendable, high-performance executable packer 
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -6,11 +6,11 @@ framework.It's a distributed processing engine for stateful computations over
 unbounded and bounded data streams.It has been designed to run in all common
 cluster environments, perform computations at in-memory speed and at any scale.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/flink-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/flink-sdkman:2": {}
 }
 ```
 
@@ -23,3 +23,7 @@ cluster environments, perform computations at in-memory speed and at any scale.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

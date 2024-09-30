@@ -3,11 +3,11 @@
 
 Grype is a vulnerability scanner for container images and filesystems.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/grype:1": {}
+    "ghcr.io/devcontainers-extra/features/grype:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Grype is a vulnerability scanner for container images and filesystems.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

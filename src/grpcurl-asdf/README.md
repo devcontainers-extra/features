@@ -3,11 +3,11 @@
 
 gRPCurl is a command-line tool that lets you interact with gRPC servers.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/grpcurl-asdf:2": {}
+    "ghcr.io/devcontainers-extra/features/grpcurl-asdf:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ gRPCurl is a command-line tool that lets you interact with gRPC servers.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

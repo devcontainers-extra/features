@@ -3,11 +3,11 @@
 
 fkill fabulously kill processes. Cross-platform.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/fkill:2": {}
+    "ghcr.io/devcontainers-extra/features/fkill:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ fkill fabulously kill processes. Cross-platform.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

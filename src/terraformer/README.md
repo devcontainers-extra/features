@@ -3,11 +3,11 @@
 
 Terraformer is a CLI tool to generate terraform files from existing infrastructure (reverse Terraform).
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/terraformer:1": {}
+    "ghcr.io/devcontainers-extra/features/terraformer:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Terraformer is a CLI tool to generate terraform files from existing infrastructu
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

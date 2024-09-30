@@ -7,7 +7,7 @@ Executes a bash command
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/bash-command:1": {}
+    "ghcr.io/devcontainers-extra/features/bash-command:1": {}
 }
 ```
 
@@ -21,4 +21,4 @@ Executes a bash command
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/bash-command/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -3,11 +3,11 @@
 
 Beehive is an event and agent system, which allows you to create your own agents that perform automated tasks triggered by events and filters.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/beehive:1": {}
+    "ghcr.io/devcontainers-extra/features/beehive:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Beehive is an event and agent system, which allows you to create your own agents
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

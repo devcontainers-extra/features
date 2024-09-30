@@ -3,11 +3,11 @@
 
 GitHub CLI is a command-line interface to GitHub for use in your terminal or your scripts.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/gh-cli:1": {}
+    "ghcr.io/devcontainers-extra/features/gh-cli:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ GitHub CLI is a command-line interface to GitHub for use in your terminal or you
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

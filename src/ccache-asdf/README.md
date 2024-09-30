@@ -3,11 +3,11 @@
 
 Ccache is a compiler cache. It speeds up recompilation by caching previous compilations and detecting when the same compilation is being done again.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/ccache-asdf:2": {}
+    "ghcr.io/devcontainers-extra/features/ccache-asdf:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Ccache is a compiler cache. It speeds up recompilation by caching previous compi
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

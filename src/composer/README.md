@@ -3,11 +3,11 @@
 
 Composer is an open source dependency management tool for PHP.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/composer:1": {}
+    "ghcr.io/devcontainers-extra/features/composer:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Composer is an open source dependency management tool for PHP.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -3,11 +3,11 @@
 
 Prettier is an opinionated code formatter.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/prettier:1": {}
+    "ghcr.io/devcontainers-extra/features/prettier:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Prettier is an opinionated code formatter.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

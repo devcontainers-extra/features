@@ -3,11 +3,11 @@
 
 Bartib is a simple timetracker for the command line. It saves a log of all tracked activities as a plaintext file and allows you to create flexible reports.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/bartib:1": {}
+    "ghcr.io/devcontainers-extra/features/bartib:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Bartib is a simple timetracker for the command line. It saves a log of all track
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

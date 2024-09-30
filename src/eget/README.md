@@ -3,11 +3,11 @@
 
 Eget easily install prebuilt binaries from GitHub.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/eget:1": {}
+    "ghcr.io/devcontainers-extra/features/eget:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Eget easily install prebuilt binaries from GitHub.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

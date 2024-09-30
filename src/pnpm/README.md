@@ -3,11 +3,11 @@
 
 Pnpm is a fast and disk space efficient package manager.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/pnpm:2": {}
+    "ghcr.io/devcontainers-extra/features/pnpm:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Pnpm is a fast and disk space efficient package manager.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

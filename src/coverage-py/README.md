@@ -3,11 +3,11 @@
 
 Coverage.py is a tool for measuring code coverage of Python programs.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/coverage-py:2": {}
+    "ghcr.io/devcontainers-extra/features/coverage-py:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Coverage.py is a tool for measuring code coverage of Python programs.
 | version | Select the version of Coverage.py to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

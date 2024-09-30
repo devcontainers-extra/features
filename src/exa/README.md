@@ -3,11 +3,11 @@
 
 exa is a modern replacement for ls.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/exa:1": {}
+    "ghcr.io/devcontainers-extra/features/exa:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ exa is a modern replacement for ls.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

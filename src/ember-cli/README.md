@@ -3,11 +3,11 @@
 
 The Ember CLI (command line interface) is the official way to create, build, test, and serve the files that make up an Ember app or addon.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/ember-cli:1": {}
+    "ghcr.io/devcontainers-extra/features/ember-cli:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ The Ember CLI (command line interface) is the official way to create, build, tes
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -15,11 +15,11 @@ contravariance, higher-order types, and anonymous types. Other features of Scala
 include operator overloading, optional parameters, named parameters, raw
 strings, and no checked exceptions.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/scala-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/scala-sdkman:2": {}
 }
 ```
 
@@ -32,3 +32,7 @@ strings, and no checked exceptions.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

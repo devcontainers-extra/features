@@ -3,11 +3,11 @@
 
 trello-cli is a CLI tool for Trello. Makes sense, right?
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/trello-cli:1": {}
+    "ghcr.io/devcontainers-extra/features/trello-cli:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ trello-cli is a CLI tool for Trello. Makes sense, right?
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

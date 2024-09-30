@@ -3,11 +3,11 @@
 
 Terragrunt is a thin wrapper that provides extra tools for keeping your configurations DRY, working with multiple Terraform modules, and managing remote state.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/terragrunt:1": {}
+    "ghcr.io/devcontainers-extra/features/terragrunt:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Terragrunt is a thin wrapper that provides extra tools for keeping your configur
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

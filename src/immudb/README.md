@@ -3,11 +3,11 @@
 
 immudb is an immutable database based on zero trust, SQL and Key-Value, tamperproof, data change history.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/immudb:1": {}
+    "ghcr.io/devcontainers-extra/features/immudb:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ immudb is an immutable database based on zero trust, SQL and Key-Value, tamperpr
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

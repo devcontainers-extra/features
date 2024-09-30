@@ -3,11 +3,11 @@
 
 PDM is a modern Python package and dependency manager supporting the latest PEP standards.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/pdm:2": {}
+    "ghcr.io/devcontainers-extra/features/pdm:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ PDM is a modern Python package and dependency manager supporting the latest PEP 
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

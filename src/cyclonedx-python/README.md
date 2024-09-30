@@ -3,11 +3,11 @@
 
 CycloneDX Python creates CycloneDX Software Bill of Materials (SBOM) from Python projects and environments.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/cyclonedx-python:1": {}
+    "ghcr.io/devcontainers-extra/features/cyclonedx-python:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ CycloneDX Python creates CycloneDX Software Bill of Materials (SBOM) from Python
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

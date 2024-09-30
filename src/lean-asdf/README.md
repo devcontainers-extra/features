@@ -3,11 +3,11 @@
 
 Lean is a functional programming language that makes it easy to write correct and maintainable code.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/lean-asdf:2": {}
+    "ghcr.io/devcontainers-extra/features/lean-asdf:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Lean is a functional programming language that makes it easy to write correct an
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

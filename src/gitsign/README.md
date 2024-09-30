@@ -3,11 +3,11 @@
 
 Gitsign implements keyless Sigstore to sign Git commits with a valid OpenID Connect identity.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/gitsign:1": {}
+    "ghcr.io/devcontainers-extra/features/gitsign:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Gitsign implements keyless Sigstore to sign Git commits with a valid OpenID Conn
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -3,11 +3,11 @@
 
 Podman is a tool for managing containers and images, volumes mounted into those containers, and pods made from groups of containers.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/podman-homebrew:1": {}
+    "ghcr.io/devcontainers-extra/features/podman-homebrew:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Podman is a tool for managing containers and images, volumes mounted into those 
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

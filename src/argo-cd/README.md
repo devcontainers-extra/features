@@ -7,7 +7,7 @@ Declarative GitOps CD for Kubernetes
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/argo-cd:1": {}
+    "ghcr.io/devcontainers-extra/features/argo-cd:1": {}
 }
 ```
 
@@ -21,4 +21,4 @@ Declarative GitOps CD for Kubernetes
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/argo-cd/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

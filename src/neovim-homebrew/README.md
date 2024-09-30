@@ -3,11 +3,11 @@
 
 Neovim is a fork of Vim focused on modern code and features, rather than running in legacy environments.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/neovim-homebrew:1": {}
+    "ghcr.io/devcontainers-extra/features/neovim-homebrew:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Neovim is a fork of Vim focused on modern code and features, rather than running
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

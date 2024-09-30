@@ -9,11 +9,11 @@ data collected by Java Flight Recorder. The tool chain enables developers and
 administrators to collect and analyze data from Java applications running
 locally or deployed in production environments.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/jmc-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/jmc-sdkman:2": {}
 }
 ```
 
@@ -26,3 +26,7 @@ locally or deployed in production environments.
 | jdkDistro | Select or enter a JDK distribution to install | string | oracle |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

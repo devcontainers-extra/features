@@ -3,11 +3,11 @@
 
 Atmos is a workflow automation tool. Atmos is lets you take a complex workflow and turn it into a parameterized CLI. You can then run the CLI anywhere, such as locally or in CI/CD.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/atmos:1": {}
+    "ghcr.io/devcontainers-extra/features/atmos:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Atmos is a workflow automation tool. Atmos is lets you take a complex workflow a
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

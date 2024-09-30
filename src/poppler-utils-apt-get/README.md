@@ -15,13 +15,22 @@ pdftops - convert PDF to printable PS format
 pdftotext - extract all text from PDF
 pdfunite - merges several PDFs.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/poppler-utils-apt-get:1": {}
+    "ghcr.io/devcontainers-extra/features/poppler-utils-apt-get:1": {}
 }
 ```
 
+## Options
+
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
 
 
+
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

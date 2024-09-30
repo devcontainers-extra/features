@@ -7,7 +7,7 @@ D is a general-purpose programming language with static typing, systems-level ac
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/d:1": {}
+    "ghcr.io/devcontainers-extra/features/d:1": {}
 }
 ```
 
@@ -22,4 +22,4 @@ D is a general-purpose programming language with static typing, systems-level ac
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/d/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

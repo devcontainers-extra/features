@@ -3,11 +3,11 @@
 
 Access the entire Linode platform from the command line, easily adding, removing, or modifing services.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/linode-cli:1": {}
+    "ghcr.io/devcontainers-extra/features/linode-cli:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Access the entire Linode platform from the command line, easily adding, removing
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -7,7 +7,7 @@ Heroku CLI allows you to interact with the Heroku API via the command line
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/heroku-cli:1": {}
+    "ghcr.io/devcontainers-extra/features/heroku-cli:1": {}
 }
 ```
 
@@ -21,4 +21,4 @@ Heroku CLI allows you to interact with the Heroku API via the command line
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/heroku-cli/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

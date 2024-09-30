@@ -3,11 +3,11 @@
 
 Redis is an in-memory data structure store, used as a distributed, in-memory key-value database, cache and message broker, with optional durability.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/redis-homebrew:1": {}
+    "ghcr.io/devcontainers-extra/features/redis-homebrew:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Redis is an in-memory data structure store, used as a distributed, in-memory key
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -5,11 +5,11 @@ AsciidoctorJ is the official library for running Asciidoctor on the JVM. Using
 AsciidoctorJ, you can convert AsciiDoc content or analyze the structure of a
 parsed AsciiDoc document from Java and other JVM languages.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/asciidoctorj-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/asciidoctorj-sdkman:2": {}
 }
 ```
 
@@ -22,3 +22,7 @@ parsed AsciiDoc document from Java and other JVM languages.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -3,11 +3,11 @@
 
 ddgr is a cmdline utility to search DuckDuckGo from the terminal.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/ddgr-homebrew:1": {}
+    "ghcr.io/devcontainers-extra/features/ddgr-homebrew:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ ddgr is a cmdline utility to search DuckDuckGo from the terminal.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

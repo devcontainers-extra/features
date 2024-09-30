@@ -3,11 +3,11 @@
 
 sigstore-python is a Python tool for generating and verifying Sigstore signatures. You can use it to sign and verify Python package distributions, or anything else!
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/sigstore-python:1": {}
+    "ghcr.io/devcontainers-extra/features/sigstore-python:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ sigstore-python is a Python tool for generating and verifying Sigstore signature
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

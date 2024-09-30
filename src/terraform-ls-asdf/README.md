@@ -3,11 +3,11 @@
 
 The official Terraform language server (terraform-ls) maintained by HashiCorp provides IDE features to any LSP-compatible editor.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/terraform-ls-asdf:2": {}
+    "ghcr.io/devcontainers-extra/features/terraform-ls-asdf:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ The official Terraform language server (terraform-ls) maintained by HashiCorp pr
 | version | Select the version of Terraform Language Server (terraform-ls) to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

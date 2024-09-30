@@ -4,11 +4,11 @@
 Kobweb is an opinionated Kotlin web framework built on top of Compose for Web.
 The CLI provides commands to help setup and manage your project.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/kobweb-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/kobweb-sdkman:2": {}
 }
 ```
 
@@ -21,3 +21,7 @@ The CLI provides commands to help setup and manage your project.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

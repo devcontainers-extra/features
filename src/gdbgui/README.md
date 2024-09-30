@@ -3,11 +3,11 @@
 
 gdbgui is a browser-based frontend to gdb (gnu debugger).
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/gdbgui:2": {}
+    "ghcr.io/devcontainers-extra/features/gdbgui:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ gdbgui is a browser-based frontend to gdb (gnu debugger).
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

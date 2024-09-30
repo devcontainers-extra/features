@@ -3,11 +3,11 @@
 
 The Budibase CLI tool can be used to create a new Budibase installation, to manage an existing installation, make backups or update a Budibase installation to a new version.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/budibase-cli:1": {}
+    "ghcr.io/devcontainers-extra/features/budibase-cli:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ The Budibase CLI tool can be used to create a new Budibase installation, to mana
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

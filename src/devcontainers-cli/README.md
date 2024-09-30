@@ -3,11 +3,11 @@
 
 The devcontainers CLI, which configures devcontainers from devcontainer.json. Requires the Docker client and access to a Docker engine socket (e.g. by mounting the host's Docker socket into the container)
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/devcontainers-cli:1": {}
+    "ghcr.io/devcontainers-extra/features/devcontainers-cli:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ The devcontainers CLI, which configures devcontainers from devcontainer.json. Re
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

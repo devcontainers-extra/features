@@ -3,11 +3,11 @@
 
 Infracost shows cloud cost estimates for Terraform. It lets engineers see a cost breakdown and understand costs before making changes, either in the terminal, VS Code or pull requests.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/infracost:1": {}
+    "ghcr.io/devcontainers-extra/features/infracost:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Infracost shows cloud cost estimates for Terraform. It lets engineers see a cost
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

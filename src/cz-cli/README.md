@@ -3,11 +3,11 @@
 
 Commitizen is release management tool designed for teams. Commitizen assumes your team uses a standard way of commiting rules and from that foundation, it can bump your project's version, create the changelog, and update files.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/cz-cli:1": {}
+    "ghcr.io/devcontainers-extra/features/cz-cli:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Commitizen is release management tool designed for teams. Commitizen assumes you
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

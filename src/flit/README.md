@@ -3,11 +3,11 @@
 
 Flit is a simple way to put Python packages and modules on PyPI.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/flit:2": {}
+    "ghcr.io/devcontainers-extra/features/flit:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Flit is a simple way to put Python packages and modules on PyPI.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

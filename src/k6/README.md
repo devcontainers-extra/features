@@ -3,11 +3,11 @@
 
 k6 is an open-source load testing tool that makes performance testing easy and productive for engineering teams.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/k6:1": {}
+    "ghcr.io/devcontainers-extra/features/k6:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ k6 is an open-source load testing tool that makes performance testing easy and p
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

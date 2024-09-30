@@ -3,11 +3,11 @@
 
 Jest is a delightful JavaScript Testing Framework with a focus on simplicity
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/jest:2": {}
+    "ghcr.io/devcontainers-extra/features/jest:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Jest is a delightful JavaScript Testing Framework with a focus on simplicity
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

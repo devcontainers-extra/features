@@ -3,11 +3,11 @@
 
 A fast, flexible, configuration-based command-line interface for linting Markdown/CommonMark files with the markdownlint library.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/markdownlint-cli2:1": {}
+    "ghcr.io/devcontainers-extra/features/markdownlint-cli2:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ A fast, flexible, configuration-based command-line interface for linting Markdow
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

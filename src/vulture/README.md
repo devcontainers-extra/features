@@ -3,11 +3,11 @@
 
 Vulture finds unused code in Python programs.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/vulture:2": {}
+    "ghcr.io/devcontainers-extra/features/vulture:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Vulture finds unused code in Python programs.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

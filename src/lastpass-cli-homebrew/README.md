@@ -3,11 +3,11 @@
 
 The LastPass command line application is an open source project that allows you to create, edit, and retrieve passwords in your online LastPass vault.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/lastpass-cli-homebrew:1": {}
+    "ghcr.io/devcontainers-extra/features/lastpass-cli-homebrew:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ The LastPass command line application is an open source project that allows you 
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -1,13 +1,13 @@
 
-# npm package (npm-package)
+# NPM package (npm-package)
 
-Installs an npm package.
+Installs an npm package globally.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/npm-package:1": {}
+    "ghcr.io/devcontainers-extra/features/npm-package:1": {}
 }
 ```
 
@@ -22,4 +22,4 @@ Installs an npm package.
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/npm-package/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

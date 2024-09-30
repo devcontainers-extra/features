@@ -3,11 +3,11 @@
 
 Mosh is a remote terminal application that allows roaming, supports intermittent connectivity, and provides intelligent local echo and line editing of user keystrokes.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/mosh-homebrew:1": {}
+    "ghcr.io/devcontainers-extra/features/mosh-homebrew:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Mosh is a remote terminal application that allows roaming, supports intermittent
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

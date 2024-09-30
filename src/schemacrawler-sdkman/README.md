@@ -10,11 +10,11 @@ SchemaCrawler also generates schema diagrams. You can execute scripts in any
 standard scripting language against your database. You can find potential schema
 design issues with lint.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/schemacrawler-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/schemacrawler-sdkman:2": {}
 }
 ```
 
@@ -27,3 +27,7 @@ design issues with lint.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

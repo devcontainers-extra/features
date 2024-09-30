@@ -3,11 +3,11 @@
 
 ORY Oathkeeper is an Identity & Access Proxy (IAP) and Access Control Decision API that authorizes HTTP requests based on sets of Access Rules.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/ory-oathkeeper:1": {}
+    "ghcr.io/devcontainers-extra/features/ory-oathkeeper:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ ORY Oathkeeper is an Identity & Access Proxy (IAP) and Access Control Decision A
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

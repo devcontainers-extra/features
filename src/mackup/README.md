@@ -3,11 +3,11 @@
 
 Mackup keeps your application settings in sync (OS X/Linux).
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/mackup:1": {}
+    "ghcr.io/devcontainers-extra/features/mackup:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Mackup keeps your application settings in sync (OS X/Linux).
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

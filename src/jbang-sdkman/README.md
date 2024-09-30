@@ -4,11 +4,11 @@
 JBang makes it easy to use Java for scripting. It lets you use a single file for
 code and dependency management and allows you to run it directly.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/jbang-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/jbang-sdkman:2": {}
 }
 ```
 
@@ -21,3 +21,7 @@ code and dependency management and allows you to run it directly.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

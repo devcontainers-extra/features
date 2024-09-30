@@ -3,11 +3,11 @@
 
 spacectl is a utility wrapping Spacelift's GraphQL API for easy programmatic access in command-line contexts - either in manual interactive mode (in your local shell), or in a predefined CI pipeline (GitHub actions, CircleCI, Jenkins etc).
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/spacectl:1": {}
+    "ghcr.io/devcontainers-extra/features/spacectl:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ spacectl is a utility wrapping Spacelift's GraphQL API for easy programmatic acc
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

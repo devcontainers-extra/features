@@ -3,11 +3,11 @@
 
 Hatch is a modern, extensible Python project manager.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/hatch:2": {}
+    "ghcr.io/devcontainers-extra/features/hatch:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Hatch is a modern, extensible Python project manager.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

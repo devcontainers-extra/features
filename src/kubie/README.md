@@ -7,7 +7,7 @@ Kubie offers kubernetes context switching, namespace switching and prompt modifi
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/kubie:1": {}
+    "ghcr.io/devcontainers-extra/features/kubie:1": {}
 }
 ```
 
@@ -21,4 +21,4 @@ Kubie offers kubernetes context switching, namespace switching and prompt modifi
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/kubie/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

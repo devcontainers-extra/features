@@ -3,11 +3,11 @@
 
 Prometheus, a Cloud Native Computing Foundation project, is a systems and service monitoring system. It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts when specified conditions are observed.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/prometheus:1": {}
+    "ghcr.io/devcontainers-extra/features/prometheus:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Prometheus, a Cloud Native Computing Foundation project, is a systems and servic
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

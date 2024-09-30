@@ -3,11 +3,11 @@
 
 The Squarespace local development server is a command line tool that sets up a test server on your computer, allowing you to see changes to your template before making them live
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/squarespace-server:1": {}
+    "ghcr.io/devcontainers-extra/features/squarespace-server:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ The Squarespace local development server is a command line tool that sets up a t
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

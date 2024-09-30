@@ -3,11 +3,11 @@
 
 APIOps applies the concepts of GitOps and DevOps to API deployment. By using practices from these two methodologies, APIOps can enable everyone involved in the lifecycle of API design, development, and deployment with self-service and automated tools to ensure the quality of the specifications and APIs that theyre building.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/azure-apiops:1": {}
+    "ghcr.io/devcontainers-extra/features/azure-apiops:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ APIOps applies the concepts of GitOps and DevOps to API deployment. By using pra
 | version | Select the version you would like to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

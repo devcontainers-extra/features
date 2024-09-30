@@ -3,11 +3,11 @@
 
 direnv is an extension for your shell. It augments existing shells with a new feature that can load and unload environment variables depending on the current directory.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/direnv:1": {}
+    "ghcr.io/devcontainers-extra/features/direnv:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ direnv is an extension for your shell. It augments existing shells with a new fe
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

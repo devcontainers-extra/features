@@ -4,11 +4,11 @@
 Open source programming language and platform for cloud-era application
 programmers to easily write software that just works.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/ballerina-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/ballerina-sdkman:2": {}
 }
 ```
 
@@ -21,3 +21,7 @@ programmers to easily write software that just works.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

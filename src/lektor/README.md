@@ -3,11 +3,11 @@
 
 Lektor is a static website generator.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/lektor:2": {}
+    "ghcr.io/devcontainers-extra/features/lektor:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Lektor is a static website generator.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

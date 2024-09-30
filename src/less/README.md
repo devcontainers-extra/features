@@ -3,11 +3,11 @@
 
 Less is a backwards-compatible language extension for CSS
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/less:2": {}
+    "ghcr.io/devcontainers-extra/features/less:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Less is a backwards-compatible language extension for CSS
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

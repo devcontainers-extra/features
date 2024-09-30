@@ -3,11 +3,11 @@
 
 Epinio is an opinionated platform that runs on Kubernetes to take you from Code to URL in one step.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/epinio:1": {}
+    "ghcr.io/devcontainers-extra/features/epinio:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Epinio is an opinionated platform that runs on Kubernetes to take you from Code 
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

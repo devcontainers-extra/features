@@ -7,7 +7,7 @@ Pulumi is a modern infrastructure as code platform
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/pulumi:1": {}
+    "ghcr.io/devcontainers-extra/features/pulumi:1": {}
 }
 ```
 
@@ -22,4 +22,4 @@ Pulumi is a modern infrastructure as code platform
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/pulumi/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

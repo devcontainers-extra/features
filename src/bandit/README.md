@@ -3,11 +3,11 @@
 
 Bandit is a tool designed to find common security issues in Python code.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/bandit:2": {}
+    "ghcr.io/devcontainers-extra/features/bandit:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Bandit is a tool designed to find common security issues in Python code.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

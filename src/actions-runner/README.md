@@ -3,11 +3,11 @@
 
 The runner is the application that runs a job from a GitHub Actions workflow. It is used by GitHub Actions in the hosted virtual environments, or you can self-host the runner in your own environment.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/actions-runner:1": {}
+    "ghcr.io/devcontainers-extra/features/actions-runner:1": {}
 }
 ```
 
@@ -19,3 +19,7 @@ The runner is the application that runs a job from a GitHub Actions workflow. It
 | dotnetVersion | Select the dotnet version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

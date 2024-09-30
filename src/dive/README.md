@@ -3,11 +3,11 @@
 
 Dive is a tool for exploring a docker image, layer contents, and discovering ways to shrink the size of your Docker/OCI image.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/dive:1": {}
+    "ghcr.io/devcontainers-extra/features/dive:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Dive is a tool for exploring a docker image, layer contents, and discovering way
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

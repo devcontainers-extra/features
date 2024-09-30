@@ -7,7 +7,7 @@ Installs Haskell. An advanced, purely functional programming language
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/haskell:2": {}
+    "ghcr.io/devcontainers-extra/features/haskell:2": {}
 }
 ```
 
@@ -28,4 +28,4 @@ Installs Haskell. An advanced, purely functional programming language
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/haskell/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -4,11 +4,11 @@
 Kotlin is a statically-typed programming language that runs on the Java Virtual
 Machine and can also be compiled to JavaScript source code.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/kotlin-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/kotlin-sdkman:2": {}
 }
 ```
 
@@ -21,3 +21,7 @@ Machine and can also be compiled to JavaScript source code.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

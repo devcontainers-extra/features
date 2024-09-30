@@ -7,7 +7,7 @@ Install (Oh-My-)ZSH plugins
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {}
+    "ghcr.io/devcontainers-extra/features/zsh-plugins:0": {}
 }
 ```
 
@@ -23,4 +23,4 @@ Install (Oh-My-)ZSH plugins
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/zsh-plugins/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

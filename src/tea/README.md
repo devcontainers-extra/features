@@ -3,11 +3,11 @@
 
 tea is the next-generation, cross-platform package manager from the creator of brew.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/tea:1": {}
+    "ghcr.io/devcontainers-extra/features/tea:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ tea is the next-generation, cross-platform package manager from the creator of b
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -6,11 +6,11 @@ services using frontend programming APIs, like JAX-WS and JAX-RS. These services
 can speak a variety of protocols such as SOAP, XML/HTTP, RESTful HTTP, or CORBA
 and work over a variety of transports such as HTTP, JMS or JBI.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/cxf-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/cxf-sdkman:2": {}
 }
 ```
 
@@ -23,3 +23,7 @@ and work over a variety of transports such as HTTP, JMS or JBI.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

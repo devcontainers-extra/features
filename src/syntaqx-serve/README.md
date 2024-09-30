@@ -3,11 +3,11 @@
 
 serve is a static http server anywhere you need one. It's basically python -m SimpleHTTPServer 8080 written in Go, because who can remember that many letters?
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/syntaqx-serve:1": {}
+    "ghcr.io/devcontainers-extra/features/syntaqx-serve:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ serve is a static http server anywhere you need one. It's basically python -m Si
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -3,11 +3,11 @@
 
 The Linkerd CLI is the primary way to interact with Linkerd. It can install the control plane to your cluster, add the proxy to your service and provide detailed metrics for how your service is performing.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/linkerd2-cli-edge:1": {}
+    "ghcr.io/devcontainers-extra/features/linkerd2-cli-edge:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ The Linkerd CLI is the primary way to interact with Linkerd. It can install the 
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

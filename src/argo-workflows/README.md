@@ -7,7 +7,7 @@ Argo Workflows is an open source container-native workflow engine for orchestrat
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/argo-workflows:1": {}
+    "ghcr.io/devcontainers-extra/features/argo-workflows:1": {}
 }
 ```
 
@@ -21,4 +21,4 @@ Argo Workflows is an open source container-native workflow engine for orchestrat
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/argo-workflows/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

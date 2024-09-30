@@ -3,11 +3,11 @@
 
 fzf is a general-purpose command-line fuzzy finder.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/fzf:1": {}
+    "ghcr.io/devcontainers-extra/features/fzf:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ fzf is a general-purpose command-line fuzzy finder.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

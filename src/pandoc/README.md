@@ -3,11 +3,11 @@
 
 Pandoc is a Haskell library for converting from one markup format to another, and a command-line tool that uses this library.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/pandoc:1": {}
+    "ghcr.io/devcontainers-extra/features/pandoc:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Pandoc is a Haskell library for converting from one markup format to another, an
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -3,11 +3,11 @@
 
 Haxe is an open source high-level cross-platform programming language and compiler.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/haxe-asdf:2": {}
+    "ghcr.io/devcontainers-extra/features/haxe-asdf:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Haxe is an open source high-level cross-platform programming language and compil
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

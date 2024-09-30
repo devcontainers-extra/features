@@ -3,11 +3,11 @@
 
 jsii-pacmak generates ready-to-publish language-specific packages for jsii modules, part of the jsii project.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/jsii-pacmak:1": {}
+    "ghcr.io/devcontainers-extra/features/jsii-pacmak:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ jsii-pacmak generates ready-to-publish language-specific packages for jsii modul
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

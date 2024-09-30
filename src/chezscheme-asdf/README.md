@@ -3,11 +3,11 @@
 
 Chez Scheme is both a programming language and an implementation of that language, with supporting tools and documentation.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/chezscheme-asdf:2": {}
+    "ghcr.io/devcontainers-extra/features/chezscheme-asdf:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Chez Scheme is both a programming language and an implementation of that languag
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
