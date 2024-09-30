@@ -3,11 +3,11 @@
 
 croc is a tool that allows any two computers to simply and securely transfer files and folders.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/croc:1": {}
+    "ghcr.io/devcontainers-extra/features/croc:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ croc is a tool that allows any two computers to simply and securely transfer fil
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

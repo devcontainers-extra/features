@@ -3,11 +3,11 @@
 
 pip-audit is a tool for scanning Python environments for packages with known vulnerabilities.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/pip-audit:1": {}
+    "ghcr.io/devcontainers-extra/features/pip-audit:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ pip-audit is a tool for scanning Python environments for packages with known vul
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

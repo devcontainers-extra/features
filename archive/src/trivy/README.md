@@ -3,11 +3,11 @@
 
 Trivy is a comprehensive and versatile security scanner. It finds vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/trivy:1": {}
+    "ghcr.io/devcontainers-extra/features/trivy:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Trivy is a comprehensive and versatile security scanner. It finds vulnerabilitie
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

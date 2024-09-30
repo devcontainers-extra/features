@@ -3,11 +3,11 @@
 
 Nushell is a shell with a focus on operating on structured data in the command line.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/nushell:1": {}
+    "ghcr.io/devcontainers-extra/features/nushell:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Nushell is a shell with a focus on operating on structured data in the command l
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

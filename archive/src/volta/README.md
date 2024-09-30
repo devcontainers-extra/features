@@ -3,11 +3,11 @@
 
 Volta is a hassle-free way to manage your JavaScript command-line tools.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/volta:1": {}
+    "ghcr.io/devcontainers-extra/features/volta:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Volta is a hassle-free way to manage your JavaScript command-line tools.
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

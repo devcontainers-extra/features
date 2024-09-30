@@ -3,11 +3,11 @@
 
 age is a simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/age:1": {}
+    "ghcr.io/devcontainers-extra/features/age:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ age is a simple, modern and secure encryption tool (and Go library) with small e
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

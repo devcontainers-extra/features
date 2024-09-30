@@ -7,7 +7,7 @@ Installs a Homebrew package.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/homebrew-package:1": {}
+    "ghcr.io/devcontainers-extra/features/homebrew-package:1": {}
 }
 ```
 
@@ -23,4 +23,4 @@ Installs a Homebrew package.
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/homebrew-package/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

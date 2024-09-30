@@ -3,11 +3,11 @@
 
 Vert.x is a tool-kit for building reactive applications on the JVM.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/vertx-sdkman:2": {}
+    "ghcr.io/devcontainers-extra/features/vertx-sdkman:2": {}
 }
 ```
 
@@ -20,3 +20,7 @@ Vert.x is a tool-kit for building reactive applications on the JVM.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

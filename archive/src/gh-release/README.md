@@ -3,11 +3,11 @@
 
 Github Release feature will download, extract and add to path a release binary from a given repo
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/gh-release:1": {}
+    "ghcr.io/devcontainers-extra/features/gh-release:1": {}
 }
 ```
 
@@ -26,3 +26,7 @@ Github Release feature will download, extract and add to path a release binary f
 | additionalFlags | (Optional) Any additional flags for the 'nanolayer install gh-release' command  | string | - |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

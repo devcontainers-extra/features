@@ -3,11 +3,11 @@
 
 CUE is an open source data constraint language which aims to simplify tasks involving defining and using data.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/cue-asdf:2": {}
+    "ghcr.io/devcontainers-extra/features/cue-asdf:2": {}
 }
 ```
 
@@ -18,3 +18,7 @@ CUE is an open source data constraint language which aims to simplify tasks invo
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

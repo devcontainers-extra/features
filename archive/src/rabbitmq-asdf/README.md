@@ -3,11 +3,11 @@
 
 RabbitMQ is a feature rich, multi-protocol messaging and streaming broker.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/rabbitmq-asdf:1": {}
+    "ghcr.io/devcontainers-extra/features/rabbitmq-asdf:1": {}
 }
 ```
 
@@ -19,3 +19,7 @@ RabbitMQ is a feature rich, multi-protocol messaging and streaming broker.
 | erlangVersion | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

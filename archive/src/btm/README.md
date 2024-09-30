@@ -3,11 +3,11 @@
 
 bottom is a customizable cross-platform graphical process/system monitor for the terminal.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/btm:1": {}
+    "ghcr.io/devcontainers-extra/features/btm:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ bottom is a customizable cross-platform graphical process/system monitor for the
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

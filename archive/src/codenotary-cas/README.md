@@ -3,11 +3,11 @@
 
 Community Attestation Service (CAS) can give any digital asset a meaningful, globally-unique, immutable identity that is authentic, verifiable, traceable from anywhere.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/codenotary-cas:1": {}
+    "ghcr.io/devcontainers-extra/features/codenotary-cas:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ Community Attestation Service (CAS) can give any digital asset a meaningful, glo
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

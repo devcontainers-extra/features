@@ -3,11 +3,11 @@
 
 The Airplane CLI, airplane, is the primary way you'll create and deploy new tasks and runbooks. The CLI also provides utility methods for managing API keys, getting/setting configs, and executing tasks/runbooks.
 
-## Example DevContainer Usage
+## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/airplane-cli:1": {}
+    "ghcr.io/devcontainers-extra/features/airplane-cli:1": {}
 }
 ```
 
@@ -18,3 +18,7 @@ The Airplane CLI, airplane, is the primary way you'll create and deploy new task
 | version | Select the version to install. | string | latest |
 
 
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
