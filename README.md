@@ -1,23 +1,15 @@
-# Devcontainer Features
-
-![Codespaces](https://img.shields.io/static/v1?style=for-the-badge&message=Codespaces&color=181717&logo=GitHub&logoColor=FFFFFF&label=)
-![Devcontainers](https://img.shields.io/static/v1?style=for-the-badge&message=Devcontainers&color=2496ED&logo=Docker&logoColor=FFFFFF&label=)
-![Python](https://img.shields.io/static/v1?style=for-the-badge&message=Python&color=3776AB&logo=Python&logoColor=FFFFFF&label=)
+# Extra Dev Container Features
 
 🐳 Extra add-in features for
 [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) and
 [GitHub Codespaces](https://github.com/features/codespaces)
 
-<div align="center">
+👀 Don't see your feature here? [🔥 Suggest a new feature! 🔥](https://github.com/devcontainers-extra/features/issues/new?template=suggest-feature.yaml) \
+🔍 Found a bug? [🐞 Open a bug report! 🐞](https://github.com/devcontainers-extra/features/issues/new?template=feature-bug-report.yaml)
 
-![](https://i.imgur.com/VgiY81S.png)
+## About This Fork
 
-</div>
-
-💻 Works with devcontainers  \
-☁️ Works with GitHub Codespaces \
-👀 Don't see your feature here?   [🔥Suggest a new feature!🔥](https://github.com/devcontainers-contrib/features/issues/new?template=suggest-feature.yaml)
-
+This repository is a continuation of the [devcontainers-contrib/features](https://github.com/devcontainers-contrib/features) project, initially developed by [danielbraun89](https://github.com/danielbraun89). The fork was created to maintain and enhance the project due to inactivity in the original repository.
 
 ## Usage
 
@@ -29,16 +21,16 @@ of an `options` object.
 
 ```json
 {
-  "image": "mcr.microsoft.com/devcontainers/universal",
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
   "features": {
-    "ghcr.io/devcontainers-contrib/features/deno": {},
-    "ghcr.io/devcontainers-contrib/features/neovim": {}
+    "ghcr.io/devcontainers-extra/features/deno": {},
+    "ghcr.io/devcontainers-extra/features/neovim": {}
   }
 }
 ```
 
 Then, after adding your devcontainer config file, you can open it in GitHub
-Codespaces, or [open it locally using VS Code]. Be warned some features will
+Codespaces, or \[open it locally using VS Code\]. Be warned some features will
 compile things from source code and may take a while!
 
 <div align="center">
@@ -46,7 +38,3 @@ compile things from source code and may take a while!
 ![](https://i.imgur.com/JMdowst.png)
 
 </div>
-
-### Found a bug?
-
-[🐞Open an bug report!🐞](https://github.com/devcontainers-contrib/features/issues/new?template=feature-bug-report.yaml)
