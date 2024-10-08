@@ -11,6 +11,9 @@
 
 This repository is a continuation of the [devcontainers-contrib/features](https://github.com/devcontainers-contrib/features) project, initially developed by [danielbraun89](https://github.com/danielbraun89). The fork was created to maintain and enhance the project due to inactivity in the original repository.
 
+> [!NOTE]
+> This project is not officially associated with or endoresed by the official [Devcontainers](https://containers.dev/) project
+
 ## Usage
 
 Just add a `.devcontainer/devcontainer.json` file with a `features` key. It's
