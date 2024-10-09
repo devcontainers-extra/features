@@ -58,7 +58,7 @@
                 "version": "latest",
                 "repo": "Azure/apiops",
                 "binaryNames": "extractor",
-                "assetRegex": "^extractor\\.linux-.+\\.exe$",
+                "assetRegex": "^extractor-linux-.+\\.zip$",
                 "additionalFlags": "--no-filter-assets-by-platform"
             }
         }
