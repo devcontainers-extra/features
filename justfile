@@ -9,3 +9,10 @@ test-scenario feature-name scenario-filter:
 unarchive feature-name:
     mv archive/src/{{feature-name}} src/
     mv archive/test/{{feature-name}} test/
+
+add feature-name:
+    mkdir -p src/{{feature-name}} test/{{feature-name}}
+    cp templates/src/* src/{{feature-name}}/
+    cp templates/test/* test/{{feature-name}}/
+    sed -i "s/<id>/{{feature-name}}/g" src/{{feature-name}}/*
+    sed -i "s/<id>/{{feature-name}}/g" test/{{feature-name}}/*

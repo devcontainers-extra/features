@@ -1,0 +1,18 @@
+{
+    "id": "<id>",
+    "version": "1.0.0",
+    "name": "<id> (via <installation-method>)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/<id>",
+    "description": "",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": []
+}
