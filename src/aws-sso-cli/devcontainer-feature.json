@@ -1,0 +1,18 @@
+{
+    "id": "aws-sso-cli",
+    "version": "1.0.0",
+    "name": "aws-sso-cli (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/aws-sso-cli",
+    "description": "",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": []
+}
