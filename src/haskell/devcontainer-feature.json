@@ -1,7 +1,7 @@
 {
     "name": "Haskell (via ghcup)",
     "id": "haskell",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "description": "Installs Haskell. An advanced, purely functional programming language",
     "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/haskell",
     "options": {
@@ -31,10 +31,19 @@
             "proposals": [
                 "",
                 "hlint",
-                "hlint hspec pandoc"
+                "hlint pandoc-cli"
             ],
             "default": "",
             "description": "Packages to install via `cabal install`, such as `hlint` for linting. Separate with spaces. This will add significant initial build time."
+        },
+        "globalLibraries": {
+            "type": "string",
+            "proposals": [
+                "",
+                "hspec hspec-contrib"
+            ],
+            "default": "",
+            "description": "Libraries to install via `cabal install --lib`, such as `hspec` for testing. Separate with spaces. This will add significant initial build time."
         },
         "installHLS": {
             "type": "boolean",
