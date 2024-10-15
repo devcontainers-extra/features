@@ -1,0 +1,20 @@
+{
+    "id": "namespace-cli",
+    "version": "1.0.0",
+    "name": "Namespace CLI (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/namespace-cli",
+    "description": "The CLI for https://namespace.so",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/gh-release"
+    ]
+}
