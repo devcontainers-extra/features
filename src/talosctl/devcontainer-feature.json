@@ -1,0 +1,20 @@
+{
+    "id": "talosctl",
+    "version": "1.0.0",
+    "name": "talosctl (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/talosctl",
+    "description": "A CLI tool that interfaces with the Talos Linux API.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/gh-release"
+    ]
+}
