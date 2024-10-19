@@ -12,13 +12,13 @@ ensure_nanolayer nanolayer_location "v0.5.4"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.23" \
+    "ghcr.io/devcontainers-extra/features/gh-release:1.0.25" \
     --option repo='Azure/apiops' --option binaryNames='extractor' --option assetRegex='^extractor-linux-x64.zip' --option version="$VERSION"
 
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.23" \
+    "ghcr.io/devcontainers-extra/features/gh-release:1.0.25" \
     --option repo='Azure/apiops' --option binaryNames='publisher' --option assetRegex='^publisher-linux-x64.zip' --option version="$VERSION"
 
 echo 'Done!'

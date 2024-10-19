@@ -14,7 +14,7 @@ ensure_nanolayer nanolayer_location "v0.5.5"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.24" \
+    "ghcr.io/devcontainers-extra/features/gh-release:1.0.25" \
     --option repo='gleam-lang/gleam' --option binaryNames='gleam' --option version="$VERSION"
 
 
