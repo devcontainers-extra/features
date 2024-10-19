@@ -4,7 +4,7 @@ set -e
 
 source dev-container-features-test-lib
 
-check "nsc version" nsc version
-check "docker-credential-nsc --help" docker-credential-nsc --help
+check "namespace-cli is installed" nsc version
+check "namespace-cli docker credential helper is installed" docker-credential-nsc --help
 
 reportResults
