@@ -22,7 +22,7 @@ $nanolayer_location \
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.23" \
+    "ghcr.io/devcontainers-extra/features/gh-release:1.0.25" \
     --option repo='caddyserver/caddy' --option binaryNames='caddy' --option version="$VERSION"
 
 

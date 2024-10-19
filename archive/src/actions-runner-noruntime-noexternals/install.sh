@@ -22,7 +22,7 @@ $nanolayer_location \
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.23" \
+    "ghcr.io/devcontainers-extra/features/gh-release:1.0.25" \
     --option repo='actions/runner' --option binaryNames='run.sh' --option binLocation='$_REMOTE_USER_HOME/.local/bin' --option version="$VERSION" --option libLocation='$_REMOTE_USER_HOME' --option libName='actions-runner' --option assetRegex='^(?!.*(trimmedpackages))(.*-noruntime.*)(.*-noexternals.*)'
 
 
