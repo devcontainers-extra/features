@@ -4,5 +4,13 @@
     "features": {
       "talosctl": {}
     }
+  },
+  "test_specific_version": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "talosctl": {
+        "version": "v1.8.0"
+      }
+    }
   }
 }

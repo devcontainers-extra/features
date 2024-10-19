@@ -16,6 +16,6 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-extra/features/gh-release:1" \
-    --option repo='siderolabs/talos' --option binaryNames='talosctl' --option version="$VERSION"
+    --option repo='siderolabs/talos' --option binaryNames='talosctl' --option version="$VERSION" --option releaseTagRegex='^(?!.*(alpha|beta)).*$'
 
 echo 'Done!'
