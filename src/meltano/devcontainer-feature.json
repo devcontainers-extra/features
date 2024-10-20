@@ -1,6 +1,6 @@
 {
     "id": "meltano",
-    "version": "2.0.17",
+    "version": "3.5",
     "name": "Meltano ELT (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/meltano",
     "description": "Meltano lets you extract and load data with a software development-inspired approach that that delivers flexibility and limitless collaboration.",
@@ -12,6 +12,31 @@
                 "latest"
             ],
             "type": "string"
+        },
+        "pythonVersion": {
+            "default": "3.11",
+            "description": "Select the version of Python to use.",
+            "enum": [
+                "latest",
+                "os-provided",
+                "3.12",
+                "3.11",
+                "3.10",
+                "3.9",
+                "3.8"
+            ],
+            "type": "string"
+        },
+        "extras": {
+            "default": "",
+            "description": "Comma-delimited list of Meltano extras to install.",
+            "type": "string",
+            "proposals": [
+                "s3",
+                "gcs",
+                "postgres",
+                "azure,mssql"
+            ]
         }
     },
     "installsAfter": [
