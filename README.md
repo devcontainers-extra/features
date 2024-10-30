@@ -4,7 +4,7 @@
 [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) and
 [GitHub Codespaces](https://github.com/features/codespaces)
 
-👀 Don't see your feature here? [🔥 Suggest a new feature! 🔥](https://github.com/devcontainers-extra/features/issues/new?template=suggest-feature.yaml) \
+👀 Don't see your feature here? [🔥 Suggest a new feature! 🔥](https://github.com/devcontainers-extra/features/issues/new?template=suggest-feature.yaml) or [📄 Learn how to add one! 📄](CONTRIBUTING.md) \
 🔍 Found a bug? [🐞 Open a bug report! 🐞](https://github.com/devcontainers-extra/features/issues/new?template=feature-bug-report.yaml)
 
 ## About This Fork

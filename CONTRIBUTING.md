@@ -10,6 +10,7 @@ Thank you for considering contributing to the devcontainers-extra/features repos
 
 3. **Install Feature**: Modify `src/your-feature/install.sh` to install the feature. Some helpers are available for common install methods
     * [ghcr.io/devcontainers-extra/features/gh-release](https://github.com/devcontainers-extra/features/blob/main/src/gh-release/README.md) for GitHub Releases
+    * [ghcr.io/devcontainers-extra/features/pipx-package](https://github.com/devcontainers-extra/features/blob/main/src/pipx-package/README.md) for Python packages via pipx
 
 4. **Update Metadata**: In `src/your-feature/devcontainer-feature.json`
     * Replace `<installation-method>`  with the feature's install method, like `GitHub Releases`
@@ -39,5 +40,32 @@ The repository contains a `justfile` with commands for testing and adding featur
 * **Code Style**: Follow the existing code style and conventions used in the repository.
 * **Documentation**: Ensure that your feature is well-documented, including usage instructions and any relevant details.
 * **Testing**: Thoroughly test your feature to ensure it works as expected and does not introduce any issues.
+
+## Using the `pipx-package` Helper
+
+The `pipx-package` helper is a convenient way to install Python packages via pipx. It simplifies the installation process and ensures that the packages are installed in isolated environments.
+
+To use the `pipx-package` helper, follow these steps:
+
+1. **Add the Helper to Your Feature**: In your `devcontainer-feature.json` file, add the `pipx-package` helper to the `installsAfter` array. For example:
+
+    ```json
+    "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/pipx-package",
+        "ghcr.io/devcontainers/features/python"
+    ]
+    ```
+
+2. **Modify the Install Script**: In your `install.sh` script, use the `pipx-package` helper to install the desired Python package. For example:
+
+    ```bash
+    $nanolayer_location \
+        install \
+        devcontainer-feature \
+        "ghcr.io/devcontainers-extra/features/pipx-package:1.1.8" \
+        --option package='your-package' --option version="$VERSION"
+    ```
+
+3. **Test the Installation**: Ensure that the package is installed correctly by running the appropriate tests.
 
 Thank you for your contribution! If you have any questions or need further assistance, feel free to open an issue or reach out to the maintainers.
