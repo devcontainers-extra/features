@@ -3,7 +3,7 @@
   "id": "zsh-plugins",
   "version": "0.0.4",
   "description": "Install (Oh-My-)ZSH plugins",
-  "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/zsh-plugins",
+  "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/zsh-plugins",
   "installsAfter": [
     "ghcr.io/devcontainers/features/common-utils",
     "ghcr.io/devcontainers/features/git"

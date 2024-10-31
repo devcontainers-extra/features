@@ -2,7 +2,7 @@
     "id": "salesforce-sfdx",
     "version": "1.0.2",
     "name": "Salesforce sfdx (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/salesforce-sfdx",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/salesforce-sfdx",
     "description": "sfdx provide you with the ability to develop and test your apps more easily on Salesforce Platform.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

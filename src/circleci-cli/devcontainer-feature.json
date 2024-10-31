@@ -2,7 +2,7 @@
     "id": "circleci-cli",
     "version": "1.0.7",
     "name": "CircleCI CLI (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/circleci-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/circleci-cli",
     "description": "The CircleCI command line interface (CLI) tool enables developers to build, validate, and test their pipeline jobs in their local development environments.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

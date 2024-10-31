@@ -2,7 +2,7 @@
     "id": "rollup",
     "version": "2.0.15",
     "name": "rollup.js (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/rollup",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/rollup",
     "description": "Rollup is a module bundler for JavaScript which compiles small pieces of code into something larger and more complex, such as a library or application.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

@@ -2,7 +2,7 @@
     "id": "datasette",
     "version": "2.0.17",
     "name": "Datasette (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/datasette",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/datasette",
     "description": "Datasette is a tool for exploring and publishing data and is aimed at data journalists, museum curators, archivists, local governments, scientists and researchers.",
     "options": {
         "version": {

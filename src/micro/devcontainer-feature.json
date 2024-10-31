@@ -2,10 +2,10 @@
     "id": "micro",
     "version": "1.0.5",
     "name": "micro (via apt-get)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/micro",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/micro",
     "description": "micro is a terminal-based text editor that aims to be easy to use and intuitive, while also taking advantage of the capabilities of modern terminals.",
     "options": {},
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+        "ghcr.io/devcontainers-extra/features/apt-get-packages"
     ]
 }

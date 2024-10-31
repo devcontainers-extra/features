@@ -2,7 +2,7 @@
     "id": "kobweb-sdkman",
     "version": "2.0.14",
     "name": "Kobweb (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/kobweb-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/kobweb-sdkman",
     "description": "Kobweb is an opinionated Kotlin web framework built on top of Compose for Web.\nThe CLI provides commands to help setup and manage your project.",
     "options": {
         "version": {

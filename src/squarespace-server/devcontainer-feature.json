@@ -2,7 +2,7 @@
     "id": "squarespace-server",
     "version": "1.0.2",
     "name": "Squarespace Local Development Server (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/squarespace-server",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/squarespace-server",
     "description": "The Squarespace local development server is a command line tool that sets up a test server on your computer, allowing you to see changes to your template before making them live",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

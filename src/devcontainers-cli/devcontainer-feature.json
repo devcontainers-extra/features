@@ -2,7 +2,7 @@
     "id": "devcontainers-cli",
     "version": "1.0.0",
     "name": "devcontainers CLI (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/devcontainers-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/devcontainers-cli",
     "description": "The devcontainers CLI, which configures devcontainers from devcontainer.json. Requires the Docker client and access to a Docker engine socket (e.g. by mounting the host's Docker socket into the container)",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node",
         "ghcr.io/devcontainers/features/docker-outside-of-docker"
     ]

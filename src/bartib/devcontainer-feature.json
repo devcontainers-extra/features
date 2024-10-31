@@ -2,7 +2,7 @@
     "id": "bartib",
     "version": "1.0.9",
     "name": "Bartib (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/bartib",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/bartib",
     "description": "Bartib is a simple timetracker for the command line. It saves a log of all tracked activities as a plaintext file and allows you to create flexible reports.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

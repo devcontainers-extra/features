@@ -2,7 +2,7 @@
     "id": "composer",
     "version": "1.0.0",
     "name": "Composer (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/composer",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/composer",
     "description": "Composer is an open source dependency management tool for PHP.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

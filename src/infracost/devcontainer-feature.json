@@ -2,7 +2,7 @@
     "id": "infracost",
     "version": "1.0.5",
     "name": "Infracost (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/infracost",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/infracost",
     "description": "Infracost shows cloud cost estimates for Terraform. It lets engineers see a cost breakdown and understand costs before making changes, either in the terminal, VS Code or pull requests.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

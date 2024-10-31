@@ -2,7 +2,7 @@
     "id": "starship",
     "version": "1.0.9",
     "name": "Starship (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/starship",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/starship",
     "description": "Starship is fast and highly customizable cross-shell prompt that can display contextual information.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

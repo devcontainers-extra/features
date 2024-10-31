@@ -2,7 +2,7 @@
     "id": "cloud-nuke",
     "version": "1.0.5",
     "name": "cloud-nuke (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/cloud-nuke",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/cloud-nuke",
     "description": "cloud-nuke is a tool for cleaning up your cloud accounts by nuking (deleting) all resources within it",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

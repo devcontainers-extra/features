@@ -2,10 +2,10 @@
     "id": "neovim-apt-get",
     "version": "1.0.18",
     "name": "Neovim (via apt-get)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/neovim-apt-get",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/neovim-apt-get",
     "description": "Neovim is a fork of Vim focused on modern code and features, rather than running in legacy environments.",
     "options": {},
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+        "ghcr.io/devcontainers-extra/features/apt-get-packages"
     ]
 }

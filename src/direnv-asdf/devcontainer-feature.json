@@ -2,7 +2,7 @@
     "id": "direnv-asdf",
     "version": "2.0.14",
     "name": "direnv (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/direnv-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/direnv-asdf",
     "description": "direnv is an extension for your shell. It augments existing shells with a new feature that can load and unload environment variables depending on the current directory.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

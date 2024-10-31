@@ -2,7 +2,7 @@
     "id": "cxf-sdkman",
     "version": "2.0.14",
     "name": "CXF (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/cxf-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/cxf-sdkman",
     "description": "Apache CXF is an open source services framework. CXF helps you build and develop\nservices using frontend programming APIs, like JAX-WS and JAX-RS. These services\ncan speak a variety of protocols such as SOAP, XML/HTTP, RESTful HTTP, or CORBA\nand work over a variety of transports such as HTTP, JMS or JBI.",
     "options": {
         "version": {

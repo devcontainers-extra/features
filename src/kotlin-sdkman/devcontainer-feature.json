@@ -2,7 +2,7 @@
     "id": "kotlin-sdkman",
     "version": "2.0.14",
     "name": "Kotlin (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/kotlin-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/kotlin-sdkman",
     "description": "Kotlin is a statically-typed programming language that runs on the Java Virtual\nMachine and can also be compiled to JavaScript source code.",
     "options": {
         "version": {

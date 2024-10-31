@@ -2,7 +2,7 @@
     "id": "svu-asdf",
     "version": "2.0.14",
     "name": "svu (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/svu-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/svu-asdf",
     "description": "svu is a tool to manage semantic versions at ease.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

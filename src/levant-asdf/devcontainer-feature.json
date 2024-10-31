@@ -2,7 +2,7 @@
     "id": "levant-asdf",
     "version": "2.0.14",
     "name": "levant (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/levant-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/levant-asdf",
     "description": "Levant is an open source templating and deployment tool for HashiCorp Nomad jobs",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

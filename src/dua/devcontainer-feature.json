@@ -2,7 +2,7 @@
     "id": "dua",
     "version": "1.0.14",
     "name": "dua (Disk Usage Analyzer) (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/dua",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/dua",
     "description": "dua (Disk Usage Analyzer) is a tool to conveniently learn about the usage of disk space of a given directory. It's parallel by default and will max out your SSD, providing relevant information as fast as possible. Optionally delete superfluous data, and do so more quickly than rm.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

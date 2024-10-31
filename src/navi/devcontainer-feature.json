@@ -2,7 +2,7 @@
     "id": "navi",
     "version": "1.0.9",
     "name": "navi (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/navi",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/navi",
     "description": "navi is an interactive cheatsheet tool for the command-line. navi allows you to browse through cheatsheets (that you may write yourself or download from maintainers) and execute commands. Suggested values for arguments are dynamically displayed in a list.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

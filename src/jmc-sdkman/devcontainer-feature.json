@@ -2,7 +2,7 @@
     "id": "jmc-sdkman",
     "version": "2.0.14",
     "name": "JDK Mission Control (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jmc-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/jmc-sdkman",
     "description": "Java Flight Recorder and JDK Mission Control together create a complete tool\nchain to continuously collect low level and detailed runtime information\nenabling after-the-fact incident analysis. JDK Mission Control is an advanced\nset of tools that enables efficient and detailed analysis of the extensive of\ndata collected by Java Flight Recorder. The tool chain enables developers and\nadministrators to collect and analyze data from Java applications running\nlocally or deployed in production environments.",
     "options": {
         "version": {

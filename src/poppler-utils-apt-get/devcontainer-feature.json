@@ -2,10 +2,10 @@
     "id": "poppler-utils-apt-get",
     "version": "1.0.0",
     "name": "poppler-utils (pdftotext, pdftoppm, pdftops, pdfattach, pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml, pdfunite) (via apt-get)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/curl-apt-get",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/curl-apt-get",
     "description": "poppler-utils is a collection of command-line utilities built on Poppler's library API, to manage PDF and extract contents: \npdfattach - add a new embedded file (attachment) to an existing PDF \npdfdetach - extract embedded documents from a PDF \npdffonts - lists the fonts used in a PDF \npdfimages - extract all embedded images at native resolution from a PDF \npdfinfo - list all information of a PDF \npdfseparate - extract single pages from a PDF \npdftocairo - convert single pages from a PDF to vector or bitmap formats using cairo \npdftohtml - convert PDF to HTML format retaining formatting \npdftoppm - convert a PDF page to a bitmap \npdftops - convert PDF to printable PS format \npdftotext - extract all text from PDF \npdfunite - merges several PDFs.",
     "options": {},
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+        "ghcr.io/devcontainers-extra/features/apt-get-packages"
     ]
 }

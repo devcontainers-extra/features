@@ -2,7 +2,7 @@
     "id": "caddy",
     "version": "1.0.9",
     "name": "Caddy (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/caddy",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/caddy",
     "description": "Caddy is a powerful, enterprise-ready, open source web server with automatic HTTPS.",
     "options": {
         "version": {
@@ -27,6 +27,6 @@
     },
     "installsAfter": [
         "ghcr.io/devcontainers/features/go",
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

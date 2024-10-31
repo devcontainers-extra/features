@@ -2,7 +2,7 @@
     "id": "sigstore-python",
     "version": "1.0.4",
     "name": "sigstore-python (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ansible",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ansible",
     "description": "sigstore-python is a Python tool for generating and verifying Sigstore signatures. You can use it to sign and verify Python package distributions, or anything else!",
     "options": {
         "version": {

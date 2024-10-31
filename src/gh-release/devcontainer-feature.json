@@ -2,7 +2,7 @@
     "id": "gh-release",
     "version": "1.0.25",
     "name": "Github Release",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/gh-release",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/gh-release",
     "description": "Github Release feature will download, extract and add to path a release binary from a given repo",
     "options": {
         "repo": {

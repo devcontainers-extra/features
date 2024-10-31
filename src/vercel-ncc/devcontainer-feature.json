@@ -2,7 +2,7 @@
     "id": "vercel-ncc",
     "version": "1.0.3",
     "name": "ncc (by Vercel) (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/vercel-ncc",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/vercel-ncc",
     "description": "ncc is a simple CLI for compiling a Node.js module into a single file, together with all its dependencies, gcc-style.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

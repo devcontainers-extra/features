@@ -2,7 +2,7 @@
     "id": "porter",
     "version": "1.0.2",
     "name": "Porter (via porter.sh)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/porter",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/porter",
     "description": "Porter enables you to package your application artifact, client tools, configuration and deployment logic together as an installer that you can distribute, and install with a single command.",
     "options": {
         "version": {

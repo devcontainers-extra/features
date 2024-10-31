@@ -2,7 +2,7 @@
     "id": "lighthouse-cli",
     "version": "1.0.3",
     "name": "Lighthouse CLI (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/lighthouse-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/lighthouse-cli",
     "description": "Lighthouse CLI provides the most flexibility in how Lighthouse runs can be configured and reported. Users who want more advanced usage, or want to run Lighthouse in an automated fashion should use the Node CLI.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

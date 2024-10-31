@@ -2,7 +2,7 @@
     "id": "postgres-asdf",
     "version": "1.0.2",
     "name": "PostgreSQL (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/postgres-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/postgres-asdf",
     "description": "PostgreSQL is a powerful, open source object-relational database system with over 35 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

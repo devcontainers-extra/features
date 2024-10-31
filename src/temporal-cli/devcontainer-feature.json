@@ -2,7 +2,7 @@
     "id": "temporal-cli",
     "version": "1.0.6",
     "name": "Temporal CLI (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/temporal-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/temporal-cli",
     "description": "Temporal CLI is a Command-line interface for running Temporal Server and interacting with Workflows, Activities, Namespaces, and other parts of Temporal.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

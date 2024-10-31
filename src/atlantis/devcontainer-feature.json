@@ -2,7 +2,7 @@
     "id": "atlantis",
     "version": "1.0.5",
     "name": "Atlantis (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/atlantis",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/atlantis",
     "description": "Atlantis is a self-hosted golang application that listens for Terraform pull request events via webhooks.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

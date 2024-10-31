@@ -2,7 +2,7 @@
     "id": "aws-eb-cli",
     "version": "1.0.16",
     "name": "aws-eb-cli (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/aws-eb-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/aws-eb-cli",
     "description": "AWS Elastic Beanstalk CLI.",
     "options": {
         "version": {

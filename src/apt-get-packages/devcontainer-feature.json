@@ -2,7 +2,7 @@
     "id": "apt-get-packages",
     "version": "1.0.6",
     "name": "apt-get packages (for Debian/Ubuntu)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/apt-get-packages",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/apt-get-packages",
     "description": "apt-get is a command line tool for interacting with the Advanced Package Tool (APT) library (a package management system for Linux distributions).",
     "options": {
         "packages": {

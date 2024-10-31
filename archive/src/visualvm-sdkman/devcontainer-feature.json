@@ -2,7 +2,7 @@
     "id": "visualvm-sdkman",
     "version": "2.0.15",
     "name": "VisualVM (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/visualvm-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/visualvm-sdkman",
     "description": "VisualVM is a tool that provides a visual interface for viewing detailed\ninformation about Java applications while they are running on a Java Virtual\nMachine.",
     "options": {
         "version": {

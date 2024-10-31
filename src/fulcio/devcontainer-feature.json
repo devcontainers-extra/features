@@ -2,7 +2,7 @@
     "id": "fulcio",
     "version": "1.0.9",
     "name": "Fulcio (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/fulcio",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/fulcio",
     "description": "Fulcio is a free-to-use certificate authority for issuing code signing certificates for an OpenID Connect (OIDC) identity, such as email address.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

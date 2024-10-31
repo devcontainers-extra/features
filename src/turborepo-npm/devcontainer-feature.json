@@ -2,7 +2,7 @@
     "id": "turborepo-npm",
     "version": "1.0.11",
     "name": "Turborepo (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/turborepo-npm",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/turborepo-npm",
     "description": "Turborepo is a high-performance build system for JavaScript and TypeScript codebases.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

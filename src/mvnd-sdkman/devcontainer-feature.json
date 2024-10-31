@@ -2,7 +2,7 @@
     "id": "mvnd-sdkman",
     "version": "2.0.15",
     "name": "Maven Daemon (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mvnd-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/mvnd-sdkman",
     "description": "The mvnd project aims to provide a daemon infrastructure for maven based builds.\nIt borrows techniques from Gradle and Takari to provide a simple and efficient\nsystem.",
     "options": {
         "version": {

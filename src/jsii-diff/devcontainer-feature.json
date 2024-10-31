@@ -2,7 +2,7 @@
     "id": "jsii-diff",
     "version": "1.0.2",
     "name": "jsii-diff (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jsii-diff",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/jsii-diff",
     "description": "jsii-diff compares two jsii assemblies for compatibility.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

@@ -2,7 +2,7 @@
     "id": "prisma",
     "version": "2.0.15",
     "name": "Prisma CLI (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/prisma",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/prisma",
     "description": "Prisma is a next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

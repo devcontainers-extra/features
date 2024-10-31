@@ -2,7 +2,7 @@
     "id": "amplify-cli",
     "version": "2.0.15",
     "name": "AWS Amplify CLI (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/amplify-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/amplify-cli",
     "description": "The Amplify Command Line Interface (CLI) is a unified toolchain to create AWS cloud services for your app. Let's go ahead and install the Amplify CLI.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

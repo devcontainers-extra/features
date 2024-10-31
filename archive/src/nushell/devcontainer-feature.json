@@ -2,7 +2,7 @@
     "id": "nushell",
     "version": "1.0.9",
     "name": "Nushell (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/nushell",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/nushell",
     "description": "Nushell is a shell with a focus on operating on structured data in the command line.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

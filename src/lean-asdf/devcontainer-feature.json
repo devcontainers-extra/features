@@ -2,7 +2,7 @@
     "id": "lean-asdf",
     "version": "2.0.14",
     "name": "Lean (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/lean-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/lean-asdf",
     "description": "Lean is a functional programming language that makes it easy to write correct and maintainable code.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

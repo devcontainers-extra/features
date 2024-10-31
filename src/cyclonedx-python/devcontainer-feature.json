@@ -2,7 +2,7 @@
     "id": "cyclonedx-python",
     "version": "1.0.4",
     "name": "CycloneDX Python (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/cyclonedx-python",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/cyclonedx-python",
     "description": "CycloneDX Python creates CycloneDX Software Bill of Materials (SBOM) from Python projects and environments.",
     "options": {
         "version": {

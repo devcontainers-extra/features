@@ -2,7 +2,7 @@
     "id": "doctoolchain-sdkman",
     "version": "2.0.14",
     "name": "docToolchain (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/doctoolchain-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/doctoolchain-sdkman",
     "description": "docToolchain is an implementation of the docs-as-code approach for software\narchitecture plus some additional automation. The basis of docToolchain is the\nphilosophy that software documentation should be treated in the same way as code\ntogether with the arc42 template for software architecture.",
     "options": {
         "version": {

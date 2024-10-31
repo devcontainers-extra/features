@@ -2,7 +2,7 @@
     "id": "mybatis-sdkman",
     "version": "2.0.15",
     "name": "MyBatis Migrations (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mybatis-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/mybatis-sdkman",
     "description": "The MyBatis Schema Migration System (or MyBatis Migrations for short) seeks to\nprovide database migrations for any database (new or existing) and make the\ncurrent status of the database easily accessible and comprehensible. Installing\nthis candidate provides the migrate command for managing database migrations",
     "options": {
         "version": {

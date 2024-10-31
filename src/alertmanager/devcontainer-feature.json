@@ -2,7 +2,7 @@
     "id": "alertmanager",
     "version": "1.0.2",
     "name": "Prometheus Alertmanager (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/alertmanager",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/alertmanager",
     "description": "The Alertmanager handles alerts sent by client applications such as the Prometheus server.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

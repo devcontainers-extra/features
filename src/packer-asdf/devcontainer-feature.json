@@ -2,7 +2,7 @@
     "id": "packer-asdf",
     "version": "2.0.14",
     "name": "Packer (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/packer-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/packer-asdf",
     "description": "Packer is a free and open source tool for creating golden images for multiple platforms from a single source configuration.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

@@ -2,7 +2,7 @@
     "id": "flink-sdkman",
     "version": "2.0.14",
     "name": "Flink (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/flink-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/flink-sdkman",
     "description": "Apache Flink is an open-source, unified stream-processing and batch-processing\nframework.It's a distributed processing engine for stateful computations over\nunbounded and bounded data streams.It has been designed to run in all common\ncluster environments, perform computations at in-memory speed and at any scale.",
     "options": {
         "version": {

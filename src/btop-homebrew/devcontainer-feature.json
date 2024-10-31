@@ -2,7 +2,7 @@
     "id": "btop-homebrew",
     "version": "1.0.18",
     "name": "btop (via Homebrew)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/btop-homebrew",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/btop-homebrew",
     "description": "btop is a resource monitor that shows usage and stats for processor, memory, disks, network and processes.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/homebrew-package"
+        "ghcr.io/devcontainers-extra/features/homebrew-package"
     ]
 }

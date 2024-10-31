@@ -2,7 +2,7 @@
     "id": "nancy",
     "version": "1.0.9",
     "name": "Nancy (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/nancy",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/nancy",
     "description": "Nancy is a tool to check for vulnerabilities in your Golang dependencies, powered by Sonatype OSS Index.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

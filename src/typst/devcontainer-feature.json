@@ -2,7 +2,7 @@
     "id": "typst",
     "version": "1.0.5",
     "name": "Typst (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/typst",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/typst",
     "description": "Typst is a new markup-based typesetting system that is designed to be as powerful as LaTeX while being much easier to learn and use.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

@@ -2,10 +2,10 @@
     "id": "mosh-apt-get",
     "version": "1.0.15",
     "name": "Mosh (via apt-get)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mosh-apt-get",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/mosh-apt-get",
     "description": "Mosh is a remote terminal application that allows roaming, supports intermittent connectivity, and provides intelligent local echo and line editing of user keystrokes.",
     "options": {},
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+        "ghcr.io/devcontainers-extra/features/apt-get-packages"
     ]
 }

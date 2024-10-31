@@ -2,7 +2,7 @@
     "id": "gitmux",
     "version": "1.0.9",
     "name": "Gitmux (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/gitmux",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/gitmux",
     "description": "Gitmux shows git status in your tmux status bar.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

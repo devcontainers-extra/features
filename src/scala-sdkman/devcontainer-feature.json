@@ -2,7 +2,7 @@
     "id": "scala-sdkman",
     "version": "2.0.14",
     "name": "Scala (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/scala-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/scala-sdkman",
     "description": "Scala is a programming language for general software applications. Scala has\nfull support for functional programming and a very strong static type system.\nThis allows programs written in Scala to be very concise and thus smaller in\nsize than other general-purpose programming languages. Scala source code is\nintended to be compiled to Java bytecode, so that the resulting executable code\nruns on a Java virtual machine. Java libraries may be used directly in Scala\ncode and vice versa. Scala is object-oriented, and uses a curly-brace syntax.\nScala has many features of functional programming languages, including currying,\ntype inference, immutability, lazy evaluation, and pattern matching. It also has\nan advanced type system supporting algebraic data types, covariance and\ncontravariance, higher-order types, and anonymous types. Other features of Scala\ninclude operator overloading, optional parameters, named parameters, raw\nstrings, and no checked exceptions.",
     "options": {
         "version": {

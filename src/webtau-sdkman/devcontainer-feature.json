@@ -2,7 +2,7 @@
     "id": "webtau-sdkman",
     "version": "2.0.14",
     "name": "Webtau (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/webtau-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/webtau-sdkman",
     "description": "Webtau (short for web test automation) is a testing API, command line tool and a\nframework to write unit, integration and end-to-end tests. Tests can span\nmultiple application layers like REST-API, Graph QL, Browser, Database and CLI.\nConsistent set of matchers and testing concepts work across all testing layers.\nUse REPL mode to speed-up tests development. Leverage rich reporting to\nsignificantly cut down failure investigation time.",
     "options": {
         "version": {

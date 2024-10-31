@@ -2,7 +2,7 @@
     "id": "live-server",
     "version": "1.0.3",
     "name": "Live Server (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/live-server",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/live-server",
     "description": "Live Server is a little development server with live reload capability. Use it for hacking your HTML/JavaScript/CSS files, but not for deploying the final site.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

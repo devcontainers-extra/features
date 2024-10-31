@@ -2,7 +2,7 @@
     "id": "meltano",
     "version": "2.0.17",
     "name": "Meltano ELT (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/meltano",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/meltano",
     "description": "Meltano lets you extract and load data with a software development-inspired approach that that delivers flexibility and limitless collaboration.",
     "options": {
         "version": {

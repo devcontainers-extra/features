@@ -2,7 +2,7 @@
     "id": "akamai-cli",
     "version": "1.0.5",
     "name": "Akamai CLI (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/akamai-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/akamai-cli",
     "description": "Use Akamai CLI to configure Akamai platform and products directly from the command line. You can install ready-to-use product packages or build your own custom solutions to manage from CLI.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

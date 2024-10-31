@@ -2,7 +2,7 @@
     "id": "sbt-sdkman",
     "version": "2.0.14",
     "name": "sbt (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/sbt-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/sbt-sdkman",
     "description": "SBT is an open source build tool for Scala and Java projects, similar to Java's\nMaven or Ant. Its main features are: native support for compiling Scala code and\nintegrating with many Scala test frameworks; build descriptions written in Scala\nusing a DSL; dependency management using Ivy (which supports Maven-format\nrepositories); continuous compilation, testing, and deployment; integration with\nthe Scala interpreter for rapid iteration and debugging; support for mixed\nJava/Scala projects",
     "options": {
         "version": {

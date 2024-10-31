@@ -2,7 +2,7 @@
     "id": "mage",
     "version": "1.0.5",
     "name": "Mage (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mage",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/mage",
     "description": "Mage is a make-like build tool using Go. You write plain-old go functions, and Mage automatically uses them as Makefile-like runnable targets.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

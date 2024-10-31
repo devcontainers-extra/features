@@ -2,7 +2,7 @@
     "id": "actionlint",
     "version": "1.0.6",
     "name": "actionlint (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/actionlint",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/actionlint",
     "description": "Static checker for GitHub Actions workflow files.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

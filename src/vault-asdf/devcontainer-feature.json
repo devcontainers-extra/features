@@ -2,7 +2,7 @@
     "id": "vault-asdf",
     "version": "2.0.14",
     "name": "Vault (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/vault-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/vault-asdf",
     "description": "Vault secures, stores, and tightly controls access to tokens, passwords, certificates, API keys, and other secrets in modern computing.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

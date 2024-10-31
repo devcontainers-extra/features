@@ -2,7 +2,7 @@
     "id": "taxi-sdkman",
     "version": "2.0.15",
     "name": "Taxi (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/taxi-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/taxi-sdkman",
     "description": "Taxi is a language for documenting data - such as data models - and the\ncontracts of APIs. It describes data semantically, allowing powerful tooling to\ndiscover and map data based on it's meaning, rather than the name of a field.",
     "options": {
         "version": {

@@ -2,7 +2,7 @@
     "id": "neko-asdf",
     "version": "2.0.14",
     "name": "Neko Virtual Machine (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/neko-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/neko-asdf",
     "description": "Installs Neko Virtual Machine",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

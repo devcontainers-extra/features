@@ -2,7 +2,7 @@
     "id": "nim-asdf",
     "version": "2.0.14",
     "name": "Nim (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/nim-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/nim-asdf",
     "description": "Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

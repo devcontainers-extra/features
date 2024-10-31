@@ -2,7 +2,7 @@
     "id": "ts-node",
     "version": "1.0.1",
     "name": "ts-node (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ts-node",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ts-node",
     "description": "ts-node is a TypeScript execution engine and REPL for Node.js. It JIT transforms TypeScript into JavaScript, enabling you to directly execute TypeScript on Node.js without precompiling. ",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

@@ -2,10 +2,10 @@
     "id": "mlocate-apt-get",
     "version": "1.0.15",
     "name": "mlocate (via apt-get)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mlocate-apt-get",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/mlocate-apt-get",
     "description": "mlocate is a locate/updatedb implementation used for quick lookup of file names.",
     "options": {},
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+        "ghcr.io/devcontainers-extra/features/apt-get-packages"
     ]
 }

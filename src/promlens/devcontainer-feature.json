@@ -2,7 +2,7 @@
     "id": "promlens",
     "version": "1.0.2",
     "name": "PromLens (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/promlens",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/promlens",
     "description": "PromLens is a web-based PromQL query builder, analyzer, and visualizer.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

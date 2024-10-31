@@ -2,7 +2,7 @@
     "id": "immuclient-fips",
     "version": "1.0.9",
     "name": "immuclient (FIPS) (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/immuclient-fips",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/immuclient-fips",
     "description": "immuclient is a CLI client for immudb - the lightweight, high-speed immutable database for systems and applications.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

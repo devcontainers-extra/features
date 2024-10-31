@@ -2,7 +2,7 @@
     "id": "dasel-asdf",
     "version": "2.0.14",
     "name": "Dasel (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/dasel-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/dasel-asdf",
     "description": "Dasel (short for data-selector) allows you to query and modify data structures using selector strings.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

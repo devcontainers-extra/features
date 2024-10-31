@@ -2,7 +2,7 @@
     "id": "youtubeuploader",
     "version": "1.0.3",
     "name": "Youtube Uploader (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/youtubeuploader",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/youtubeuploader",
     "description": "Scripted uploads to Youtube.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

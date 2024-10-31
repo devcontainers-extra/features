@@ -2,7 +2,7 @@
     "id": "mongodb-atlas-cli-homebrew",
     "version": "1.0.12",
     "name": "MongoDB Atlas CLI (via Homebrew)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mongodb-atlas-cli-homebrew",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/mongodb-atlas-cli-homebrew",
     "description": "The Atlas CLI is a command line interface built specifically for MongoDB Atlas.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/homebrew-package"
+        "ghcr.io/devcontainers-extra/features/homebrew-package"
     ]
 }

@@ -1,6 +1,6 @@
 #!/bin/bash -i
-# This is part of devcontainers-contrib script library
-# source: https://github.com/devcontainers-contrib/features
+# This is part of devcontainers-extra script library
+# source: https://github.com/devcontainers-extra/features
 set -ex
 
 PLUGIN=${PLUGIN:-""}

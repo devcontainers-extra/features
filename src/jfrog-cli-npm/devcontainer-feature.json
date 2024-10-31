@@ -2,7 +2,7 @@
     "id": "jfrog-cli-npm",
     "version": "1.0.9",
     "name": "JFrog CLI (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jfrog-cli-npm",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/jfrog-cli-npm",
     "description": "JFrog CLI is a compact and smart client that provides a simple interface that automates access to JFrog products simplifying your automation scripts making them more readable and easier to maintain.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

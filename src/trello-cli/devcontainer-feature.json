@@ -2,7 +2,7 @@
     "id": "trello-cli",
     "version": "1.0.3",
     "name": "Trello CLI (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/trello-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/trello-cli",
     "description": "trello-cli is a CLI tool for Trello. Makes sense, right?",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

@@ -2,7 +2,7 @@
     "id": "raku-asdf",
     "version": "1.0.16",
     "name": "Raku (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/raku-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/raku-asdf",
     "description": "Raku is a general-purpose, interpreted, dynamic programming language.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages",
-        "ghcr.io/devcontainers-contrib/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/apt-get-packages",
+        "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

@@ -2,7 +2,7 @@
     "id": "ganache",
     "version": "1.0.2",
     "name": "Ganache (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ganache",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ganache",
     "description": "Ganache is an Ethereum simulator that makes developing Ethereum applications faster, easier, and safer. It includes all popular RPC functions and features (like events) and can be run deterministically to make development a breeze.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

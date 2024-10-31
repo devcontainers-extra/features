@@ -2,7 +2,7 @@
     "id": "powerbi-visuals-tools",
     "version": "2.0.15",
     "name": "PowerBI Visual Tools (pbiviz) (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/powerbi-visuals-tools",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/powerbi-visuals-tools",
     "description": "PowerBI Visual Tools Contains tools for building/packaging Power BI visuals",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

@@ -2,7 +2,7 @@
     "id": "gitomatic",
     "version": "1.0.14",
     "name": "git-o-matic (gitomatic) (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/gitomatic",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/gitomatic",
     "description": "gitomatic is a tool to monitor git repositories and automatically pull & push changes.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

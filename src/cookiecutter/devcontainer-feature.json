@@ -2,7 +2,7 @@
     "id": "cookiecutter",
     "version": "2.0.17",
     "name": "Cookiecutter (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/cookiecutter",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/cookiecutter",
     "description": "Cookiecutter creates projects from project templates.",
     "options": {
         "version": {

@@ -2,7 +2,7 @@
     "id": "tldr",
     "version": "2.0.15",
     "name": "tldr (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tldr",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/tldr",
     "description": "The tldr pages are a community effort to simplify the beloved man pages with practical examples.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

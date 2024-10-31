@@ -2,7 +2,7 @@
     "id": "vertx-sdkman",
     "version": "2.0.15",
     "name": "Vert.x (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/vertx-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/vertx-sdkman",
     "description": "Vert.x is a tool-kit for building reactive applications on the JVM.",
     "options": {
         "version": {

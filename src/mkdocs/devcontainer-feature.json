@@ -2,7 +2,7 @@
     "id": "mkdocs",
     "version": "2.0.18",
     "name": "MkDocs (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mkdocs",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/mkdocs",
     "description": "MkDocs is a fast, simple and downright gorgeous static site generator that's geared towards building project documentation.",
     "options": {
         "version": {

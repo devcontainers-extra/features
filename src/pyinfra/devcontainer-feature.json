@@ -2,7 +2,7 @@
     "id": "pyinfra",
     "version": "2.0.17",
     "name": "pyinfra (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pyinfra",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/pyinfra",
     "description": "pyinfra is a Python alternative to Ansible where you don't write your deployment in YAML file, but in Python.",
     "options": {
         "version": {

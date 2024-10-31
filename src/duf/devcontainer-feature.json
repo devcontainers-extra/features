@@ -2,7 +2,7 @@
     "id": "duf",
     "version": "1.0.14",
     "name": "duf (Disk Usage/Free Utility) (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/duf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/duf",
     "description": "duf is a better 'df' alternative.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

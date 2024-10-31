@@ -2,7 +2,7 @@
     "id": "syft",
     "version": "1.0.9",
     "name": "Syft (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/syft",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/syft",
     "description": "Syft is A CLI tool and Go library for generating a Software Bill of Materials (SBOM) from container images and filesystems.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

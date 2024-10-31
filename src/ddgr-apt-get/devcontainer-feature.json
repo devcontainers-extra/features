@@ -2,10 +2,10 @@
     "id": "ddgr-apt-get",
     "version": "1.0.15",
     "name": "ddgr (via apt-get)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ddgr-apt-get",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ddgr-apt-get",
     "description": "ddgr is a cmdline utility to search DuckDuckGo from the terminal.",
     "options": {},
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+        "ghcr.io/devcontainers-extra/features/apt-get-packages"
     ]
 }

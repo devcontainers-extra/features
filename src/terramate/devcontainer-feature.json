@@ -2,7 +2,7 @@
     "id": "terramate",
     "version": "1.0.5",
     "name": "Terramate (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/terramate",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/terramate",
     "description": "Terramate adds powerful capabilities such as code generation, stacks, orchestration, change detection, data sharing and more to Terraform.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

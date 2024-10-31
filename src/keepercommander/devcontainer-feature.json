@@ -2,7 +2,7 @@
     "id": "keepercommander",
     "version": "1.0.4",
     "name": "Keeper Commander (Keeper CLI) (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/keepercommander",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/keepercommander",
     "description": "Keeper Commander is a command-line and SDK interface to Keeper\u00ae Password Manager. Commander can be used to access and control your Keeper vault, perform administrative functions (such as end-user onboarding and data import/export), launch remote sessions, rotate passwords, eliminate hardcoded passwords and more.",
     "options": {
         "version": {

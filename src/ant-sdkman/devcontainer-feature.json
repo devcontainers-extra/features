@@ -2,7 +2,7 @@
     "id": "ant-sdkman",
     "version": "2.0.14",
     "name": "Ant (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ant-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ant-sdkman",
     "description": "Apache Ant is a Java library and command-line tool whose mission is to drive\nprocesses described in build files as targets and extension points dependent\nupon each other. The main known usage of Ant is the build of Java applications.\nAnt supplies a number of built-in tasks allowing to compile, assemble, test and\nrun Java applications. Ant can also be used effectively to build non Java\napplications, for instance C or C++ applications. More generally, Ant can be\nused to pilot any type of process which can be described in terms of targets and\ntasks.",
     "options": {
         "version": {

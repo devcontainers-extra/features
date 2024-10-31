@@ -2,7 +2,7 @@
     "id": "volta",
     "version": "1.0.5",
     "name": "Volta (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/volta",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/volta",
     "description": "Volta is a hassle-free way to manage your JavaScript command-line tools.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

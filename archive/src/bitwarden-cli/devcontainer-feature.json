@@ -2,7 +2,7 @@
     "id": "bitwarden-cli",
     "version": "1.0.2",
     "name": "Bitwarden CLI (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/bitwarden-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/bitwarden-cli",
     "description": "The Bitwarden command-line interface (CLI) is a powerful, fully-featured tool for accessing and managing your vault.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

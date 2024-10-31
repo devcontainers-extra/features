@@ -2,7 +2,7 @@
     "id": "grails-sdkman",
     "version": "2.0.14",
     "name": "Grails (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/grails-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/grails-sdkman",
     "description": "Grails is a powerful web framework, for the Java platform aimed at multiplying\ndevelopers productivity thanks to a Convention-over-Configuration, sensible\ndefaults and opinionated APIs. It integrates smoothly with the JVM, allowing you\nto be immediately productive whilst providing powerful features, including\nintegrated ORM, Domain-Specific Languages, runtime and compile-time\nmeta-programming and Asynchronous programming.",
     "options": {
         "version": {

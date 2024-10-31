@@ -2,7 +2,7 @@
     "id": "git-lfs",
     "version": "1.0.2",
     "name": "Git LFS (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/git-lfs",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/git-lfs",
     "description": "Git LFS is a command line extension and specification for managing large files with Git.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

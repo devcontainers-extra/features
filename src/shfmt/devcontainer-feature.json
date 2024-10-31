@@ -2,7 +2,7 @@
     "id": "shfmt",
     "version": "1.0.0",
     "name": "shfmt (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/shfmt",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/shfmt",
     "description": "Shfmt is a shell parser, formatter, and interpreter.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

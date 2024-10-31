@@ -2,7 +2,7 @@
     "id": "cuba-sdkman",
     "version": "2.0.14",
     "name": "CUBA CLI (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/cuba-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/cuba-sdkman",
     "description": "CUBA CLI is an open source command line utility that enables you to easily\ncreate projects based on CUBA Platform",
     "options": {
         "version": {

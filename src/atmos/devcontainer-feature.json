@@ -2,7 +2,7 @@
     "id": "atmos",
     "version": "1.0.5",
     "name": "Atmos (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/atmos",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/atmos",
     "description": "Atmos is a workflow automation tool. Atmos is lets you take a complex workflow and turn it into a parameterized CLI. You can then run the CLI anywhere, such as locally or in CI/CD.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

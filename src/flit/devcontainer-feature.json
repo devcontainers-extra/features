@@ -2,7 +2,7 @@
     "id": "flit",
     "version": "2.0.17",
     "name": "Flit (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/flit",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/flit",
     "description": "Flit is a simple way to put Python packages and modules on PyPI.",
     "options": {
         "version": {

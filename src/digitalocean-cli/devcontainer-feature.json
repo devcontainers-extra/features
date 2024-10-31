@@ -3,7 +3,7 @@
     "id": "digitalocean-cli",
     "version": "1.0.3",
     "description": "DigitalOcean CLI allows you to interact with the DigitalOcean API via the command line",
-    "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/digitalocean-cli",
+    "documentationURL": "https://github.com/devcontainers-extra/features/tree/main/src/digitalocean-cli",
     "options": {
         "version": {
             "type": "string",

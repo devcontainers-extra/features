@@ -2,7 +2,7 @@
     "id": "ember-cli",
     "version": "1.0.2",
     "name": "Ember CLI (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ember-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ember-cli",
     "description": "The Ember CLI (command line interface) is the official way to create, build, test, and serve the files that make up an Ember app or addon.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

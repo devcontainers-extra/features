@@ -2,7 +2,7 @@
     "id": "go-task",
     "version": "1.0.5",
     "name": "Task (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/go-task",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/go-task",
     "description": "Task is a task runner / build tool that aims to be simpler and easier to use than, for example, GNU Make.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

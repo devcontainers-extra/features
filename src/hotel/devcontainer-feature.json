@@ -2,7 +2,7 @@
     "id": "hotel",
     "version": "1.0.3",
     "name": "hotel (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/hotel",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/hotel",
     "description": "hotel is a simple process manager for developers. Start apps from your browser and access them using local domains.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

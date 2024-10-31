@@ -3,7 +3,7 @@
     "id": "pipx-package",
     "version": "1.1.9",
     "description": "Installs a pipx package.",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pipx-package",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/pipx-package",
     "installsAfter": [
         "ghcr.io/devcontainers/features/python"
     ],

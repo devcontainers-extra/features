@@ -2,7 +2,7 @@
     "id": "tmux-homebrew",
     "version": "1.0.18",
     "name": "tmux (via Homebrew)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tmux-homebrew",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/tmux-homebrew",
     "description": "tmux is a terminal multiplexer: it enables a number of terminals to be created, accessed, and controlled from a single screen. tmux may be detached from a screen and continue running in the background, then later reattached.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/homebrew-package"
+        "ghcr.io/devcontainers-extra/features/homebrew-package"
     ]
 }

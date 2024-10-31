@@ -2,7 +2,7 @@
     "id": "buku",
     "version": "1.0.4",
     "name": "buku (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/buku",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/buku",
     "description": "buku is a powerful bookmark manager and a personal textual mini-web.",
     "options": {
         "version": {

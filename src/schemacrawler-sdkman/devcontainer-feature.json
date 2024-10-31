@@ -2,7 +2,7 @@
     "id": "schemacrawler-sdkman",
     "version": "2.0.15",
     "name": "SchemaCrawler (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/schemacrawler-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/schemacrawler-sdkman",
     "description": "SchemaCrawler is a free database schema discovery and comprehension tool.\nSchemaCrawler has a good mix of useful features for data governance. You can\nsearch for database schema objects using regular expressions, and output the\nschema and data in a readable text format. The output serves for database\ndocumentation, and is designed to be diff-ed against other database schemas.\nSchemaCrawler also generates schema diagrams. You can execute scripts in any\nstandard scripting language against your database. You can find potential schema\ndesign issues with lint.",
     "options": {
         "version": {

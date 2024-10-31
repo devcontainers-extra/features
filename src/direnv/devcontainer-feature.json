@@ -2,7 +2,7 @@
     "id": "direnv",
     "version": "1.0.2",
     "name": "Direnv (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/direnv",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/direnv",
     "description": "direnv is an extension for your shell. It augments existing shells with a new feature that can load and unload environment variables depending on the current directory.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

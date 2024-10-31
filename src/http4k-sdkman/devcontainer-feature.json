@@ -2,7 +2,7 @@
     "id": "http4k-sdkman",
     "version": "2.0.14",
     "name": "http4k (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/http4k-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/http4k-sdkman",
     "description": "http4k is the Functional toolkit for building HTTP applications in Kotlin",
     "options": {
         "version": {

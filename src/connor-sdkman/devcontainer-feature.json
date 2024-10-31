@@ -2,7 +2,7 @@
     "id": "connor-sdkman",
     "version": "2.0.14",
     "name": "ConnOR (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/connor-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/connor-sdkman",
     "description": "ConnOR, short for ConnectOffsetReset, is a commandline tool for resetting Kafka\nConnect source connector offsets.",
     "options": {
         "version": {

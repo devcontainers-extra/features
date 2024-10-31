@@ -2,10 +2,10 @@
     "id": "tmux-apt-get",
     "version": "1.0.15",
     "name": "tmux (via apt-get)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tmux-apt-get",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/tmux-apt-get",
     "description": "tmux is a terminal multiplexer: it enables a number of terminals to be created, accessed, and controlled from a single screen. tmux may be detached from a screen and continue running in the background, then later reattached.",
     "options": {},
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+        "ghcr.io/devcontainers-extra/features/apt-get-packages"
     ]
 }

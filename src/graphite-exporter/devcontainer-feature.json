@@ -2,7 +2,7 @@
     "id": "graphite-exporter",
     "version": "1.0.2",
     "name": "Prometheus Graphite Exporter (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/graphite-exporter",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/graphite-exporter",
     "description": "An exporter for metrics exported in the Graphite plaintext protocol.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

@@ -2,7 +2,7 @@
     "id": "bomber",
     "version": "1.0.9",
     "name": "bomber (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/bomber",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/bomber",
     "description": "bomber is an application that scans SBOMs for security vulnerabilities.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

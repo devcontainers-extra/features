@@ -2,7 +2,7 @@
     "id": "bpipe-sdkman",
     "version": "2.0.14",
     "name": "Bpipe (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/bpipe-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/bpipe-sdkman",
     "description": "Bpipe is a framework for running computational pipelines and workflows",
     "options": {
         "version": {

@@ -2,7 +2,7 @@
     "id": "nestjs-cli",
     "version": "2.0.15",
     "name": "NestJS CLI (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/nestjs-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/nestjs-cli",
     "description": "Nestjs is a progressive Node.js framework for building efficient, reliable and scalable server-side applications.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

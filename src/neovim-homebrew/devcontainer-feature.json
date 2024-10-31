@@ -2,7 +2,7 @@
     "id": "neovim-homebrew",
     "version": "1.0.18",
     "name": "Neovim (via Homebrew)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/neovim-homebrew",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/neovim-homebrew",
     "description": "Neovim is a fork of Vim focused on modern code and features, rather than running in legacy environments.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/homebrew-package"
+        "ghcr.io/devcontainers-extra/features/homebrew-package"
     ]
 }

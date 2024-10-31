@@ -2,7 +2,7 @@
     "id": "linode-cli",
     "version": "1.0.2",
     "name": "Linode CLI (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/linode-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/linode-cli",
     "description": "Access the entire Linode platform from the command line, easily adding, removing, or modifing services.",
     "options": {
         "version": {

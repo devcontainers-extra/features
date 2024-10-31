@@ -3,7 +3,7 @@
     "id": "deno",
     "version": "1.0.2",
     "description": "Deno is a simple, modern runtime for JavaScript and TypeScript that uses V8 and is built in Rust.",
-    "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/deno",
+    "documentationURL": "https://github.com/devcontainers-extra/features/tree/main/src/deno",
     "options": {
         "version": {
             "type": "string",

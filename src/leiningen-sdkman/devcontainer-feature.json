@@ -2,7 +2,7 @@
     "id": "leiningen-sdkman",
     "version": "2.0.14",
     "name": "Leiningen (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/leiningen-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/leiningen-sdkman",
     "description": "Leiningen is the easiest way to use Clojure. With a focus on project automation\nand declarative configuration, it gets out of your way and lets you focus on\nyour code.",
     "options": {
         "version": {

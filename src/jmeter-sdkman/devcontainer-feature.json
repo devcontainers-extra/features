@@ -2,7 +2,7 @@
     "id": "jmeter-sdkman",
     "version": "2.0.14",
     "name": "Apache JMeter (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jmeter-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/jmeter-sdkman",
     "description": "The Apache JMeter\u2122 application is open source software, a 100% pure Java\napplication designed to load test functional behavior and measure performance.\nIt was originally designed for testing Web Applications but has since expanded\nto other test functions.",
     "options": {
         "version": {

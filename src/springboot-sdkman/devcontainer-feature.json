@@ -2,7 +2,7 @@
     "id": "springboot-sdkman",
     "version": "2.0.15",
     "name": "Spring Boot (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/springboot-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/springboot-sdkman",
     "description": "Spring Boot takes an opinionated view of building production-ready Spring\napplications. It favors convention over configuration and is designed to get you\nup and running as quickly as possible.",
     "options": {
         "version": {

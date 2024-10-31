@@ -2,7 +2,7 @@
     "id": "http-server",
     "version": "1.0.3",
     "name": "http-server (by http-party) (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/http-server",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/http-server",
     "description": "http-server is a simple, zero-configuration command-line static HTTP server. It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development and learning.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

@@ -3,7 +3,7 @@
     "id": "npm-package",
     "version": "1.0.3",
     "description": "Installs an npm package globally.",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/npm-package",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/npm-package",
     "installsAfter": [
         "ghcr.io/devcontainers/features/node"
     ],

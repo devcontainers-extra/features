@@ -2,10 +2,10 @@
     "id": "tailscale",
     "version": "1.0.10",
     "name": "Tailscale (via tailscale.com)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tailscale",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/tailscale",
     "description": "Tailscale is a VPN service that makes the devices and applications you own accessible anywhere in the world, securely and effortlessly.",
     "options": {},
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/curl-apt-get"
+        "ghcr.io/devcontainers-extra/features/curl-apt-get"
     ]
 }

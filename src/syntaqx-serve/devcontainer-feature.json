@@ -2,7 +2,7 @@
     "id": "syntaqx-serve",
     "version": "1.0.6",
     "name": "serve (by syntaqx) (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/syntaqx-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/syntaqx-cli",
     "description": "serve is a static http server anywhere you need one. It's basically python -m SimpleHTTPServer 8080 written in Go, because who can remember that many letters?",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

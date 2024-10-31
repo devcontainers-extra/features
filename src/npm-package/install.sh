@@ -19,8 +19,8 @@ if [ "$(id -u)" -ne 0 ]; then
 fi
 
 check_packages() {
-	# This is part of devcontainers-contrib script library
-	# source: https://github.com/devcontainers-contrib/features/tree/v1.1.8/script-library
+	# This is part of devcontainers-extra script library
+	# source: https://github.com/devcontainers-extra/features/tree/v1.1.8/script-library
 	if ! dpkg -s "$@" >/dev/null 2>&1; then
 		if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
 			echo "Running apt-get update..."
@@ -31,8 +31,8 @@ check_packages() {
 }
 
 install_via_npm() {
-	# This is part of devcontainers-contrib script library
-	# source: https://github.com/devcontainers-contrib/features/tree/v1.1.8/script-library
+	# This is part of devcontainers-extra script library
+	# source: https://github.com/devcontainers-extra/features/tree/v1.1.8/script-library
 	PACKAGE=$1
 
 	# install node+npm if does not exists

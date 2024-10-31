@@ -2,10 +2,10 @@
     "id": "ncdu",
     "version": "1.0.5",
     "name": "ncdu (via apt-get)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ncdu",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ncdu",
     "description": "ncdu (NCurses Disk Usage) is a disk utility for Unix systems.",
     "options": {},
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+        "ghcr.io/devcontainers-extra/features/apt-get-packages"
     ]
 }

@@ -2,10 +2,10 @@
     "id": "neofetch",
     "version": "1.0.5",
     "name": "Neofetch (via apt-get)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/neofetch",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/neofetch",
     "description": "Neofetch displays information about your operating system, software and hardware in an aesthetic and visually pleasing way.",
     "options": {},
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+        "ghcr.io/devcontainers-extra/features/apt-get-packages"
     ]
 }

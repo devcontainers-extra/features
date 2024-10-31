@@ -3,7 +3,7 @@
     "id": "bash-command",
     "version": "1.0.0",
     "description": "Executes a bash command",
-    "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/bash-command",
+    "documentationURL": "https://github.com/devcontainers-extra/features/tree/main/src/bash-command",
     "options": {
         "command": {
             "type": "string",

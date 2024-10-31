@@ -2,7 +2,7 @@
     "id": "apt-packages",
     "version": "1.0.4",
     "name": "apt packages (for Debian/Ubuntu)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/apt-packages",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/apt-packages",
     "description": "Advanced package tool, or APT, is a free-software user interface that works with core libraries to handle the installation and removal of software on Debian and Debian-based Linux distributions.",
     "options": {
         "packages": {

@@ -27,7 +27,7 @@ check_packages() {
 # making sure curl is there, you never know
 check_packages ca-certificates curl
 
-# We run as the non-root user so to fix https://github.com/devcontainers-contrib/features/issues/80
+# We run as the non-root user so to fix https://github.com/devcontainers-extra/features/issues/80
 # Note that we substitute SOME variables before evaluation, and some are
 # substituted inside the $_REMOTE_USER shell. Particularily $HOME which needs to
 # be from the $_REMOTE_USER, and $VERSION which needs to come from this script.

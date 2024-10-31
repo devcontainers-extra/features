@@ -2,7 +2,7 @@
     "id": "pip-audit",
     "version": "1.0.4",
     "name": "CVE Binary Tool (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pip-audit",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/pip-audit",
     "description": "pip-audit is a tool for scanning Python environments for packages with known vulnerabilities.",
     "options": {
         "version": {

@@ -3,7 +3,7 @@
     "id": "kubie",
     "version": "1.0.3",
     "description": "Kubie offers kubernetes context switching, namespace switching and prompt modification in a way that makes each shell independent from others",
-    "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/kubie",
+    "documentationURL": "https://github.com/devcontainers-extra/features/tree/main/src/kubie",
     "options": {
         "version": {
             "type": "string",

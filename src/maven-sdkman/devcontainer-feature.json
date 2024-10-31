@@ -2,7 +2,7 @@
     "id": "maven-sdkman",
     "version": "2.0.14",
     "name": "Maven (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/maven-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/maven-sdkman",
     "description": "Apache Maven is a software project management and comprehension tool. Based on\nthe concept of a project object model (POM), Maven can manage a project's build,\nreporting and documentation from a central piece of information.",
     "options": {
         "version": {

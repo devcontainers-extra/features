@@ -2,7 +2,7 @@
     "id": "tooljet-cli",
     "version": "1.0.2",
     "name": "ToolJet CLI (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tooljet-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/tooljet-cli",
     "description": "ToolJet is an open-source low-code framework to build and deploy internal tools quickly with minimal engineering effort.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

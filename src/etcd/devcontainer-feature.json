@@ -2,7 +2,7 @@
     "id": "etcd",
     "version": "1.0.11",
     "name": "etcd (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/etcd",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/etcd",
     "description": "etcd is a distributed reliable key-value store for the most critical data of a distributed system.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

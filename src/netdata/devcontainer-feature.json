@@ -2,10 +2,10 @@
     "id": "netdata",
     "version": "1.0.9",
     "name": "Netdata  (via my-netdata.io)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/netdata",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/netdata",
     "description": "Netdata is a distributed, real-time, performance and health monitoring platform for systems, hardware, containers and applications, collecting thousands of useful metrics with zero configuration needed.",
     "options": {},
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/curl-apt-get"
+        "ghcr.io/devcontainers-extra/features/curl-apt-get"
     ]
 }

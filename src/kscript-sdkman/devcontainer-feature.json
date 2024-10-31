@@ -2,7 +2,7 @@
     "id": "kscript-sdkman",
     "version": "2.0.14",
     "name": "kscript (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/kscript-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/kscript-sdkman",
     "description": "Enhanced scripting support for Kotlin on *nix-based systems. kscript provides an\neasy-to-use, very flexible, and almost zero-overhead solution to write\nself-contained mini-applications with Kotlin.",
     "options": {
         "version": {

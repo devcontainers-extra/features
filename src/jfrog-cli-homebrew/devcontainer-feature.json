@@ -2,7 +2,7 @@
     "id": "jfrog-cli-homebrew",
     "version": "1.0.12",
     "name": "JFrog CLI (via Homebrew)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jfrog-cli-homebrew",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/jfrog-cli-homebrew",
     "description": "JFrog CLI is a compact and smart client that provides a simple interface that automates access to JFrog products simplifying your automation scripts making them more readable and easier to maintain.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/homebrew-package"
+        "ghcr.io/devcontainers-extra/features/homebrew-package"
     ]
 }

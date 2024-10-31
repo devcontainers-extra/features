@@ -2,10 +2,10 @@
     "id": "nnn-apt-get",
     "version": "1.0.15",
     "name": "nnn (n\u00b3) (via apt-get)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/nnn-apt-get",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/nnn-apt-get",
     "description": "nnn is a free and open-source file manager which provides a text-based user interface to provide file managing functionalities for Unix-like systems.",
     "options": {},
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+        "ghcr.io/devcontainers-extra/features/apt-get-packages"
     ]
 }

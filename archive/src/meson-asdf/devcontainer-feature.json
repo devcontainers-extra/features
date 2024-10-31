@@ -2,7 +2,7 @@
     "id": "meson-asdf",
     "version": "2.0.14",
     "name": "Meson (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/meson-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/meson-asdf",
     "description": "Meson is an open source build system meant to be both extremely fast, and, even more importantly, as user friendly as possible.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

@@ -2,7 +2,7 @@
     "id": "former2-cli",
     "version": "1.0.2",
     "name": "Former2 CLI (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/former2-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/former2-cli",
     "description": "The Former2 CLI allows you to use the former2.com tool directly from your command line.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

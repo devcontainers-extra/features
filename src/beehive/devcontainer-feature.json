@@ -2,7 +2,7 @@
     "id": "beehive",
     "version": "1.0.14",
     "name": "Beehive (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/beehive",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/beehive",
     "description": "Beehive is an event and agent system, which allows you to create your own agents that perform automated tasks triggered by events and filters.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

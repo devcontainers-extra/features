@@ -2,7 +2,7 @@
     "id": "yapf",
     "version": "2.0.17",
     "name": "yapf (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/yapf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/yapf",
     "description": "yapf is a formatter for Python files.",
     "options": {
         "version": {

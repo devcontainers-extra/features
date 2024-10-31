@@ -2,7 +2,7 @@
     "id": "k6",
     "version": "1.0.2",
     "name": "k6 (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/k6",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/k6",
     "description": "k6 is an open-source load testing tool that makes performance testing easy and productive for engineering teams.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

@@ -3,7 +3,7 @@
     "id": "pulumi",
     "version": "1.2.3",
     "description": "Pulumi is a modern infrastructure as code platform",
-    "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/pulumi",
+    "documentationURL": "https://github.com/devcontainers-extra/features/tree/main/src/pulumi",
     "options": {
         "version": {
             "type": "string",

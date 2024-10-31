@@ -2,7 +2,7 @@
     "id": "gitsign",
     "version": "1.0.9",
     "name": "Gitsign (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/gitsign",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/gitsign",
     "description": "Gitsign implements keyless Sigstore to sign Git commits with a valid OpenID Connect identity.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

@@ -2,7 +2,7 @@
     "id": "budibase-cli",
     "version": "1.0.2",
     "name": "Budibase CLI (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/budibase-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/budibase-cli",
     "description": "The Budibase CLI tool can be used to create a new Budibase installation, to manage an existing installation, make backups or update a Budibase installation to a new version.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

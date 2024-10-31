@@ -2,7 +2,7 @@
     "id": "actions-runner",
     "version": "1.0.12",
     "name": "GitHub Actions Runner",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/actions-runner",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/actions-runner",
     "description": "The runner is the application that runs a job from a GitHub Actions workflow. It is used by GitHub Actions in the hosted virtual environments, or you can self-host the runner in your own environment.",
     "options": {
         "version": {
@@ -23,7 +23,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release",
+        "ghcr.io/devcontainers-extra/features/gh-release",
         "ghcr.io/devcontainers/features/dotnet"
     ]
 }

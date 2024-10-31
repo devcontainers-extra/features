@@ -3,7 +3,7 @@
     "id": "haskell",
     "version": "2.2.1",
     "description": "Installs Haskell. An advanced, purely functional programming language",
-    "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/haskell",
+    "documentationURL": "https://github.com/devcontainers-extra/features/tree/main/src/haskell",
     "options": {
         "ghcVersion": {
             "type": "string",

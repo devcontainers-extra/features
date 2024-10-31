@@ -2,7 +2,7 @@
     "id": "joern-sdkman",
     "version": "2.0.14",
     "name": "Joern (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/joern-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/joern-sdkman",
     "description": "Joern is a platform for analyzing source code, bytecode, and binary executables.\nIt generates code property graphs (CPGs), a graph representation of code for\ncross-language code analysis. Code property graphs are stored in a custom graph\ndatabase. This allows code to be mined using search queries formulated in a\nScala-based domain-specific query language. Joern is developed with the goal of\nproviding a useful tool for vulnerability discovery and research in static\nprogram analysis.",
     "options": {
         "version": {

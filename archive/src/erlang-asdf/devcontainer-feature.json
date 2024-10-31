@@ -2,7 +2,7 @@
     "id": "erlang-asdf",
     "version": "2.0.18",
     "name": "Erlang (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/erlang-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/erlang-asdf",
     "description": "Erlang is a general-purpose, concurrent, functional programming language, and a garbage-collected runtime system.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package",
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+        "ghcr.io/devcontainers-extra/features/asdf-package",
+        "ghcr.io/devcontainers-extra/features/apt-get-packages"
     ]
 }

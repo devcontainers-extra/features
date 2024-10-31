@@ -2,7 +2,7 @@
     "id": "vercel-cli",
     "version": "1.0.3",
     "name": "Vercel CLI (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/vercel-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/vercel-cli",
     "description": "With Vercel CLI command-line interface (CLI) you can interact with the Vercel platform using a terminal, or through an automated system, enabling you to retrieve logs, manage certificates, replicate your deployment environment locally, manage Domain Name System (DNS) records, and more.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

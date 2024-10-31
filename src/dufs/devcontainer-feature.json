@@ -2,7 +2,7 @@
     "id": "dufs",
     "version": "1.0.14",
     "name": "Dufs (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/dufs",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/dufs",
     "description": "Dufs is a distinctive utility file server that supports static serving, uploading, searching, accessing control, webdav and more.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

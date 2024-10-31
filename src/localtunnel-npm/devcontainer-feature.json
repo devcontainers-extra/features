@@ -2,7 +2,7 @@
     "id": "localtunnel-npm",
     "version": "1.0.10",
     "name": "Localtunnel (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/localtunnel-npm",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/localtunnel-npm",
     "description": "Localtunnel allows you to easily share a web service on your local development machine without messing with DNS and firewall settings.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

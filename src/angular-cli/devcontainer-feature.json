@@ -2,7 +2,7 @@
     "id": "angular-cli",
     "version": "2.0.15",
     "name": "Angular CLI (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/angular-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/angular-cli",
     "description": "Angular CLI is a command-line interface tool that you use to initialize, develop, scaffold, and maintain Angular applications directly from a command shell.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

@@ -39,7 +39,7 @@ check_packages ca-certificates curl build-essential libffi-dev libffi8ubuntu1 li
 # Here's some more examples using it: https://github.com/search?q=org%3Adevcontainers+_REMOTE_USER&type=code
 # We also use /bin/sh as defined in the script hash-bang line instead of $SHELL.
 sudo -iu "$_REMOTE_USER" <<EOF
-	# Add some env vars as discussed in https://github.com/devcontainers-contrib/features/pull/94#issuecomment-1330004657
+	# Add some env vars as discussed in https://github.com/devcontainers-extra/features/pull/94#issuecomment-1330004657
 	export GHCUP_USE_XDG_DIRS=1
 	echo 'export GHCUP_USE_XDG_DIRS=1' >> ~/.bashrc
 

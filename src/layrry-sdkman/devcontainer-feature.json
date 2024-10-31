@@ -2,7 +2,7 @@
     "id": "layrry-sdkman",
     "version": "2.0.14",
     "name": "Layrry (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/layrry-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/layrry-sdkman",
     "description": "Layrry - A Launcher and API for Modularized Java Applications. It allows to\nassemble modularized applications based on Maven artifact coordinates of the\n(modular) JARs to include. Layrry utilizes the Java Module System's notion of\nmodule layers, allowing multiple versions of one module to be used within an\napplication at the same time, as well as dynamically adding and removing modules\nat application runtime.",
     "options": {
         "version": {

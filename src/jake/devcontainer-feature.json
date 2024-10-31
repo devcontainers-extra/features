@@ -2,7 +2,7 @@
     "id": "jake",
     "version": "1.0.4",
     "name": "jake (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jake",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/jake",
     "description": "jake is a tool to check your Python environments for vulnerable Open Source packages with OSS Index or Sonatype Nexus Lifecycle.",
     "options": {
         "version": {

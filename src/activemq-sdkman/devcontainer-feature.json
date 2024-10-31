@@ -2,7 +2,7 @@
     "id": "activemq-sdkman",
     "version": "2.0.14",
     "name": "Apache ActiveMQ (Classic) (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/activemq-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/activemq-sdkman",
     "description": "Apache ActiveMQ\u00ae is a popular open source, multi-protocol, Java-based message\nbroker. It supports industry standard protocols so users get the benefits of\nclient choices across a broad range of languages and platforms. Connect from\nclients written in JavaScript, C, C++, Python, .Net, and more. Integrate your\nmulti-platform applications using the ubiquitous AMQP protocol. Exchange\nmessages between your web applications using STOMP over websockets. Manage your\nIoT devices using MQTT. Support your existing JMS infrastructure and beyond.\nActiveMQ offers the power and flexibility to support any messaging use-case.",
     "options": {
         "version": {

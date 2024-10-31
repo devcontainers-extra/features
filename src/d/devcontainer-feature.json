@@ -3,7 +3,7 @@
     "id": "d",
     "version": "1.0.2",
     "description": "D is a general-purpose programming language with static typing, systems-level access, and C-like syntax.",
-    "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/d",
+    "documentationURL": "https://github.com/devcontainers-extra/features/tree/main/src/d",
     "options": {
         "compiler": {
             "type": "string",

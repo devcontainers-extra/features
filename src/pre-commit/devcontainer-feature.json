@@ -2,7 +2,7 @@
     "id": "pre-commit",
     "version": "2.0.17",
     "name": "Pre-Commit (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pre-commit",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/pre-commit",
     "description": "Pre-Commit is a framework for managing and maintaining multi-language pre-commit hooks.",
     "options": {
         "version": {

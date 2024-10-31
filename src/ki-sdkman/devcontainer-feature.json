@@ -2,7 +2,7 @@
     "id": "ki-sdkman",
     "version": "2.0.14",
     "name": "ki (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ki-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ki-sdkman",
     "description": "An extensible implementation of the Kotlin REPL with a rich set of features\nincluding autocomplete, syntax highlighting, type inference and maven\ndependencies.",
     "options": {
         "version": {

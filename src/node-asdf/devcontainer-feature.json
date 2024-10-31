@@ -2,7 +2,7 @@
     "id": "node-asdf",
     "version": "0.0.1",
     "name": "Node.js (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/node-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/node-asdf",
     "description": "Installs Node.js via asdf.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

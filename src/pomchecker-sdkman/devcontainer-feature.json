@@ -2,7 +2,7 @@
     "id": "pomchecker-sdkman",
     "version": "2.0.15",
     "name": "Pomchecker (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pomchecker-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/pomchecker-sdkman",
     "description": "Pomchecker - Checks that POM files comply with the minimum rules required for\npublication to Maven Central. It can also check if a POM is a valid BOM file.",
     "options": {
         "version": {

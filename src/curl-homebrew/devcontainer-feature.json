@@ -2,7 +2,7 @@
     "id": "curl-homebrew",
     "version": "1.0.18",
     "name": "cURL (via Homebrew)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/curl-homebrew",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/curl-homebrew",
     "description": "cURL is a computer software project providing a library and command-line tool for transferring data using various network protocols.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/homebrew-package"
+        "ghcr.io/devcontainers-extra/features/homebrew-package"
     ]
 }

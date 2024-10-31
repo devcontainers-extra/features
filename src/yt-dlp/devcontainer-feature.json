@@ -2,7 +2,7 @@
     "id": "yt-dlp",
     "version": "2.0.17",
     "name": "yt-dlp (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/yt-dlp",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/yt-dlp",
     "description": "yt-dlp is a youtube-dl fork with additional features and fixes.",
     "options": {
         "version": {

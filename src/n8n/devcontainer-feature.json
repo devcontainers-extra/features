@@ -2,7 +2,7 @@
     "id": "n8n",
     "version": "1.0.2",
     "name": "n8n (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/n8n",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/n8n",
     "description": "n8n is a free and source-available fair-code licensed workflow automation tool.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

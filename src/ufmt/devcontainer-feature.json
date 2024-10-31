@@ -2,7 +2,7 @@
     "id": "ufmt",
     "version": "1.0.0",
     "name": "ufmt (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ufmt",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ufmt",
     "description": "µfmt is a safe, atomic code formatter for Python built on top of black and µsort.",
     "options": {
         "version": {

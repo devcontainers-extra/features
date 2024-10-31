@@ -2,10 +2,10 @@
     "id": "tmate",
     "version": "1.0.5",
     "name": "tmate (via apt-get)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tmate",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/tmate",
     "description": "tmate is a terminal multiplexer with instant terminal sharing. It enables a number of terminals to be created, accessed, and controlled from a single screen and be shared with another mates.",
     "options": {},
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+        "ghcr.io/devcontainers-extra/features/apt-get-packages"
     ]
 }

@@ -2,7 +2,7 @@
     "id": "boundary-asdf",
     "version": "2.0.14",
     "name": "boundary (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/boundary-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/boundary-asdf",
     "description": "Installs boundary",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

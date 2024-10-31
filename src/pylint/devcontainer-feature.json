@@ -2,7 +2,7 @@
     "id": "pylint",
     "version": "2.0.17",
     "name": "Pylint (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pylint",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/pylint",
     "description": "Pylint is a static code analyser for Python 2 or 3.",
     "options": {
         "version": {

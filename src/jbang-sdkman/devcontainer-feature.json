@@ -2,7 +2,7 @@
     "id": "jbang-sdkman",
     "version": "2.0.14",
     "name": "JBang (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jbang-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/jbang-sdkman",
     "description": "JBang makes it easy to use Java for scripting. It lets you use a single file for\ncode and dependency management and allows you to run it directly.",
     "options": {
         "version": {

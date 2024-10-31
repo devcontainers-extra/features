@@ -2,10 +2,10 @@
     "id": "fossil-apt-get",
     "version": "1.0.15",
     "name": "Fossil (via apt-get)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/fossil-apt-get",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/fossil-apt-get",
     "description": "Fossil is a simple, high-reliability, distributed software configuration management system. It is capable of performing distributed version control, bug tracking, wiki services, and blogging.",
     "options": {},
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+        "ghcr.io/devcontainers-extra/features/apt-get-packages"
     ]
 }

@@ -3,9 +3,9 @@
     "id": "asdf-package",
     "version": "1.0.8",
     "description": "Installs an asdf package.",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/asdf-package",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/asdf-package",
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+        "ghcr.io/devcontainers-extra/features/apt-get-packages"
     ],
     "options": {
         "plugin": {

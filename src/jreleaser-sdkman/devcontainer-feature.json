@@ -2,7 +2,7 @@
     "id": "jreleaser-sdkman",
     "version": "2.0.14",
     "name": "JReleaser (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jreleaser-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/jreleaser-sdkman",
     "description": "JReleaser is a release automation tool for Java projects. Its goal is to\nsimplify creating releases and publishing artifacts to multiple package managers\nwhile providing customizable options.",
     "options": {
         "version": {

@@ -2,7 +2,7 @@
     "id": "dbt-coverage",
     "version": "1.0.1",
     "name": "dbt-coverage (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/dbt-coverage",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/dbt-coverage",
     "description": "dbt-coverage is a one-stop-shop for docs and test coverage of dbt projects.",
     "options": {
         "version": {

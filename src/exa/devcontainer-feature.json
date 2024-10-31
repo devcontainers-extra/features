@@ -2,7 +2,7 @@
     "id": "exa",
     "version": "1.0.14",
     "name": "exa (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/exa",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/exa",
     "description": "exa is a modern replacement for ls.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

@@ -2,7 +2,7 @@
     "id": "glances",
     "version": "2.0.17",
     "name": "Glances (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/glances",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/glances",
     "description": "Glances is a cross-platform monitoring tool which aims to present a large amount of monitoring information through a curses or Web based interface.",
     "options": {
         "version": {

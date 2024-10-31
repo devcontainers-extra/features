@@ -2,7 +2,7 @@
     "id": "gitty",
     "version": "1.0.14",
     "name": "gitty (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/gitty",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/gitty",
     "description": "gitty is a smart little CLI helper for git projects, that shows you all the relevant issues, pull requests and changes at a quick glance, right on the command-line.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

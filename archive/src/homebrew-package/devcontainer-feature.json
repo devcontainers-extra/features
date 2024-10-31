@@ -3,7 +3,7 @@
     "id": "homebrew-package",
     "version": "1.0.7",
     "description": "Installs a Homebrew package.",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/homebrew-package",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/homebrew-package",
     "installsAfter": [
         "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2"
     ],

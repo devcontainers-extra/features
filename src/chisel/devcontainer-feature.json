@@ -2,7 +2,7 @@
     "id": "chisel",
     "version": "1.0.3",
     "name": "Chisel (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/chisel",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/chisel",
     "description": "Chisel is a fast TCP/UDP tunnel, transported over HTTP, secured via SSH.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

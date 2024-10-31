@@ -2,7 +2,7 @@
     "id": "waypoint-asdf",
     "version": "2.0.14",
     "name": "Waypoint (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/waypoint-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/waypoint-asdf",
     "description": "Waypoint is an open source solution that provides a modern workflow for build, deploy, and release across platforms.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

@@ -2,7 +2,7 @@
     "id": "rabbitmq-asdf",
     "version": "1.0.3",
     "name": "Rabbitmq (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/kubectl-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/kubectl-asdf",
     "description": "RabbitMQ is a feature rich, multi-protocol messaging and streaming broker.",
     "options": {
         "version": {
@@ -23,6 +23,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

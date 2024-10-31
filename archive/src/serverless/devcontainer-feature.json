@@ -2,7 +2,7 @@
     "id": "serverless",
     "version": "2.0.15",
     "name": "Serverless Framework (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/serverless",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/serverless",
     "description": "Serverless Framework is a widely used open-source IaC tool that allows you to build, and deploy serverless applications on multiple cloud providers.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

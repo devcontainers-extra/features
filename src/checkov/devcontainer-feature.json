@@ -2,7 +2,7 @@
     "id": "checkov",
     "version": "1.0.16",
     "name": "Checkov (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/checkov",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/checkov",
     "description": "Checkov is a static code analysis tool for infrastructure as code (IaC) and also a software composition analysis (SCA) tool for images and open source packages.",
     "options": {
         "version": {

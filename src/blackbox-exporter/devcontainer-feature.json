@@ -2,7 +2,7 @@
     "id": "blackbox-exporter",
     "version": "1.0.2",
     "name": "Prometheus Blackbox Exporter (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/blackbox-exporter",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/blackbox-exporter",
     "description": "The blackbox exporter allows blackbox probing of endpoints over HTTP, HTTPS, DNS, TCP, ICMP and gRPC.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

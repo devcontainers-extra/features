@@ -2,7 +2,7 @@
     "id": "mkcert",
     "version": "1.0.14",
     "name": "mkcert (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mkcert",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/mkcert",
     "description": "mkcert is a simple tool for making locally-trusted development certificates.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

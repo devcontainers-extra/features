@@ -2,7 +2,7 @@
     "id": "tox",
     "version": "2.0.17",
     "name": "tox (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tox",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/tox",
     "description": "tox is a generic virtual environment management and test command line tool.",
     "options": {
         "version": {

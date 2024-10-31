@@ -2,7 +2,7 @@
     "id": "exercism-cli",
     "version": "1.0.6",
     "name": "Exercism CLI (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/exercism-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/exercism-cli",
     "description": "Exercism CLI  is the link between the Exercism website and your local work environment. It lets you download exercises and submit your solution to the site.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

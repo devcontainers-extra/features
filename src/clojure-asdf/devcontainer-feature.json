@@ -2,7 +2,7 @@
     "id": "clojure-asdf",
     "version": "2.0.14",
     "name": "Clojure (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/clojure-asdf",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/clojure-asdf",
     "description": "Clojure is a dialect of Lisp, and shares with Lisp the code-as-data philosophy and a powerful macro system.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

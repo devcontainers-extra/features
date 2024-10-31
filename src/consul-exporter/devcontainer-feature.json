@@ -2,7 +2,7 @@
     "id": "consul-exporter",
     "version": "1.0.2",
     "name": "Prometheus Consul Exporter (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/consul-exporter",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/consul-exporter",
     "description": "Prometheus exporter for Consul metrics.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

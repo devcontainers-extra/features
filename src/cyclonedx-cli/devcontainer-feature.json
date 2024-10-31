@@ -2,7 +2,7 @@
     "id": "cyclonedx-cli",
     "version": "1.0.9",
     "name": "CycloneDX CLI (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/cyclonedx-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/cyclonedx-cli",
     "description": "CycloneDX CLI is a utility with many functions to view, convert, and perform operations on SBOMs.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

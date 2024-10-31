@@ -2,7 +2,7 @@
     "id": "kyverno-cli",
     "version": "1.0.9",
     "name": "Kyverno CLI (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/kyverno-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/kyverno-cli",
     "description": "Kyverno is a policy engine designed for Kubernetes. The Kyverno Command Line Interface (CLI) is designed to validate and test policy behavior to resources prior to adding them to a cluster.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

@@ -2,7 +2,7 @@
     "install_rabbitmq": {
         "image": "debian:bullseye",
         "features": {
-            "ghcr.io/devcontainers-contrib/features/apt-get-packages" : {"packages": "xz-utils"},
+            "ghcr.io/devcontainers-extra/features/apt-get-packages" : {"packages": "xz-utils"},
             "asdf-package": {
                 "version": "v3.12.0",
                 "plugin": "rabbitmq",

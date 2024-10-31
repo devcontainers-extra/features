@@ -2,7 +2,7 @@
     "id": "xmrig",
     "version": "1.0.2",
     "name": "XMRig (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/xmrig",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/xmrig",
     "description": "XMRig is a high performance, open source, cross platform RandomX, KawPow, CryptoNight and GhostRider unified CPU/GPU miner and RandomX benchmark.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

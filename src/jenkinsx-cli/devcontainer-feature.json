@@ -2,7 +2,7 @@
     "id": "jenkinsx-cli",
     "version": "1.0.7",
     "name": "Jenkins X CLI (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jenkinsx-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/jenkinsx-cli",
     "description": "Jenkins X CLI is the modular command line CLI for Jenkins X 3.x",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

@@ -2,7 +2,7 @@
     "id": "qrcode",
     "version": "2.0.17",
     "name": "qrcode (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/qrcode",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/qrcode",
     "description": "qrcode is a command line QR-Code generator.",
     "options": {
         "version": {

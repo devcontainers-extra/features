@@ -2,7 +2,7 @@
     "id": "nx-npm",
     "version": "1.0.10",
     "name": "nx (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/nx-npm",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/nx-npm",
     "description": "Nx is a smart, fast and extensible build system with first class monorepo support and powerful integrations.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

@@ -2,7 +2,7 @@
     "id": "ory-kratos",
     "version": "1.0.5",
     "name": "Ory Kratos (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ory-kratos",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ory-kratos",
     "description": "Ory Kratos is the developer-friendly, security-hardened and battle-test Identity, User Management and Authentication system for the Cloud.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

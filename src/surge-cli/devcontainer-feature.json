@@ -2,7 +2,7 @@
     "id": "surge-cli",
     "version": "1.0.2",
     "name": "Surge CLI (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/surge-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/surge-cli",
     "description": "Publish HTML, CSS, and JS for free, without leaving the command line.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers-extra/features/npm-package",
         "ghcr.io/devcontainers/features/node"
     ]
 }

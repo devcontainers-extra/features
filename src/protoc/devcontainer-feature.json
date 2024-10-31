@@ -2,7 +2,7 @@
     "id": "protoc",
     "version": "1.0.2",
     "name": "Protocol Buffer (Protobuf) Compiler (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/protoc",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/protoc",
     "description": "A compiler for protocol buffer definition files.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }

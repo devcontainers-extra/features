@@ -2,7 +2,7 @@
     "id": "coverage-py",
     "version": "2.0.17",
     "name": "Coverage.py (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/coverage-py",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/coverage-py",
     "description": "Coverage.py is a tool for measuring code coverage of Python programs.",
     "options": {
         "version": {

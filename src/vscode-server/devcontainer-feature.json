@@ -3,7 +3,7 @@
     "id": "vscode-server",
     "version": "1.0.0",
     "description": "Visual Studio Code Server (official Microsoft build), which hosts Visual Studio Code via HTTP",
-    "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/vscode-server",
+    "documentationURL": "https://github.com/devcontainers-extra/features/tree/main/src/vscode-server",
     "options": {
         "version": {
             "type": "string",

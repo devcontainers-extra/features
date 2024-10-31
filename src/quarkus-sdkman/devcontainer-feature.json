@@ -2,7 +2,7 @@
     "id": "quarkus-sdkman",
     "version": "2.0.15",
     "name": "Quarkus CLI (via SDKMAN)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/quarkus-sdkman",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/quarkus-sdkman",
     "description": "Quarkus is a Kubernetes Native Java framework tailored for OpenJDK HotSpot and\nGraalVM, crafted from best-of-breed Java libraries and standards.",
     "options": {
         "version": {
