@@ -15,7 +15,7 @@ ensure_nanolayer nanolayer_location "v0.4.45"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/apt-get-packages:1.0.4" \
+    "ghcr.io/devcontainers-extra/features/apt-get-packages:1.0.6" \
     --option packages='ca-certificates'
 
 
