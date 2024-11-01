@@ -4,5 +4,13 @@
         "features": {
             "haskell": {}
         }
+    },
+    "test_libraries": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "haskell": {
+                "globalLibraries": "hspec hspec-contrib QuickCheck HUnit"
+            }
+        }
     }
 }

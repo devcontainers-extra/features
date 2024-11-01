@@ -40,7 +40,7 @@
             "type": "string",
             "proposals": [
                 "",
-                "hspec hspec-contrib"
+                "hspec hspec-contrib QuickCheck HUnit"
             ],
             "default": "",
             "description": "Libraries to install via `cabal install --lib`, such as `hspec` for testing. Separate with spaces. This will add significant initial build time."
