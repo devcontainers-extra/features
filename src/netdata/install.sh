@@ -1,4 +1,4 @@
-#!/bin/bash -i
+#!/usr/bin/env bash
 
 set -e
 
@@ -14,7 +14,7 @@ ensure_nanolayer nanolayer_location "v0.4.29"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/curl-apt-get:1.0.7"
+    "ghcr.io/devcontainers-extra/features/curl-apt-get:1.0.16"
 
 curl https://get.netdata.cloud/kickstart.sh >/tmp/netdata-kickstart.sh &&
     sh /tmp/netdata-kickstart.sh --no-updates --stable-channel --disable-telemetry &&
