@@ -23,7 +23,7 @@ $nanolayer_location \
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/asdf-package:1.0.5" \
+    "ghcr.io/devcontainers-extra/features/asdf-package:1.0.8" \
     --option plugin='chezscheme' --option version="$VERSION"
 
 
