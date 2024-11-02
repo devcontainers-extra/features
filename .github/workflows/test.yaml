@@ -127,6 +127,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Free Disk Space
+        uses: jlumbroso/free-disk-space@main
+        with:
+          tool-cache: false
+          docker-images: false
+          swap-storage: false
+
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
 
