@@ -22,6 +22,8 @@ if [ "$ARCH" == "x86_64" ]; then
 	ARCH=x64
 elif [[ "$ARCH" == aarch* ]]; then
 	ARCH=arm
+elif [[ "$ARCH" == "arm64" ]]; then
+	ARCH=arm64
 else
 	echo -e "unsupported arch: $ARCH"
 	exit 1
@@ -39,7 +41,7 @@ check_packages() {
 }
 
 # make sure we have curl
-check_packages ca-certificates curl
+check_packages ca-certificates curl jq
 
 # make sure /usr/local/lib exists
 mkdir -p /usr/local/lib
