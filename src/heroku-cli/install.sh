@@ -61,7 +61,7 @@ else
 	DOWNLOAD_URL=$(curl -sSL $ASSET_PATH_URL | jq -r ".[\"$HEROKU_CLI_VERSION\"] | select(.)")
 
 	if [ -z "$DOWNLOAD_URL" ]; then
-		echo "Invalid version: $HEROKU_CLI_VERSION"
+		echo "Invalid version and arch: $HEROKU_CLI_VERSION, $ARCH"
 		exit 1
 	fi
 fi
