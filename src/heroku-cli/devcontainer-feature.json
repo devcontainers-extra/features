@@ -9,7 +9,7 @@
             "type": "string",
             "proposals": [
                 "latest",
-                "7.60.1"
+                "9.3.2"
             ],
             "default": "latest",
             "description": "Select the Heroku CLI version you would like to install"
