@@ -62,7 +62,7 @@ To use the `pipx-package` helper, follow these steps:
     $nanolayer_location \
         install \
         devcontainer-feature \
-        "ghcr.io/devcontainers-extra/features/pipx-package:1.1.8" \
+        "ghcr.io/devcontainers-extra/features/pipx-package:1.1.9" \
         --option package='your-package' --option version="$VERSION"
     ```
 
