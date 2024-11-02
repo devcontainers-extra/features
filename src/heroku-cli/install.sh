@@ -50,11 +50,18 @@ rm -rf ~/.local/share/heroku/client
 rm -f $(command -v heroku) || true
 rm -f /usr/local/bin/heroku
 
-# resolve download url based on version, this is not documented and prune to break if heroku change their naming convensions
+# resolve heroku download url with asset JSON: https://github.com/heroku/cli/issues/2477
+# works with version 8 and up
 if [ "${HEROKU_CLI_VERSION}" == "latest" ]; then
 	DOWNLOAD_URL=https://cli-assets.heroku.com/channels/stable/heroku-linux-$ARCH.tar.gz
 else
-	DOWNLOAD_URL=https://cli-assets.heroku.com/heroku-v${HEROKU_CLI_VERSION}/heroku-v${HEROKU_CLI_VERSION}-linux-${ARCH}.tar.gz
+	ASSET_PATH_URL=https://cli-assets.heroku.com/versions/heroku-linux-${ARCH}-tar-xz.json
+	DOWNLOAD_URL=$(curl -sSL $ASSET_PATH_URL | jq -r ".[\"$HEROKU_CLI_VERSION\"] | select(.)")
+
+	if [ -z "$DOWNLOAD_URL" ]; then
+		echo "Invalid version: $HEROKU_CLI_VERSION"
+		exit 1
+	fi
 fi
 
 # download binary, untar and ln into /usr/local/bin
