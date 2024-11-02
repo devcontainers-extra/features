@@ -57,7 +57,7 @@ rm -f /usr/local/bin/heroku
 if [ "${HEROKU_CLI_VERSION}" == "latest" ]; then
 	DOWNLOAD_URL=https://cli-assets.heroku.com/channels/stable/heroku-linux-$ARCH.tar.gz
 else
-	ASSET_PATH_URL=https://cli-assets.heroku.com/versions/heroku-linux-${ARCH}-tar-xz.json
+	ASSET_PATH_URL=https://cli-assets.heroku.com/versions/heroku-linux-${ARCH}-tar-gz.json
 	DOWNLOAD_URL=$(curl -sSL $ASSET_PATH_URL | jq -r ".[\"$HEROKU_CLI_VERSION\"] | select(.)")
 
 	if [ -z "$DOWNLOAD_URL" ]; then
