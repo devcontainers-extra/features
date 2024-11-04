@@ -9,7 +9,7 @@
         "image": "mcr.microsoft.com/devcontainers/base:debian",
         "features": {
             "heroku-cli": {
-                "version": "9.3.2"
+                "version": "9.3.1"
             }
         }
     }
