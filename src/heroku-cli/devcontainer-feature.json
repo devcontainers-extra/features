@@ -3,7 +3,7 @@
     "id": "heroku-cli",
     "version": "1.0.2",
     "description": "Heroku CLI allows you to interact with the Heroku API via the command line (version 8 and above)",
-    "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/heroku-cli",
+    "documentationURL": "https://github.com/devcontainers-extra/features/tree/main/src/heroku-cli",
     "options": {
         "version": {
             "type": "string",
