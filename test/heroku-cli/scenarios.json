@@ -5,7 +5,7 @@
             "heroku-cli": {}
         }
     },
-    "non_latest_version": {
+    "test_non_latest_version": {
         "image": "mcr.microsoft.com/devcontainers/base:debian",
         "features": {
             "heroku-cli": {
