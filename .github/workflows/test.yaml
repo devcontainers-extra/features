@@ -127,8 +127,29 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Check if the disk has to be cleaned up
+        id: check-disk-space-requiement
+        run: |
+          # Array of features that require more disk storage
+          # If there's a feature that fails during tests due to lack of disk space, add it here
+          features_that_require_more_disk_storage=("homebrew-package")
+
+          # Array of features to test from comma separated list passed in matrix.features
+          IFS=',' read -r -a features_to_test <<< "${{ matrix.features }}"
+
+          # Check if any feature to test requires more disk storage
+          # If so, set the output to true
+          for feature in "${features_that_require_more_disk_storage[@]}"; do
+            for f in "${features_to_test[@]}"; do
+              if [ "$f" == "$feature" ]; then
+                echo "clean_disk_space=true" >> "$GITHUB_OUTPUT"
+              fi
+            done
+          done
+
       - name: Free Disk Space
         uses: jlumbroso/free-disk-space@main
+        if: ${{ steps.check-disk-space-requiement.outputs.clean_disk_space == 'true' }}
         with:
           tool-cache: false
           docker-images: false
