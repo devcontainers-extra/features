@@ -132,7 +132,7 @@ jobs:
         run: |
           # Array of features that require more disk storage
           # If there's a feature that fails during tests due to lack of disk space, add it here
-          features_that_require_more_disk_storage=("homebrew-package")
+          features_that_require_more_disk_storage=("homebrew-package" "haskell")
 
           # Array of features to test from comma separated list passed in matrix.features
           IFS=',' read -r -a features_to_test <<< "${{ matrix.features }}"
