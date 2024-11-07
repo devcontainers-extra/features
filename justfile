@@ -10,6 +10,10 @@ unarchive feature-name:
     mv archive/src/{{feature-name}} src/
     mv archive/test/{{feature-name}} test/
 
+archive feature-name:
+    mv src/{{feature-name}} archive/src/
+    mv test/{{feature-name}} archive/test/
+
 add feature-name:
     mkdir -p src/{{feature-name}} test/{{feature-name}}
     cp templates/src/* src/{{feature-name}}/
