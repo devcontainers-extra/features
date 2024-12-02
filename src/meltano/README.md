@@ -7,7 +7,11 @@ Meltano lets you extract and load data with a software development-inspired appr
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-extra/features/meltano:2": {}
+    "ghcr.io/devcontainers-extra/features/meltano:2": {
+        "version": "latest",
+        "pythonVersion": "3.12",
+        "extras": "s3,postgres"
+    }
 }
 ```
 
@@ -16,6 +20,8 @@ Meltano lets you extract and load data with a software development-inspired appr
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select the version of Meltano ELT to install. | string | latest |
+| pythonVersion | Select the version of Python to use. | string | 3.11 |
+| extras | Comma-delimited list of Meltano extras to install. | string | "" |
 
 
 
