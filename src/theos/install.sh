@@ -17,5 +17,8 @@ $nanolayer_location \
     devcontainer-feature \
     "ghcr.io/devcontainers-extra/features/curl-apt-get:1"
 
-# Install Theos
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/theos/theos/master/bin/install-theos)"
+# Switch to non-root user
+sudo -iu "$_REMOTE_USER" <<EOF
+    # Install Theos
+    curl -fsSL https://raw.githubusercontent.com/theos/theos/master/bin/install-theos | bash
+EOF
