@@ -12,6 +12,6 @@ fi
 
 . ./utils.sh
 
-install_webi $(determine_user $USERNAME) $PACKAGES
+install_webi "$(determine_user "$USERNAME")" "$PACKAGES"
 
 clean

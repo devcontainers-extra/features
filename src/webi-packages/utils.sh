@@ -1,10 +1,10 @@
 #!/bin/bash
 
 install_webi() {
-  local USERNAME="$1"
-  local PACKAGES="$(echo "$2" | tr ',' ' ')"
+    local USERNAME="$1"
+    local PACKAGES="$2"
 
-  su - ${USERNAME} <<EOF
+    su - "${USERNAME}" <<EOF
     if ! command -v webi &>/dev/null; then
         echo "Installing webinstall.dev for user ${USERNAME}..."
         check_command curl
@@ -15,7 +15,7 @@ install_webi() {
 
     if [ -n "$PACKAGES" ]; then
       echo "Installing specified packages: ${PACKAGES}"
-      webi ${PACKAGES}
+      webi $(echo "$PACKAGES" | tr ',' ' ')
     fi
 EOF
 }
@@ -24,10 +24,10 @@ determine_user() {
     local USERNAME="${1:-"auto"}"
     if [ "${USERNAME}" = "auto" ] || [ "${USERNAME}" = "automatic" ]; then
         USERNAME=""
-        check_command awk > /dev/null 2>&1;
+        check_command awk >/dev/null 2>&1
         POSSIBLE_USERS=("vscode" "node" "codespace" "$(awk -v val=1000 -F ":" '$3==val{print $1}' /etc/passwd)")
         for CURRENT_USER in "${POSSIBLE_USERS[@]}"; do
-            if id -u ${CURRENT_USER} > /dev/null 2>&1; then
+            if id -u "${CURRENT_USER}" >/dev/null 2>&1; then
                 USERNAME=${CURRENT_USER}
                 break
             fi
@@ -35,7 +35,7 @@ determine_user() {
         if [ "${USERNAME}" = "" ]; then
             USERNAME=root
         fi
-    elif [ "${USERNAME}" = "none" ] || ! id -u ${USERNAME} > /dev/null 2>&1; then
+    elif [ "${USERNAME}" = "none" ] || ! id -u "${USERNAME}" >/dev/null 2>&1; then
         USERNAME=root
     fi
 
@@ -44,28 +44,28 @@ determine_user() {
 
 check_command() {
     local cmd=$1
-    
+
     if command -v "$cmd" &>/dev/null; then
         echo "$cmd is already installed"
         return 0
     fi
-    
+
     echo "$cmd not found, attempting to install..."
-    
+
     if command -v apt &>/dev/null; then
         echo "Installing using apt..."
         sudo apt update
         sudo apt -y install --no-install-recommends "$cmd"
         return $?
     fi
-    
+
     if command -v apk &>/dev/null; then
         echo "Installing using apk..."
         sudo apk update
         sudo apk add --no-cache "$cmd"
         return $?
     fi
-    
+
     echo "Error: No supported package manager found (apt/apk)"
     return 1
 }
