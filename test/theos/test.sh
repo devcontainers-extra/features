@@ -4,6 +4,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "theos is installed" theos --version
+check "theos is installed" "$THEOS"
 
 reportResults

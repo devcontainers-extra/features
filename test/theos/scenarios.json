@@ -1,16 +1,8 @@
 {
-    "test_debian": {
-        "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "test": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
             "theos": {}
-        }
-    },
-    "test_specific_version": {
-        "image": "mcr.microsoft.com/devcontainers/base:debian",
-        "features": {
-            "theos": {
-                "version": "1.0.0"
-            }
         }
     }
 }
