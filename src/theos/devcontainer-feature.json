@@ -1,0 +1,9 @@
+{
+    "id": "theos",
+    "version": "1.0.0",
+    "name": "theos",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/theos",
+    "description": "A cross-platform build system for creating iOS, macOS, Linux, and Windows programs.",
+    "options": {},
+    "installsAfter": ["ghcr.io/devcontainers-extra/features/curl-apt-get"]
+}
