@@ -1,0 +1,17 @@
+{
+    "id": "webi-packages",
+    "version": "1.0.0",
+    "name": "webi packages",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/webi-packages",
+    "description": "Install webi and use it to install specified packages",
+    "options": {
+        "packages": {
+            "type": "string",
+            "description": "List of packages to install, comma-separated (e.g., 'node@lts', 'deno')",
+            "default": ""
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
