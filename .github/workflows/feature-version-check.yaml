@@ -1,0 +1,19 @@
+name: Feature Version Bump Check
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  check-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run feature version check script
+        run: |
+          python .github/scripts/feature-version-check.py

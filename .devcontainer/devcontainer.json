@@ -9,7 +9,8 @@
         "DavidAnson.vscode-markdownlint",
         "nefrob.vscode-just-syntax",
         "timonwong.shellcheck",
-        "ms-vscode-remote.remote-containers"
+        "ms-vscode-remote.remote-containers",
+        "github.vscode-github-actions"
       ]
     }
   },
