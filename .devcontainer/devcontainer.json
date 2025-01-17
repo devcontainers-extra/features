@@ -9,7 +9,8 @@
         "DavidAnson.vscode-markdownlint",
         "nefrob.vscode-just-syntax",
         "timonwong.shellcheck",
-        "ms-vscode-remote.remote-containers"
+        "ms-vscode-remote.remote-containers",
+        "github.vscode-github-actions"
       ]
     }
   },
@@ -20,7 +21,8 @@
     "ghcr.io/lukewiwa/features/shellcheck:0.2.3": {},
     "ghcr.io/guiyomh/features/just:0": {},
     "ghcr.io/devcontainers-extra/features/pre-commit:2": {},
-    "ghcr.io/devcontainers-extra/features/tmux-homebrew:1": {}
+    "ghcr.io/devcontainers-extra/features/tmux-homebrew:1": {},
+    "ghcr.io/devcontainers-extra/features/act:1": {}
   },
   "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh > postCreateCommand.log"
 }
