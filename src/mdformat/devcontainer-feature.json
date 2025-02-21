@@ -1,0 +1,21 @@
+{
+    "id": "mdformat",
+    "version": "1.0.0",
+    "name": "Mdformat (via pipx)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/treemdformat/main/src/mdformat",
+    "description": "Mdformat is an opinionated Markdown formatter that can be used to enforce a consistent style in Markdown files.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/pipx-package",
+        "ghcr.io/devcontainers/features/python"
+    ]
+}
