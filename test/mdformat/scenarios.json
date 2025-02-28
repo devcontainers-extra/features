@@ -1,0 +1,28 @@
+{
+    "test_ubuntu": {
+        "image": "ubuntu:22.04",
+        "features": {
+            "mdformat": {}
+        }
+    },
+    "test_debian": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "mdformat": {}
+        }
+    },
+    "test_debian_bookworm": {
+        "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+        "features": {
+            "mdformat": {}
+        }
+    },
+    "test_version_selection": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "mdformat": {
+                "version": "0.7.16"
+            }
+        }
+    }
+}
