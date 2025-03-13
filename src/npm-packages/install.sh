@@ -16,13 +16,11 @@ IFS=',' read -ra PACKAGE_ARRAY <<<"$PACKAGES"
 
 # Iterate through each package
 for package in "${PACKAGE_ARRAY[@]}"; do
-    # Check if package contains version
-    if [[ $package == *@* ]]; then
-        # Split package into name and version
-        name=${package%@*}
-        version=${package#*@}
+    # Use regex to split package into name and version
+    if [[ $package =~ ^(@?[^@]+)@(.+)$ ]]; then
+        name="${BASH_REMATCH[1]}"
+        version="${BASH_REMATCH[2]}"
     else
-        # Package without version
         name=$package
         version=""
     fi
