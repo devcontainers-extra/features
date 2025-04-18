@@ -1,0 +1,20 @@
+{
+    "id": "claude-code",
+    "version": "1.0.0",
+    "name": "claude-code (via npm)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/claude-code",
+    "description": "Claude Code is Anthropic's official CLI for Claude, enabling access to Claude's capabilities from the command line",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/node"
+    ]
+}
