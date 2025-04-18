@@ -4,6 +4,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "Claude Code is installed" claude-code --version
+check "Claude Code is installed" claude --version
 
 reportResults

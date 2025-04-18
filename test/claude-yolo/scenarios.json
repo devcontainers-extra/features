@@ -13,7 +13,7 @@
             "ghcr.io/devcontainers/features/node:1": {},
             "ghcr.io/devcontainers-extra/features/claude-code:1": {},
             "claude-yolo": {
-                "version": "0.1.0"
+                "version": "1.6.4"
             }
         }
     }

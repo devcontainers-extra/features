@@ -4,6 +4,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "something is installed" something --version
+check "claude-yolo is installed" claude-yolo --version
 
 reportResults

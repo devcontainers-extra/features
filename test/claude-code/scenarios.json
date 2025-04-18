@@ -11,7 +11,7 @@
         "features": {
             "ghcr.io/devcontainers/features/node:1": {},
             "claude-code": {
-                "version": "0.2.72"
+                "version": "0.2.70"
             }
         }
     }

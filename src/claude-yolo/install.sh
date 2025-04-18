@@ -11,12 +11,6 @@ source ./library_scripts.sh
 # of the script
 ensure_nanolayer nanolayer_location "v0.5.6"
 
-# Check if claude-code is installed
-if ! command -v claude-code &> /dev/null; then
-    echo "Error: claude-code is required but not installed. Please install it first."
-    exit 1
-fi
-
 # Install Claude YOLO globally via npm
 if [ "${VERSION}" = "latest" ]; then
     npm install -g "claude-yolo"
