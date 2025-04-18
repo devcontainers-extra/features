@@ -1,6 +1,6 @@
 # Claude Code (via npm)
 
-Claude Code is Anthropic's official CLI for Claude, enabling access to Claude's capabilities from the command line.
+Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.
 
 ## Example Usage
 
@@ -17,12 +17,6 @@ Claude Code is Anthropic's official CLI for Claude, enabling access to Claude's 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select the version to install. | string | "latest" |
-
-## Customizations
-
-### VS Code Extensions
-
-- `anthropic.claude-vscode`: Claude for VS Code - The official extension for using Claude in VS Code
 
 ## License
 
