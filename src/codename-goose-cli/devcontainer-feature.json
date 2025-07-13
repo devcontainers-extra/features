@@ -1,0 +1,17 @@
+{
+    "id": "codename-goose-cli",
+    "version": "1.0.0",
+    "name": "codename-goose-cli",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/codename-goose-cli",
+    "description": "An open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+    "options": {
+        "version": {
+            "default": "stable",
+            "description": "Select the version to install.",
+            "proposals": [
+                "stable"
+            ],
+            "type": "string"
+        }
+    }
+}
