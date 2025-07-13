@@ -1,0 +1,19 @@
+{
+  "id": "claude-yolo",
+  "version": "1.0.0",
+  "name": "claude-yolo (via npm)",
+  "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/claude-yolo",
+  "description": "A wrapper for the Claude CLI that ALWAYS enables --dangerously-skip-permissions mode AND bypasses Docker and internet permission checks so that you can run in danger mode anywhere, anytime. Use at your own risk.",
+  "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": ["latest"],
+      "type": "string"
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/node",
+    "ghcr.io/devcontainers-extra/features/claude-code"
+  ]
+}
