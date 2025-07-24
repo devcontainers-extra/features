@@ -1,0 +1,40 @@
+{
+    "id": "jsonnet",
+    "version": "1.0.0",
+    "name": "jsonnet (via GitHub Releases)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/jsonnet",
+    "description": "Install jsonnet and associated tools",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of Jsonnet to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        },
+        "installJsonnetBundler": {
+            "type": "boolean",
+            "default": false,
+            "description": "Install jsonnet-bundler, a package manager for Jsonnet."
+        },
+        "jsonnetBundlerVersion": {
+            "type": "string",
+            "description": "Select the version of jsonnet-bundler to install.",
+            "default": "latest",
+            "proposals": [
+                "latest"
+            ]
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/gh-release"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Grafana.vscode-jsonnet"
+            ]
+        }
+    }
+}

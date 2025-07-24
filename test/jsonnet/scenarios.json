@@ -1,0 +1,24 @@
+{
+    "test_debian": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "jsonnet": {}
+        }
+    },
+    "test_specific_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "jsonnet": {
+                "version": "0.20.0"
+            }
+        }
+    },
+    "test_jb": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "jsonnet": {
+                "installJsonnetBundler": true
+            }
+        }
+    }
+}
