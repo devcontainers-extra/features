@@ -1,0 +1,20 @@
+{
+    "id": "dart",
+    "version": "1.0.0",
+    "name": "dart (via asdf)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/dart",
+    "description": "Dart is an approachable, portable, and productive programming language for high-quality apps on any platform",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/asdf-package"
+    ]
+}
