@@ -9,7 +9,7 @@
         "image": "mcr.microsoft.com/devcontainers/base:debian",
         "features": {
             "dart": {
-                "version": "3.9.4"
+                "version": "3.9.3"
             }
         }
     }
