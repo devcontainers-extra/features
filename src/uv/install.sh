@@ -16,7 +16,7 @@ ensure_nanolayer nanolayer_location "v0.5.6"
 arch_segment=""
 case "$(uname -m)" in
     x86_64)
-        arch_segment="x64"
+        arch_segment="x86_64"
         ;;
     aarch64|arm64)
         arch_segment="aarch64"
