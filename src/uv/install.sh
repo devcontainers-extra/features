@@ -25,7 +25,7 @@ case "$(uname -m)" in
         arch_segment="$(uname -m)"
         ;;
 esac
-assetRegex="^uv-${arch_segment}-unknown-linux-gnu\\.tar\\.gz$"
+asset_regex="^uv-${arch_segment}-unknown-linux-gnu\\.tar\\.gz$"
 
 # Example nanolayer installation via devcontainer-feature
 $nanolayer_location \
