@@ -39,7 +39,7 @@ release_tag_regex="^(?!.*nightly)[0-9]+\\.[0-9]+\\.[0-9]+$"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/gh-release:1" \
+    "ghcr.io/devcontainers-extra/features/gh-release:1.0.26" \
     --option repo='ClementTsang/bottom' --option binaryNames='btm' --option version="$VERSION" --option assetRegex="$asset_regex" --option releaseTagRegex="$release_tag_regex"
 
 
