@@ -1,6 +1,6 @@
 {
     "id": "uv",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "uv (via GitHub Releases)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/uv",
     "description": "An extremely fast Python package and project manager, written in Rust.",

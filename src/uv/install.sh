@@ -16,7 +16,7 @@ ensure_nanolayer nanolayer_location "v0.5.6"
 arch_segment=""
 case "$(uname -m)" in
     x86_64)
-        arch_segment="x64"
+        arch_segment="x86_64"
         ;;
     aarch64|arm64)
         arch_segment="aarch64"
@@ -25,7 +25,7 @@ case "$(uname -m)" in
         arch_segment="$(uname -m)"
         ;;
 esac
-assetRegex="^uv-${arch_segment}-unknown-linux-gnu\\.tar\\.gz$"
+asset_regex="^uv-${arch_segment}-unknown-linux-gnu\\.tar\\.gz$"
 
 # Example nanolayer installation via devcontainer-feature
 $nanolayer_location \
