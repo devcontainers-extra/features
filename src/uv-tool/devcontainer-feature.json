@@ -1,0 +1,42 @@
+{
+    "id": "uv-tool",
+    "version": "1.0.0",
+    "name": "Python tool (via uv)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/uv-tool",
+    "description": "Installs a Python tool using uv.",
+    "options": {
+        "uv_version": {
+            "default": "latest",
+            "description": "The version of uv to install. Set to 'latest' to always get the latest version.",
+            "type": "string"
+        },
+        "package": {
+            "default": "",
+            "description": "The package to install commands from.",
+            "type": "string"
+        },
+        "from": {
+            "default": "",
+            "description": "Use the given package to provide the command. By default, the package name is assumed to match the command name.",
+            "type": "string"
+        },
+        "with": {
+            "default": "",
+            "description": "Space-separated list of additional packages to include as dependencies (does not install their executables). Supports version constraints, e.g., 'mkdocs-material mkdocs-minify-plugin>=0.7,<0.8'",
+            "type": "string"
+        },
+        "with-executables-from": {
+            "default": "",
+            "description": "Comma-separated list of packages to include as dependencies and install their executables, e.g., 'ansible-core,ansible-lint'",
+            "type": "string"
+        },
+        "python": {
+            "default": "",
+            "description": "Specify the Python version to use.",
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/uv"
+    ]
+}
