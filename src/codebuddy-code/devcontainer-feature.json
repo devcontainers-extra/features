@@ -1,0 +1,18 @@
+{
+    "id": "codebuddy-code",
+    "version": "1.0.0",
+    "name": "CodeBuddy Code (via npm)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/codebuddy-code",
+    "description": "CodeBuddy Code is an agentic coding tool that lives in your terminal",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": []
+}
