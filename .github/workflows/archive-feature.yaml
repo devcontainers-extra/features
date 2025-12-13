@@ -1,0 +1,50 @@
+name: Archive Feature
+
+on:
+  workflow_dispatch:
+    inputs:
+      feature_name:
+        description: 'Name of the feature to archive'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Install just
+        uses: extractions/setup-just@v3
+
+      - name: Create branch for archiving
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b archive/${{ inputs.feature_name }}
+
+      - name: Archive feature
+        run: just archive ${{ inputs.feature_name }}
+
+      - name:  Commit changes
+        run: |
+          git add -A
+          git commit -m "chore: archive feature ${{ inputs.feature_name }}"
+
+      - name: Push changes
+        run: git push origin archive/${{ inputs.feature_name }}
+
+      - name: Create Pull Request
+        env:
+          GH_TOKEN: ${{ github. token }}
+        run: |
+          gh pr create \
+            --title "Archive feature:  ${{ inputs.feature_name }}" \
+            --body "This PR archives the \`${{ inputs.feature_name }}\` feature by moving it to the archive directory." \
+            --base main \
+            --head archive/${{ inputs.feature_name }}
