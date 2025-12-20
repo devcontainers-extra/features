@@ -1,6 +1,6 @@
 {
     "id": "talosctl",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "talosctl (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/talosctl",
     "description": "A CLI tool that interfaces with the Talos Linux API.",
