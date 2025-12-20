@@ -103,7 +103,7 @@ jobs:
 
       - name: Commit changes
         run: |
-          git add -A
+          git add src/ test/
           git commit -m "feat(${{ inputs.ID }}): init
 
           Generated using boilerplate templates."
