@@ -1,0 +1,18 @@
+{
+    "id": "boilerplate",
+    "version": "1.0.0",
+    "name": "boilerplate (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/boilerplate",
+    "description": "A tool for generating files and folders (boilerplate) from a set of templates",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": []
+}
