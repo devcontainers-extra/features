@@ -1,0 +1,134 @@
+name: Generate Feature from gh-release Template
+
+on:
+  workflow_dispatch:
+    inputs:
+      ID:
+        description: 'Feature identifier (e.g., akamai-cli)'
+        required: true
+        type: string
+      Description:
+        description: 'Feature description'
+        required: true
+        type: string
+      Repository:
+        description: 'GitHub repository in format "owner/repo" (e.g., akamai/cli)'
+        required: true
+        type: string
+      BinaryNames:
+        description: 'Binary names (comma-separated if multiple)'
+        required: true
+        type: string
+      BinaryVersionCommands:
+        description: 'Version check commands (comma-separated if multiple)'
+        required: false
+        type: string
+        default: '--version'
+      BinaryNonLatestVersions:
+        description: 'Non-latest versions for testing (comma-separated if multiple)'
+        required: true
+        type: string
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.ARCHIVE_TOKEN }}
+
+      - name: Check if feature already exists
+        run: |
+          if [ -d "src/${{ inputs.ID }}" ] || [ -d "test/${{ inputs.ID }}" ]; then
+            echo "❌ Feature '${{ inputs.ID }}' already exists!"
+            echo "Please use a different feature ID or remove the existing feature first."
+            exit 1
+          fi
+          echo "✅ Feature ID is available"
+
+      - name: Validate GitHub repository exists
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if gh api repos/${{ inputs.Repository }} > /dev/null 2>&1; then
+            echo "✅ Repository '${{ inputs.Repository }}' exists and is accessible"
+          else
+            echo "⚠️  Warning: Could not verify repository '${{ inputs.Repository }}'"
+            echo "The repository might be private, not exist, or you don't have access to it."
+            echo "Continuing with feature generation..."
+          fi
+
+      - name: Download boilerplate
+        run: |
+          wget -q https://github.com/gruntwork-io/boilerplate/releases/download/v0.10.1/boilerplate_linux_amd64
+          chmod +x boilerplate_linux_amd64
+
+      - name: Create vars.yml
+        run: |
+          cat > vars.yml << 'EOF'
+          ID: ${{ inputs.ID }}
+          Description: ${{ inputs.Description }}
+          Repository: ${{ inputs.Repository }}
+          BinaryNames: ${{ inputs.BinaryNames }}
+          BinaryVersionCommands: ${{ inputs.BinaryVersionCommands }}
+          BinaryNonLatestVersions: ${{ inputs.BinaryNonLatestVersions }}
+          EOF
+          echo "📝 Created vars.yml:"
+          cat vars.yml
+
+      - name: Create branch for new feature
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b feature/${{ inputs.ID }}-init
+
+      - name: Generate feature files
+        run: |
+          echo "🔧 Generating feature files from templates/gh-release..."
+          ./boilerplate_linux_amd64 \
+            --template-url templates/gh-release/ \
+            --output-folder src/${{ inputs.ID }} \
+            --var-file vars.yml \
+            --non-interactive
+
+      - name: Generate test files
+        run: |
+          echo "🧪 Generating test files from templates/test..."
+          ./boilerplate_linux_amd64 \
+            --template-url templates/test/ \
+            --output-folder test/${{ inputs.ID }} \
+            --var-file vars.yml \
+            --non-interactive
+
+      - name: Commit changes
+        run: |
+          git add -A
+          git commit -m "feat(${{ inputs.ID }}): init
+
+          Generated using boilerplate templates."
+
+      - name: Push changes
+        run: git push origin feature/${{ inputs.ID }}-init
+
+      - name: Create Pull Request
+        env:
+          GH_TOKEN: ${{ secrets.ARCHIVE_TOKEN }}
+        run: |
+          gh pr create \
+            --title "feat(${{ inputs.ID }}): init" \
+            --body "## New Feature: \`${{ inputs.ID }}\`
+
+          **Description:** ${{ inputs.Description }}
+
+          **Repository:** [${{ inputs.Repository }}](https://github.com/${{ inputs.Repository }})
+
+          **Binaries:** \`${{ inputs.BinaryNames }}\`
+
+          **Version Commands:** \`${{ inputs.BinaryVersionCommands }}\`
+
+          **Test Versions:** \`${{ inputs.BinaryNonLatestVersions }}\`
+
+          ---
+
+          This PR was automatically generated using the boilerplate templates.

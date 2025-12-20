@@ -1,0 +1,12 @@
+variables:
+  - name: ID
+    description: The unique identifier for the feature (e.g., akamai-cli).
+
+  - name: Description
+    description: A brief description of the feature.
+
+  - name: Repository
+    description: The GitHub repository in the format "owner/repo" (e.g., akamai/cli).
+
+  - name: BinaryNames
+    description: The names of the binaries to install from the release (comma-separated if multiple).
