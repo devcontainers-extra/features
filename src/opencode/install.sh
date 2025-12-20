@@ -16,6 +16,7 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-extra/features/gh-release:1" \
-    --option repo='sst/opencode' --option binaryNames='opencode' --option version="$VERSION"
+    --option repo='sst/opencode' --option binaryNames='opencode' --option version="$VERSION" \
+    --option assetRegex='^(?!.*baseline).*$'
 
 echo 'Done!'
