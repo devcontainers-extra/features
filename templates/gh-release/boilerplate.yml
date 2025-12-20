@@ -10,10 +10,3 @@ variables:
 
   - name: BinaryNames
     description: The names of the binaries to install from the release (comma-separated if multiple).
-
-  # - name: BinaryVersionCommands
-  #   description: The commands to check the version of the installed binaries (comma-separated if multiple).
-  #   default: "--version"
-
-  # - name: BinaryNonLatestVersions
-  #   description: Specific non-latest versions for test scenarios (comma-separated if multiple). For example, if 1.2.3 is the latest version, you should use 1.2.2 here.
