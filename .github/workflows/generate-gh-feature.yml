@@ -111,24 +111,34 @@ jobs:
       - name: Push changes
         run: git push origin feature/${{ inputs.ID }}-init
 
+      - name: Create PR body file
+        run: |
+          cat > pr_body.md << 'EOF'
+          ## New Feature: `${{ inputs.ID }}`
+
+          **Description:** ${{ inputs.Description }}
+
+          **Repository:** [${{ inputs.Repository }}](https://github.com/${{ inputs.Repository }})
+
+          **Binaries:** `${{ inputs.BinaryNames }}`
+
+          **Version Commands:** `${{ inputs.BinaryVersionCommands }}`
+
+          **Test Versions:** `${{ inputs.BinaryNonLatestVersions }}`
+
+          ---
+
+          This PR was automatically generated using the boilerplate templates.
+          EOF
+          echo "📝 PR body content:"
+          cat pr_body.md
+
       - name: Create Pull Request
         env:
           GH_TOKEN: ${{ secrets.ARCHIVE_TOKEN }}
         run: |
           gh pr create \
             --title "feat(${{ inputs.ID }}): init" \
-            --body "## New Feature: \`${{ inputs.ID }}\`
-
-          **Description:** ${{ inputs.Description }}
-
-          **Repository:** [${{ inputs.Repository }}](https://github.com/${{ inputs.Repository }})
-
-          **Binaries:** \`${{ inputs.BinaryNames }}\`
-
-          **Version Commands:** \`${{ inputs.BinaryVersionCommands }}\`
-
-          **Test Versions:** \`${{ inputs.BinaryNonLatestVersions }}\`
-
-          ---
-
-          This PR was automatically generated using the boilerplate templates.
+            --body-file pr_body.md \
+            --base main \
+            --head feature/${{ inputs.ID }}-init
