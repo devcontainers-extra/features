@@ -1,0 +1,6 @@
+ID: opencode
+Description: The open source coding agent.
+Repository: sst/opencode
+BinaryNames: opencode
+BinaryVersionCommands: --version
+BinaryNonLatestVersions: 1.0.179
