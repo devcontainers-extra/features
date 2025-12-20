@@ -2,14 +2,14 @@
     "test_debian": {
         "image": "mcr.microsoft.com/devcontainers/base:debian",
         "features": {
-            "{{.ID}}": {}
+            "<id>": {}
         }
     },
     "test_specific_version": {
         "image": "mcr.microsoft.com/devcontainers/base:debian",
         "features": {
-            "{{.ID}}": {
-                "version": "{{index (splitList "," .BinaryNonLatestVersions) 0}}"
+            "<id>": {
+                "version": "x.y.z"
             }
         }
     }
