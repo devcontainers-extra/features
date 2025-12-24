@@ -1,96 +1,141 @@
 #!/usr/bin/env bash
+# This is part of devcontainers-extra script library
+# source: https://github.com/devcontainers-extra/features
+
 set -ex
 
-# ------------------------------------------------------------------------------
-# Erlang (via asdf) – devcontainer feature
-# ------------------------------------------------------------------------------
+VERSION=${VERSION:-"latest"}
+KERL_CONFIGURE_OPTIONS=${KERLCONFIGUREOPTIONS:-""}
 
-# Provided by devcontainer feature runtime
-REMOTE_USER="${_REMOTE_USER:-vscode}"
-REMOTE_USER_HOME="${_REMOTE_USER_HOME:-/home/$REMOTE_USER}"
+# Clean up
+rm -rf /var/lib/apt/lists/*
 
-# Feature options (auto-exported by devcontainers)
-VERSION="${VERSION:-latest}"
-KERLCONFIGUREOPTIONS="${KERLCONFIGUREOPTIONS:-}"
-
-# asdf locations
-ASDF_DIR="${ASDF_DIR:-$REMOTE_USER_HOME/.asdf}"
-KERL_HOME="$ASDF_DIR/plugins/erlang/kerl-home"
-KERLRC_PATH="$KERL_HOME/.kerlrc"
-
-echo "[erlang-asdf] Remote user: $REMOTE_USER"
-echo "[erlang-asdf] Remote home: $REMOTE_USER_HOME"
-echo "[erlang-asdf] asdf dir:     $ASDF_DIR"
-
-# ------------------------------------------------------------------------------
-# Ensure required base packages (curl/git/ca-certificates)
-# ------------------------------------------------------------------------------
-
-if grep -qiE 'alpine' /etc/os-release; then
-  apk add --no-cache curl git ca-certificates
-else
-  apt-get update -y
-  apt-get install -y --no-install-recommends curl git ca-certificates
-  rm -rf /var/lib/apt/lists/*
+if [ "$(id -u)" -ne 0 ]; then
+	echo -e 'Script must be run as
+    root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
+	exit 1
 fi
 
-# ------------------------------------------------------------------------------
-# Install asdf for the remote user if missing
-# ------------------------------------------------------------------------------
+check_alpine_packages() {
+    apk add -v --no-cache "$@"
+}
 
-if ! su - "$REMOTE_USER" -c "command -v asdf >/dev/null 2>&1"; then
-  echo "[erlang-asdf] Installing asdf for $REMOTE_USER"
-  su - "$REMOTE_USER" <<EOF
-    set -e
-    git clone https://github.com/asdf-vm/asdf.git "$ASDF_DIR" --branch v0.12.0
+check_packages() {
+	if ! dpkg -s "$@" >/dev/null 2>&1; then
+		if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
+			echo "Running apt-get update..."
+			apt-get update -y
+		fi
+		apt-get -y install --no-install-recommends "$@"
+	fi
+}
+
+updaterc() {
+	if cat /etc/os-release | grep "ID_LIKE=.*alpine.*\|ID=.*alpine.*" ; then
+		echo "Updating /etc/profile"
+		echo -e "$1" >>/etc/profile
+	fi
+	if [[ "$(cat /etc/bash.bashrc)" != *"$1"* ]]; then
+		echo "Updating /etc/bash.bashrc"
+		echo -e "$1" >>/etc/bash.bashrc
+	fi
+	if [ -f "/etc/zsh/zshrc" ] && [[ "$(cat /etc/zsh/zshrc)" != *"$1"* ]]; then
+		echo "Updating /etc/zsh/zshrc"
+		echo -e "$1" >>/etc/zsh/zshrc
+	fi
+}
+
+install_via_asdf() {
+	PLUGIN=$1
+	VERSION=$2
+	REPO=$3
+
+	# install git and curl if does not exists
+	if cat /etc/os-release | grep "ID_LIKE=.*alpine.*\|ID=.*alpine.*" ; then
+        check_alpine_packages curl git ca-certificates
+	elif cat /etc/os-release | grep  "ID_LIKE=.*debian.*\|ID=.*debian.*"; then
+		check_packages curl git ca-certificates
+	fi
+
+
+	# asdf may be installed somewhere on the machine, but we need it to be accessible to the remote user
+	# the code bellow will return 2 only when asdf is available, and 1 otherwise
+	set +e
+	su - "$_REMOTE_USER" <<EOF
+		if type asdf >/dev/null 2>&1; then
+			exit 2
+		fi
+		exit 1
 EOF
-fi
+	exit_code=$?
+	set -e
 
-# Ensure asdf is sourced in login shells
-ASDF_INIT_LINE=". \"$ASDF_DIR/asdf.sh\""
-for rc in /etc/profile /etc/bash.bashrc; do
-  if [ -f "$rc" ] && ! grep -q "$ASDF_INIT_LINE" "$rc"; then
-    echo "$ASDF_INIT_LINE" >> "$rc"
-  fi
-done
+	if [ "${exit_code}" -eq 2 ]; then
+		# asdf already available to remote user, use it
+		su - "$_REMOTE_USER" <<EOF
 
-# ------------------------------------------------------------------------------
-# Write kerl configuration (THE KEY PART)
-# ------------------------------------------------------------------------------
+			if asdf list "$PLUGIN" >/dev/null 2>&1; then
+				echo "$PLUGIN  already exists - skipping adding it"
+			else
+				asdf plugin add "$PLUGIN" "$REPO"
+			fi
 
-if [ -n "$KERLCONFIGUREOPTIONS" ]; then
-  echo "[erlang-asdf] Writing kerl config to $KERLRC_PATH"
-  mkdir -p "$KERL_HOME"
-  printf 'KERL_CONFIGURE_OPTIONS="%s"\n' "$KERLCONFIGUREOPTIONS" > "$KERLRC_PATH"
-  chown -R "$REMOTE_USER:$REMOTE_USER" "$KERL_HOME"
-else
-  echo "[erlang-asdf] No kerl options provided"
-fi
+ 			if [ "${VERSION}" = "latest" ] ; then
+				resolved_version=$(asdf latest "$PLUGIN" "$LATESTVERSIONPATTERN")
+			else
+				resolved_version=$VERSION
+			fi
 
-# ------------------------------------------------------------------------------
-# Install Erlang via asdf (same execution context as kerl)
-# ------------------------------------------------------------------------------
+            export KERL_CONFIGURE_OPTIONS="$KERL_CONFIGURE_OPTIONS"
+			asdf install "$PLUGIN" "$resolved_version"
+			asdf global "$PLUGIN" "$resolved_version"
+EOF
+	else
+		# asdf is not available to remote user, install it, then update rc files
 
-echo "[erlang-asdf] Installing Erlang $VERSION"
 
-su - "$REMOTE_USER" <<EOF
-  set -e
-  . "$ASDF_DIR/asdf.sh"
+		su - "$_REMOTE_USER" <<EOF
+			git clone --depth=1 \
+					-c core.eol=lf \
+					-c core.autocrlf=false \
+					-c fsck.zeroPaddedFilemode=ignore \
+					-c fetch.fsck.zeroPaddedFilemode=ignore \
+					-c receive.fsck.zeroPaddedFilemode=ignore \
+					"https://github.com/asdf-vm/asdf.git" --branch v0.12.0 $_REMOTE_USER_HOME/.asdf 2>&1
 
-  if ! asdf plugin list | grep -q '^erlang$'; then
-    asdf plugin add erlang https://github.com/asdf-vm/asdf-erlang.git
-  fi
+			. $_REMOTE_USER_HOME/.asdf/asdf.sh
+			if asdf list "$PLUGIN" >/dev/null 2>&1; then
+				echo "$PLUGIN  already exists - skipping adding it"
+			else
+				asdf plugin add "$PLUGIN" "$REPO"
+			fi
 
-  if [ "$VERSION" = "latest" ]; then
-    RESOLVED_VERSION="\$(asdf latest erlang)"
-  else
-    RESOLVED_VERSION="$VERSION"
-  fi
-
-  echo "[erlang-asdf] Resolved Erlang version: \$RESOLVED_VERSION"
-
-  asdf install erlang "\$RESOLVED_VERSION"
-  asdf global erlang "\$RESOLVED_VERSION"
 EOF
 
-echo "[erlang-asdf] Done"
+
+		# I resolve the version like this because in bash resolving
+		# a subshell take prevedent to su, so we must resolve variables
+		# pre using them in final su clause.
+		# I hate bash.
+		resolved_version=$(su - "$_REMOTE_USER" <<EOF
+			. $_REMOTE_USER_HOME/.asdf/asdf.sh > /dev/null 2>&1
+
+			if [ "${VERSION}" = "latest" ] ; then
+				asdf latest "$PLUGIN" "$LATESTVERSIONPATTERN"
+			else
+				echo $VERSION
+			fi
+EOF
+)
+		su - "$_REMOTE_USER" <<EOF
+			. $_REMOTE_USER_HOME/.asdf/asdf.sh
+            export KERL_CONFIGURE_OPTIONS="$KERL_CONFIGURE_OPTIONS"
+			asdf install "$PLUGIN" "$resolved_version"
+			asdf global "$PLUGIN" "$resolved_version"
+
+EOF
+		updaterc ". $_REMOTE_USER_HOME/.asdf/asdf.sh"
+	fi
+}
+
+install_via_asdf erlang "$VERSION" "https://github.com/asdf-vm/asdf-erlang.git"
