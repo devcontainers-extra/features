@@ -1,8 +1,0 @@
-{
-    "test": {
-        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-        "features": {
-            "micronaut-sdkman": {}
-        }
-    }
-}

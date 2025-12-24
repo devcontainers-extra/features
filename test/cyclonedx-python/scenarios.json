@@ -1,8 +1,0 @@
-{
-    "test_defaults": {
-        "image": "mcr.microsoft.com/devcontainers/base:debian",
-        "features": {
-            "cyclonedx-python": {}
-        }
-    }
-}
