@@ -11,6 +11,15 @@ LATESTVERSIONPATTERN=${LATESTVERSIONPATTERN:-""}
 # Clean up
 rm -rf /var/lib/apt/lists/*
 
+echo "==================== Checking Kerl config env"
+env
+echo "==================== Checking Kerl config kerlrc"
+pwd
+id
+echo "$HOME"
+ls -ltra
+cat "$HOME/.kerlrc"
+
 if [ -z "$PLUGIN" ]; then
 	echo -e "'plugin' variable is empty, skipping"
 	exit 0
