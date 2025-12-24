@@ -2,7 +2,9 @@
     "test": {
         "image": "mcr.microsoft.com/devcontainers/base:debian",
         "features": {
-            "erlang-asdf": {}
+            "erlang-asdf": {
+                "version": "28.1"
+            }
         }
     }
 }
