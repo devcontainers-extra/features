@@ -1,0 +1,20 @@
+{
+    "id": "erlang-asdf",
+    "version": "2.0.16",
+    "name": "Erlang (via asdf)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/erlang-asdf",
+    "description": "Erlang is a programming language used to build massively scalable soft real-time systems with requirements on high availability. Some of its uses are in telecoms, banking, e-commerce, computer telephony and instant messaging. Erlang's runtime system has built-in support for concurrency, distribution and fault tolerance.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/asdf-package"
+    ]
+}
