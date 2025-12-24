@@ -12,9 +12,18 @@
                 "latest"
             ],
             "type": "string"
+        },
+        "kerlConfigureOptions": {
+            "default": "",
+            "description": "kerl configure options used when building.",
+            "proposals": [
+                "--disable-debug --without-javac"
+            ],
+            "type": "string"
         }
     },
     "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/apt-get-packages",
         "ghcr.io/devcontainers-extra/features/asdf-package"
     ]
 }

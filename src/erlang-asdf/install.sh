@@ -11,6 +11,7 @@ source ./library_scripts.sh
 # of the script
 ensure_nanolayer nanolayer_location "v0.4.45"
 
+export KERL_CONFIGURE_OPTIONS="$KERLCONFIGUREOPTIONS"
 
 $nanolayer_location \
     install \
