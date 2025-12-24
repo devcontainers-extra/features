@@ -23,7 +23,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-extra/features/apt-get-packages",
-        "ghcr.io/devcontainers-extra/features/asdf-package"
+        "ghcr.io/devcontainers-extra/features/apt-get-packages"
     ]
 }

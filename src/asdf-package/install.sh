@@ -11,15 +11,6 @@ LATESTVERSIONPATTERN=${LATESTVERSIONPATTERN:-""}
 # Clean up
 rm -rf /var/lib/apt/lists/*
 
-echo "==================== Checking Kerl config env"
-env
-echo "==================== Checking Kerl config kerlrc"
-pwd
-id
-echo "$HOME"
-ls -ltra
-cat "$HOME/.kerlrc"
-
 if [ -z "$PLUGIN" ]; then
 	echo -e "'plugin' variable is empty, skipping"
 	exit 0
@@ -64,15 +55,6 @@ install_via_asdf() {
 	PLUGIN=$1
 	VERSION=$2
 	REPO=$3
-
-	echo "==================== Checking Kerl config env"
-	env
-	echo "==================== Checking Kerl config kerlrc"
-	pwd
-	id
-	echo "$HOME"
-	ls -ltra
-	cat "$HOME/.kerlrc"
 
 	# install git and curl if does not exists
 	if cat /etc/os-release | grep "ID_LIKE=.*alpine.*\|ID=.*alpine.*" ; then
