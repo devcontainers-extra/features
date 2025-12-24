@@ -1,9 +1,4 @@
 {
   "image": "ghcr.io/devcontainers-extra/features/prebuilt-devcontainer:latest",
-  "features": {
-		"ghcr.io/devcontainers-extra/features/apt-get-packages:1": {
-			"packages": "curl,git,unzip,inotify-tools,build-essential,autoconf,m4,libwxgtk3.2-dev,libwxgtk-webview3.2-dev,libgl1-mesa-dev,libglu1-mesa-dev,libpng-dev,libssh-dev,unixodbc-dev,xsltproc,fop,libxml2-utils,libncurses-dev,openjdk-11-jdk"
-	  }
-  },
   "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh > postCreateCommand.log"
 }
