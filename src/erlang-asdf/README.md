@@ -10,7 +10,8 @@ _Note: This feature does not install the build tools or dependencies needed for 
 ```json
 "features": {
     "ghcr.io/devcontainers-extra/features/erlang-asdf:1": {
-        "version": "28.1"
+        "version": "28.1",
+        "kerlConfigureOptions": "--disable-debug --without-javac"
     }
 }
 ```
@@ -20,4 +21,5 @@ _Note: This feature does not install the build tools or dependencies needed for 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select the version to install. | string | latest |
+| kerlConfigureOptions | kerl configure options used when building. | string | --disable-debug --without-javac |
 
