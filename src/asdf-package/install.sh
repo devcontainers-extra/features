@@ -65,6 +65,15 @@ install_via_asdf() {
 	VERSION=$2
 	REPO=$3
 
+	echo "==================== Checking Kerl config env"
+	env
+	echo "==================== Checking Kerl config kerlrc"
+	pwd
+	id
+	echo "$HOME"
+	ls -ltra
+	cat "$HOME/.kerlrc"
+
 	# install git and curl if does not exists
 	if cat /etc/os-release | grep "ID_LIKE=.*alpine.*\|ID=.*alpine.*" ; then
         check_alpine_packages curl git ca-certificates

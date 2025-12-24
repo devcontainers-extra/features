@@ -10,6 +10,8 @@ if [ -n "$KERLCONFIGUREOPTIONS" ]; then
   echo "KERL_CONFIGURE_OPTIONS=\"$KERLCONFIGUREOPTIONS\"" > "$KERLRC_PATH"
 fi
 
+echo "================ KERLRC_PATH = $KERLRC_PATH"
+
 # nanolayer is a cli utility which keeps container layers as small as possible
 # source code: https://github.com/devcontainers-extra/nanolayer
 # `ensure_nanolayer` is a bash function that will find any existing nanolayer installations,
