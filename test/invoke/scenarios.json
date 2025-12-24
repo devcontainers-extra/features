@@ -1,0 +1,14 @@
+{
+    "test_ubuntu": {
+        "image": "ubuntu:22.04",
+        "features": {
+            "invoke": {}
+        }
+    },
+    "test_debian": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "invoke": {}
+        }
+    }
+}

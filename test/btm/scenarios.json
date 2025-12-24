@@ -1,0 +1,16 @@
+{
+    "test_defaults_debian": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "btm": {}
+        }
+    },
+    "test_specific_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "btm": {
+                "version": "0.11.0"
+            }
+        }
+    }
+}

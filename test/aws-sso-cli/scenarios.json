@@ -1,0 +1,16 @@
+{
+    "test_debian": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "aws-sso-cli": {}
+        }
+    },
+    "test_specific_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "aws-sso-cli": {
+                "version": "1.16.1"
+            }
+        }
+    }
+}

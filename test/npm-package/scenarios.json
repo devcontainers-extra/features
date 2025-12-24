@@ -1,0 +1,38 @@
+{
+    "install_angular_cli": {
+        "image": "debian:bullseye",
+        "features": {
+            "npm-package": {
+                "version": "latest",
+                "package": "@angular/cli"
+            }
+        }
+    },
+    "install_typescript": {
+        "image": "debian:bullseye",
+        "features": {
+            "npm-package": {
+                "version": "latest",
+                "package": "typescript"
+            }
+        }
+    },
+    "test_existing_installation": {
+        "image": "mcr.microsoft.com/devcontainers/typescript-node:18-bullseye",
+        "features": {
+            "npm-package": {
+                "version": "8.3.1",
+                "package": "pnpm"
+            }
+        }
+    },
+    "test_existing_installation_different_version": {
+        "image": "mcr.microsoft.com/devcontainers/typescript-node:18-bullseye",
+        "features": {
+            "npm-package": {
+                "version": "7.26.3",
+                "package": "pnpm"
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "install_tool_using_uv_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "uv-tool": {
+                "uv_version": "0.9.6",
+                "package": "httpie"
+            }
+        }
+    },
+    "install_tool_using_from": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "uv-tool": {
+                "package": "httpie",
+                "from": "git+https://github.com/httpie/cli"
+            }
+        }
+    },
+    "install_tool_using_with": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "uv-tool": {
+                "package": "mkdocs",
+                "with": "mkdocs-material"
+            }
+        }
+    },
+    "install_tool_using_multiple_with": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "uv-tool": {
+                "package": "mkdocs",
+                "with": "mkdocs-material mkdocs-minify-plugin"
+            }
+        }
+    },
+    "install_tool_using_with_executables_from_and_python": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "uv-tool": {
+                "package": "ansible",
+                "with-executables-from": "ansible-core,ansible-lint",
+                "python": "3.13"
+            }
+        }
+    }
+}

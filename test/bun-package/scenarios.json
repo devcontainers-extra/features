@@ -1,0 +1,62 @@
+{
+    "test_install_angular_cli": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "bun": {},
+            "bun-package": {
+                "version": "latest",
+                "package": "@angular/cli"
+            }
+        }
+    },
+    "test_install_typescript": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "bun": {},
+            "bun-package": {
+                "version": "latest",
+                "package": "typescript"
+            }
+        }
+    },
+    "test_ubuntu": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "bun": {},
+            "bun-package": {
+                "version": "latest",
+                "package": "typescript"
+            }
+        }
+    },
+    "test_debian": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "bun": {},
+            "bun-package": {
+                "version": "latest",
+                "package": "typescript"
+            }
+        }
+    },
+    "test_alpine": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "bun": {},
+            "bun-package": {
+                "version": "latest",
+                "package": "typescript"
+            }
+        }
+    },
+    "test_specific_package_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "bun": {},
+            "bun-package": {
+                "version": "5.5.4",
+                "package": "typescript"
+            }
+        }
+    }
+}

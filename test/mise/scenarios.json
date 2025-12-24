@@ -1,0 +1,16 @@
+{
+    "test": {
+      "image": "mcr.microsoft.com/devcontainers/base:debian",
+      "features": {
+        "mise": {}
+      }
+    },
+    "ubuntu_with_version": {
+      "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+      "features": {
+        "mise": {
+          "version": "2025.2.0"
+        }
+      }
+    }
+  }

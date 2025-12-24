@@ -1,0 +1,16 @@
+{
+    "test_latest_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "protoc-asdf": {}
+        }
+    },
+    "test_specified_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "protoc-asdf": {
+                "version": "3.14.0"
+            }
+        }
+    }
+}

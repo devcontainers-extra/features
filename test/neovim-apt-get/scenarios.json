@@ -1,0 +1,14 @@
+{
+    "test_ubuntu": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "neovim-apt-get": {}
+        }
+    },
+    "test_debian": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "neovim-apt-get": {}
+        }
+    }
+}

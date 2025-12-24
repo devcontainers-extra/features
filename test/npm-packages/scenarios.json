@@ -1,0 +1,10 @@
+{
+    "test_debian_versions": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "npm-packages": {
+                "packages": "eslint@9.20.1,nodemon,prettier@3.5.2,@angular/cli@19.2.1,@biomejs/biome"
+            }
+        }
+    }
+}

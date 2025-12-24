@@ -1,0 +1,16 @@
+{
+    "test": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "argo-cd": {}
+        }
+    },
+    "test_specific_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "argo-cd": {
+                "version": "2.14.14"
+            }
+        }
+    }
+}

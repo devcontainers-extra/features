@@ -1,0 +1,8 @@
+{
+  "test_debian": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "graphite-cli": {}
+    }
+  }
+}

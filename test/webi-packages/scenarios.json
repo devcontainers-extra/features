@@ -1,0 +1,18 @@
+{
+    "test": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "webi-packages": {
+                "packages": "node@18,deno"
+            }
+        }
+    },
+    "test_alpine": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "webi-packages": {
+                "packages": "node@18"
+            }
+        }
+    }
+}

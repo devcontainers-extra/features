@@ -1,0 +1,14 @@
+{
+    "test_defaults_debian": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "gh-cli": {}
+        }
+    },
+    "test_defaults_alpine": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "gh-cli": {}
+        }
+    }
+}

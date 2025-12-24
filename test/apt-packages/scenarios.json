@@ -1,0 +1,11 @@
+{
+    "test_neovim_ubuntu": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "apt-packages": {
+                "packages": "neovim",
+                "ppas": "ppa:neovim-ppa/stable"
+            }
+        }
+    }
+}
