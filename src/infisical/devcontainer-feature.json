@@ -1,0 +1,17 @@
+{
+  "id": "infisical",
+  "version": "1.0.0",
+  "name": "infisical (via Github Releases)",
+  "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/infisical",
+  "description": "The official Infisical CLI: Inject secrets into applications and manage your Infisical infrastructure.",
+  "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": ["latest"],
+      "type": "string"
+    }
+  },
+  "installsAfter": []
+}
+
