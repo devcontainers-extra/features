@@ -1,6 +1,6 @@
 {
     "id": "bun",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "Bun",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/bun",
     "description": "Bun is an all-in-one toolkit for JavaScript and TypeScript apps.",
