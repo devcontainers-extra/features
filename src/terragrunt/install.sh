@@ -15,9 +15,8 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-extra/features/gh-release:1.0.25" \
-    --option repo='gruntwork-io/terragrunt' --option binaryNames='terragrunt' --option version="$VERSION"
-
-
+    --option repo='gruntwork-io/terragrunt' --option binaryNames='terragrunt' --option version="$VERSION" \
+    --option assetRegex='^(?!.*(\.zip|\.tar\.gz)$).*$'
 
 echo 'Done!'
 
