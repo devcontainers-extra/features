@@ -4,5 +4,21 @@
         "features": {
             "terragrunt": {}
         }
+    },
+    "test_specific_version_before_assets_change": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "terragrunt": {
+                "version": "0.93.5"
+            }
+        }
+    },
+    "test_specific_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "terragrunt": {
+                "version": "0.96.0"
+            }
+        }
     }
 }
