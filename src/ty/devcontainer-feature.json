@@ -14,5 +14,12 @@
             "type": "string"
         }
     },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "astral-sh.ty"
+            ]
+        }
+    },
     "installsAfter": []
 }
