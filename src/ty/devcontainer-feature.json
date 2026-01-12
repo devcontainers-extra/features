@@ -1,0 +1,18 @@
+{
+    "id": "ty",
+    "version": "1.0.0",
+    "name": "ty (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ty",
+    "description": "An extremely fast Python type checker and language server, written in Rust.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": []
+}
