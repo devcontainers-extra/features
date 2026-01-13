@@ -8,16 +8,13 @@ set -e
 # `ensure_nanolayer` is a bash function that will find any existing nanolayer installations,
 # and if missing - will download a temporary copy that automatically get deleted at the end
 # of the script
-ensure_nanolayer nanolayer_location "v0.5.0"
+ensure_nanolayer nanolayer_location "v0.5.6"
 
 
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/pipx-package:1.1.8" \
-    --option package='ruff' --option version="$VERSION"
-
-
+    "ghcr.io/devcontainers-extra/features/gh-release:1" \
+    --option repo='astral-sh/ruff' --option binaryNames='ruff' --option version="$VERSION"
 
 echo 'Done!'
-

@@ -1,5 +1,5 @@
 
-# Ruff (via pipx) (ruff)
+# Ruff (via Github Releases)
 
 Ruff is an extremely fast Python linter, written in Rust.
 
