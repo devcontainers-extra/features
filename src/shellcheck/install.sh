@@ -16,6 +16,6 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-extra/features/gh-release:1" \
-    --option repo='koalaman/shellcheck' --option binaryNames='shellcheck' --option version="$VERSION" --option assetRegex='shellcheck-.*.tar.gz$'
+    --option repo='koalaman/shellcheck' --option binaryNames='shellcheck' --option version="$VERSION" --option assetRegex='shellcheck-.*.tar.xz$'
 
 echo 'Done!'
