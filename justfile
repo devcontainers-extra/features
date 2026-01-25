@@ -18,7 +18,7 @@ archive feature-name:
 
 add feature-name:
     mkdir -p src/{{feature-name}} test/{{feature-name}}
-    cp templates/src/* src/{{feature-name}}/
-    cp templates/test/* test/{{feature-name}}/
+    cp templates/bak/src/* src/{{feature-name}}/
+    cp templates/bak/test/* test/{{feature-name}}/
     sed {{sed_inplace}} "s/<id>/{{feature-name}}/g" src/{{feature-name}}/*
     sed {{sed_inplace}} "s/<id>/{{feature-name}}/g" test/{{feature-name}}/*
