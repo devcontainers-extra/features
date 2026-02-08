@@ -6,6 +6,6 @@ set -e
 # dev-container-features-test-lib is provided by the test framework at runtime
 source dev-container-features-test-lib
 
-check "bun version is equal to 1.3.8" sh -c "bun --version | grep '^1.3.8'"
+check "bun version is equal to 1.2.20" sh -c "bun --version | grep '^1.2.20'"
 
 reportResults
