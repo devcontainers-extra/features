@@ -34,19 +34,41 @@ Pin a specific version:
 ## Support
 
 - Distros: `Debian` / `Ubuntu` and `Alpine`
-- Architectures: `x86_64` and `arm64`
+- Architectures: `x86_64` and `arm64` (based on available Bun releases)
 
 ## Tests
 
-This feature is tested against various Distro:
+This feature is tested against various Distros:
 
-- `Ubuntu` (latest)
-- `Debian` (latest)
-- `Alpine` (latest)
-- `Debian` with a pinned version of Bun (e.g., Bun `v1.1.38`)
+- `Ubuntu` (glibc)
+- `Debian` (glibc)
+- `Alpine` (musl)
+- `Debian` with a pinned version of Bun
+
+*Note: Only architectures with actual Bun release assets are supported (x86_64 and arm64).* *
+
+## Architecture and Asset Selection
+
+This feature automatically selects the correct Bun release asset based on the detected architecture and libc:
+
+- **x86_64**: Uses "baseline" builds for optimal CPU compatibility (e.g., `bun-linux-x64-baseline.zip`)
+- **arm64**: Uses standard builds since "baseline" variants are not published for ARM64 (e.g., `bun-linux-aarch64.zip`)
+
+The installation includes robust fallback logic:
+
+- Primary: Preferred asset pattern for the detected architecture/libc combination
+- Fallback: Alternative patterns if the primary asset is not found
+- Error handling: Clear error messages if no suitable asset is available
+
+This approach ensures compatibility across different platforms while gracefully handling potential future changes to Bun's release asset naming.
 
 ## Considerations / Future Enhancements
 
-- If Bun’s release assets ever require explicit filtering, we can wire an `assetRegex` or pass `additionalFlags` to the `gh-release` helper. The helper already auto-filters by platform/arch, so no extra flags are set currently.
 - Coexistence with Node.js: this feature only installs `bun` and a `bunx` shim and does not modify Node.js.
 - PATH/profile: installation to `/usr/local/bin` avoids profile changes.
+- Asset regex patterns: the fallback chain ensures compatibility even if Bun changes their release asset naming conventions.
+
+## Debugging
+
+- To enable additional debug logs during installation, set the environment variable `BUN_FEATURE_DEBUG=1`.
+- Diagnostic logs from detection functions are emitted to stderr to keep return values clean.
