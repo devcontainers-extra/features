@@ -1,0 +1,39 @@
+{
+    "id": "crossplane-cli",
+    "version": "1.0.0",
+    "name": "crossplane-cli (crossplane)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/crossplane-cli",
+    "description": "Installs crossplane CLI, which provides utilities to make using Crossplane easier.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "current"
+            ],
+            "default": "current",
+            "description": "Select version of crossplane"
+        },
+        "channel": {
+            "type": "string",
+            "proposals": [
+                "stable",
+                "preview",
+                "master"
+            ],
+            "default": "stable",
+            "description": "Select channel of crossplane releases"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "github.copilot.chat.codeGeneration.instructions": [
+                    {
+                        "text": "This dev container includes crossplane pre-installed and available on the `PATH`."
+                    }
+                ]
+            }
+        }
+    },
+    "installsAfter": []
+}
