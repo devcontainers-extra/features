@@ -1,0 +1,20 @@
+{
+    "id": "prek",
+    "version": "1.0.0",
+    "name": "prek (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/prek",
+    "description": "prek is a faster, dependency-free alternative to pre-commit, re-engineered in Rust.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/gh-release"
+    ]
+}

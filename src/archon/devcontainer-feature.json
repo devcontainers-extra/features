@@ -1,0 +1,18 @@
+{
+    "id": "archon",
+    "version": "1.0.0",
+    "name": "archon (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/archon",
+    "description": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": []
+}

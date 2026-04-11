@@ -1,0 +1,16 @@
+{
+    "test_defaults_debian": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "prek": {}
+        }
+    },
+    "test_specific_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "prek": {
+                "version": "0.3.6"
+            }
+        }
+    }
+}

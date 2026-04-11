@@ -1,0 +1,18 @@
+{
+    "id": "golangci-lint",
+    "version": "1.0.0",
+    "name": "golangci-lint (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/golangci-lint",
+    "description": "Fast linters runner for Go",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": []
+}

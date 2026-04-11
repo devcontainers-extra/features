@@ -1,0 +1,18 @@
+{
+    "id": "worktrunk",
+    "version": "1.0.0",
+    "name": "worktrunk (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/worktrunk",
+    "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": []
+}

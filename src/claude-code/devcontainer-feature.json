@@ -1,7 +1,7 @@
 {
     "id": "claude-code",
-    "version": "1.0.0",
-    "name": "claude-code (via npm)",
+    "version": "2.0.0",
+    "name": "claude-code",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/claude-code",
     "description": "Claude Code is an agentic coding tool that lives in your terminal",
     "options": {
