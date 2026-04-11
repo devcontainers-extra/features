@@ -1,7 +1,7 @@
 {
     "id": "crossplane-cli",
     "version": "1.0.0",
-    "name": "crossplane-cli (crossplane)",
+    "name": "crossplane-cli",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/crossplane-cli",
     "description": "Installs crossplane CLI, which provides utilities to make using Crossplane easier.",
     "options": {
