@@ -1,0 +1,18 @@
+{
+    "id": "incus",
+    "version": "1.0.0",
+    "name": "incus (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/incus",
+    "description": "CLI for Incus - Powerful system container and virtual machine manager",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": []
+}
