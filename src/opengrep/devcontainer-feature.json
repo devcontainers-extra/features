@@ -1,0 +1,18 @@
+{
+    "id": "opengrep",
+    "version": "1.0.0",
+    "name": "opengrep (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/opengrep",
+    "description": "Static code analysis engine to find security issues in code.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": []
+}
