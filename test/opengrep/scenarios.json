@@ -1,0 +1,16 @@
+{
+    "test_debian": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "opengrep": {}
+        }
+    },
+    "test_specific_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "opengrep": {
+                "version": "1.18.0"
+            }
+        }
+    }
+}
