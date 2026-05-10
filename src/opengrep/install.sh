@@ -16,6 +16,6 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-extra/features/gh-release:1" \
-    --option repo='opengrep/opengrep' --option binaryNames='opengrep' --option version="$VERSION"
+    --option repo='opengrep/opengrep' --option binaryNames='opengrep' --option version="$VERSION" --option assetRegex='opengrep_manylinux_[^.]*$'
 
 echo 'Done!'
