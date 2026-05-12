@@ -8,13 +8,13 @@ set -e
 # `ensure_nanolayer` is a bash function that will find any existing nanolayer installations,
 # and if missing - will download a temporary copy that automatically get deleted at the end
 # of the script
-ensure_nanolayer nanolayer_location "v0.5.4"
+ensure_nanolayer nanolayer_location "v0.5.6"
 
 
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers/features/go:1.1.3" \
+    "ghcr.io/devcontainers/features/go:1.3.4" \
     --option version="$GOLANGVERSION"
 
 
@@ -22,7 +22,7 @@ $nanolayer_location \
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/gh-release:1.0.25" \
+    "ghcr.io/devcontainers-extra/features/gh-release:1.0.26" \
     --option repo='caddyserver/caddy' --option binaryNames='caddy' --option version="$VERSION"
 
 
