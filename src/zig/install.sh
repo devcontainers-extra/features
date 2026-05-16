@@ -36,8 +36,11 @@ mkdir -p /usr/local/lib/zig
 
 INDEX_URL="https://ziglang.org/download/index.json"
 
-if [[ "$ZIG_VERSION" == "latest" || "$ZIG_VERSION" == "current" || "$ZIG_VERSION" == "lts" ]]
+if [[ "$ZIG_VERSION" == "latest" || "$ZIG_VERSION" == "current" ]]
 then
+	# for latest we download the latest *release* version
+	DOWNLOAD_URL=$(curl -sSL $INDEX_URL | jq -r 'to_entries[0].value."'"$ARCH"'-linux".tarball')
+elif [[ "$ZIG_VERSION" == "lts" ]]; then
 	# for latest we download the latest *release* version
 	DOWNLOAD_URL=$(curl -sSL $INDEX_URL | jq -r 'to_entries[1].value."'"$ARCH"'-linux".tarball')
 else

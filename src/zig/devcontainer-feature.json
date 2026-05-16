@@ -9,9 +9,13 @@
             "type": "string",
             "proposals": [
                 "latest",
-                "0.10.0"
+                "lts",
+                "0.15.2",
+                "0.14.1",
+                "0.13.0",
+                "0.12.1"
             ],
-            "default": "latest",
+            "default": "lts",
             "description": "Select the Zig version you would like to install"
         }
     }
