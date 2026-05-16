@@ -1,0 +1,21 @@
+{
+    "id": "bazel-compile-commands",
+    "version": "1.0.0",
+    "name": "bazel-compile-commands (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/bazel-compile-commands",
+    "description": "Generates compile_commands.json from Bazel builds. Installs the appropriate binary for the current platform and CPU architecture: a native .deb on Ubuntu Noble (24.04), a generic zip on other Linux distros, and the macOS universal binary on Darwin.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Version to install. Accepts 'latest', a numeric version like '0.22.4', or the full release tag 'bazel-compile-commands-v0.22.4'.",
+            "proposals": [
+                "latest",
+                "0.22.4"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-community/features/bazel"
+    ]
+}
