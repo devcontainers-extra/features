@@ -1,0 +1,25 @@
+{
+    "test": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+        "features": {
+            "ghcr.io/devcontainers-community/features/bazel:1": {},
+            "bazel-compile-commands": {}
+        }
+    },
+    "test_specific_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+        "features": {
+            "ghcr.io/devcontainers-community/features/bazel:1": {},
+            "bazel-compile-commands": {
+                "version": "0.22.4"
+            }
+        }
+    },
+    "test_debian": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "ghcr.io/devcontainers-community/features/bazel:1": {},
+            "bazel-compile-commands": {}
+        }
+    }
+}
