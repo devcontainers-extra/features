@@ -1,100 +1,173 @@
 #!/usr/bin/env bash
 
-# Adapted from https://github.com/devcontainers-community/features-bazel/blob/main/lib.sh
-# which itself traces back to the official devcontainers/features node install script.
+clean_download() {
+    # The purpose of this function is to download a file with minimal impact on container layer size
+    # this means if no valid downloader is found (curl or wget) then we install a downloader (currently wget) in a
+    # temporary manner, and making sure to
+    # 1. uninstall the downloader at the return of the function
+    # 2. revert back any changes to the package installer database/cache (for example apt-get lists)
+    # The above steps will minimize the leftovers being created while installing the downloader
+    # Supported distros:
+    #  debian/ubuntu/alpine
 
-# Runs apt-get update only when the apt lists cache is empty, avoiding redundant network hits.
-apt_get_update() {
-    if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
-        echo "Running apt-get update..."
+    url=$1
+    output_location=$2
+    tempdir=$(mktemp -d)
+    downloader_installed=""
+
+    function _apt_get_install() {
+        tempdir=$1
+
+        # copy current state of apt list - in order to revert back later (minimize contianer layer size)
+        cp -p -R /var/lib/apt/lists $tempdir
         apt-get update -y
-    fi
-}
+        apt-get -y install --no-install-recommends wget ca-certificates
+    }
 
-# Installs the given packages only if they are not already installed (checked via dpkg).
-# Debian/Ubuntu only; calls apt_get_update lazily rather than unconditionally.
-check_packages() {
-    if ! dpkg -s "$@" > /dev/null 2>&1; then
-        apt_get_update
-        apt-get -y install --no-install-recommends "$@"
-    fi
-}
+    function _apt_get_cleanup() {
+        tempdir=$1
 
-# Removes apt list files to keep the container layer small.
-apt_cleanup() {
-    rm -rf /var/lib/apt/lists/*
-}
+        echo "removing wget"
+        apt-get -y purge wget --auto-remove
 
-# Ensures the given packages are installed, using apt-get on Debian/Ubuntu or apk on Alpine.
-ensure_packages() {
-    if command -v apt-get >/dev/null 2>&1; then
-        check_packages "$@"
-    elif command -v apk >/dev/null 2>&1; then
-        apk add --no-cache "$@"
+        echo "revert back apt lists"
+        rm -rf /var/lib/apt/lists/*
+        rm -r /var/lib/apt/lists && mv $tempdir/lists /var/lib/apt/lists
+    }
+
+    function _apk_install() {
+        tempdir=$1
+        # copy current state of apk cache - in order to revert back later (minimize contianer layer size)
+        cp -p -R /var/cache/apk $tempdir
+
+        apk add --no-cache wget
+    }
+
+    function _apk_cleanup() {
+        tempdir=$1
+
+        echo "removing wget"
+        apk del wget
+    }
+    # try to use either wget or curl if one of them already installer
+    if type curl >/dev/null 2>&1; then
+        downloader=curl
+    elif type wget >/dev/null 2>&1; then
+        downloader=wget
     else
-        echo "No supported package manager found to install: $*" >&2
-        exit 1
+        downloader=""
     fi
-}
 
-detect_platform() {
-    local os
-    os="$(uname -s)"
-    case "${os}" in
-        Linux)  echo "linux" ;;
-        Darwin) echo "macos" ;;
-        *)      echo "Unsupported platform: ${os}" >&2; exit 1 ;;
-    esac
-}
+    # in case none of them is installed, install wget temporarly
+    if [ -z $downloader ]; then
+        if [ -x "/usr/bin/apt-get" ]; then
+            _apt_get_install $tempdir
+        elif [ -x "/sbin/apk" ]; then
+            _apk_install $tempdir
+        else
+            echo "distro not supported"
+            exit 1
+        fi
+        downloader="wget"
+        downloader_installed="true"
+    fi
 
-detect_arch() {
-    local arch
-    arch="$(uname -m)"
-    case "${arch}" in
-        x86_64)          echo "amd64" ;;
-        aarch64 | arm64) echo "arm64" ;;
-        *)               echo "Unsupported architecture: ${arch}" >&2; exit 1 ;;
-    esac
-}
-
-# Resolves a user-provided version string to the exact GitHub release tag.
-# Accepted inputs: "latest", "0.22.4", "v0.22.4", or "bazel-compile-commands-v0.22.4"
-resolve_tag() {
-    local version="$1"
-    local repo="$2"
-    local tag_prefix="$3"   # e.g. "bazel-compile-commands"
-
-    if [ "${version}" = "latest" ]; then
-        curl -fsSL "https://api.github.com/repos/${repo}/releases/latest" \
-            | grep '"tag_name"' | sed -E 's/.*"tag_name": "([^"]+)".*/\1/'
-    elif [[ "${version}" == ${tag_prefix}-* ]]; then
-        echo "${version}"
-    elif [[ "${version}" == v* ]]; then
-        echo "${tag_prefix}-${version}"
+    if [ $downloader = "wget" ]; then
+        wget -q $url -O $output_location
     else
-        echo "${tag_prefix}-v${version}"
+        curl -sfL $url -o $output_location
     fi
+
+    # NOTE: the cleanup procedure was not implemented using `trap X RETURN` only because
+    # alpine lack bash, and RETURN is not a valid signal under sh shell
+    if ! [ -z $downloader_installed ]; then
+        if [ -x "/usr/bin/apt-get" ]; then
+            _apt_get_cleanup $tempdir
+        elif [ -x "/sbin/apk" ]; then
+            _apk_cleanup $tempdir
+        else
+            echo "distro not supported"
+            exit 1
+        fi
+    fi
+
 }
 
-# Downloads a GitHub release zip asset, extracts a named binary, and places it in /usr/local/bin.
-#
-# Usage: install_via_zip <zip_url> <binary_name>
-#
-#   zip_url     - Direct URL to the .zip asset on GitHub Releases.
-#   binary_name - Name of the binary inside the archive (e.g. "bazel-compile-commands").
-#
-# unzip is auto-installed if not already present, and the temporary download
-# directory is cleaned up on exit.
-install_via_zip() {
-    local zip_url="$1"
-    local binary_name="$2"
+ensure_nanolayer() {
+    # Ensure existance of the nanolayer cli program
+    local variable_name=$1
 
-    ensure_packages unzip
+    local required_version=$2
+    # normalize version
+    if ! [[ $required_version == v* ]]; then
+        required_version=v$required_version
+    fi
 
-    local tmp_dir
-    tmp_dir=$(mktemp -d)
-    curl -fsSL "${zip_url}" -o "${tmp_dir}/${binary_name}.zip"
-    unzip -j "${tmp_dir}/${binary_name}.zip" -d "${tmp_dir}"
-    install -m 0755 "${tmp_dir}/${binary_name}" /usr/local/bin/
-    rm -rf "${tmp_dir}"
+    local nanolayer_location=""
+
+    # If possible - try to use an already installed nanolayer
+    if [[ -z "${NANOLAYER_FORCE_CLI_INSTALLATION}" ]]; then
+        if [[ -z "${NANOLAYER_CLI_LOCATION}" ]]; then
+            if type nanolayer >/dev/null 2>&1; then
+                echo "Found a pre-existing nanolayer in PATH"
+                nanolayer_location=nanolayer
+            fi
+        elif [ -f "${NANOLAYER_CLI_LOCATION}" ] && [ -x "${NANOLAYER_CLI_LOCATION}" ]; then
+            nanolayer_location=${NANOLAYER_CLI_LOCATION}
+            echo "Found a pre-existing nanolayer which were given in env variable: $nanolayer_location"
+        fi
+
+        # make sure its of the required version
+        if ! [[ -z "${nanolayer_location}" ]]; then
+            local current_version
+            current_version=$($nanolayer_location --version)
+            if ! [[ $current_version == v* ]]; then
+                current_version=v$current_version
+            fi
+
+            if ! [ $current_version == $required_version ]; then
+                echo "skipping usage of pre-existing nanolayer. (required version $required_version does not match existing version $current_version)"
+                nanolayer_location=""
+            fi
+        fi
+
+    fi
+
+    # If not previuse installation found, download it temporarly and delete at the end of the script
+    if [[ -z "${nanolayer_location}" ]]; then
+
+        if [ "$(uname -sm)" == "Linux x86_64" ] || [ "$(uname -sm)" == "Linux aarch64" ]; then
+            tmp_dir=$(mktemp -d -t nanolayer-XXXXXXXXXX)
+
+            clean_up() {
+                ARG=$?
+                rm -rf $tmp_dir
+                exit $ARG
+            }
+            trap clean_up EXIT
+
+            if [ -x "/sbin/apk" ]; then
+                clib_type=musl
+            else
+                clib_type=gnu
+            fi
+
+            tar_filename=nanolayer-"$(uname -m)"-unknown-linux-$clib_type.tgz
+
+            # clean download will minimize leftover in case a downloaderlike wget or curl need to be installed
+            clean_download https://github.com/devcontainers-extra/nanolayer/releases/download/$required_version/$tar_filename $tmp_dir/$tar_filename
+
+            tar xfzv $tmp_dir/$tar_filename -C "$tmp_dir"
+            chmod a+x $tmp_dir/nanolayer
+            nanolayer_location=$tmp_dir/nanolayer
+
+        else
+            echo "No binaries compiled for non-x86-linux architectures yet: $(uname -m)"
+            exit 1
+        fi
+    fi
+
+    # Expose outside the resolved location
+    declare -g ${variable_name}=$nanolayer_location
+
 }

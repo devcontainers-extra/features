@@ -2,51 +2,29 @@
 
 set -e
 
-source ./library_scripts.sh
+. ./library_scripts.sh
 
-BINARY_NAME="bazel-compile-commands"
-GITHUB_REPO="kiron1/bazel-compile-commands"
-VERSION="${VERSION:-"latest"}"
+# nanolayer is a cli utility which keeps container layers as small as possible
+# source code: https://github.com/devcontainers-extra/nanolayer
+# `ensure_nanolayer` is a bash function that will find any existing nanolayer installations,
+# and if missing - will download a temporary copy that automatically get deleted at the end
+# of the script
+ensure_nanolayer nanolayer_location "v0.5.6"
 
-PLATFORM="$(detect_platform)"
-ARCH="$(detect_arch)"
-ensure_packages curl ca-certificates
-TAG="$(resolve_tag "${VERSION}" "${GITHUB_REPO}" "${BINARY_NAME}")"
-
-# Extract the numeric version from the tag (e.g. "bazel-compile-commands-v0.22.4" → "0.22.4")
-FILE_VERSION="${TAG#${BINARY_NAME}-v}"
-
-BASE_URL="https://github.com/${GITHUB_REPO}/releases/download/${TAG}"
-
-echo "Installing ${BINARY_NAME} ${TAG} for ${PLATFORM}/${ARCH}..."
-
-USE_DEB=false
-ZIP_ASSET=""
-
-if [ "${PLATFORM}" = "linux" ]; then
-    # On Ubuntu Noble (24.04), prefer the native .deb package; fall back to the generic .zip.
-    if command -v apt-get >/dev/null 2>&1 && \
-       [ -f /etc/os-release ] && \
-       grep -qi "noble" /etc/os-release; then
-        USE_DEB=true
-    else
-        ZIP_ASSET="linux_${ARCH}"
-    fi
-elif [ "${PLATFORM}" = "macos" ]; then
-    ZIP_ASSET="macos_universal"
+# Upstream tags use a non-standard "bazel-compile-commands-v<ver>" format. Normalise
+# any plain version (e.g. "0.22.4" or "v0.22.4") so nanolayer can match it exactly.
+if [[ "${VERSION}" != "latest" && "${VERSION}" != bazel-compile-commands-* ]]; then
+    VERSION="bazel-compile-commands-v${VERSION#v}"
 fi
 
-if [ "${USE_DEB}" = true ]; then
-    echo "Ubuntu Noble detected – installing via .deb package..."
-    TMP_DEB=$(mktemp --suffix=.deb)
-    curl -fsSL "${BASE_URL}/${BINARY_NAME}_${FILE_VERSION}-noble_${ARCH}.deb" -o "${TMP_DEB}"
-    apt_get_update
-    apt-get install -y "${TMP_DEB}"
-    rm -f "${TMP_DEB}"
-    apt_cleanup
-else
-    echo "Installing via .zip (${ZIP_ASSET})..."
-    install_via_zip "${BASE_URL}/${BINARY_NAME}_${FILE_VERSION}-${ZIP_ASSET}.zip" "${BINARY_NAME}"
-fi
+$nanolayer_location \
+    install \
+    devcontainer-feature \
+    "ghcr.io/devcontainers-extra/features/gh-release:1" \
+    --option repo='kiron1/bazel-compile-commands' \
+    --option binaryNames='bazel-compile-commands' \
+    --option version="$VERSION" \
+    --option assetRegex='linux_' \
+    --option releaseTagRegex='bazel-compile-commands-v'
 
-echo "Done! ${BINARY_NAME} installed to /usr/local/bin/${BINARY_NAME}"
+echo 'Done!'
