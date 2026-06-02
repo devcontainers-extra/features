@@ -1,0 +1,9 @@
+{
+    "test": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "initializeCommand": "mkdir -p ~/.aws",
+        "features": {
+            "mount-aws-credentials": {}
+        }
+    }
+}

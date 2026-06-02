@@ -1,0 +1,28 @@
+{
+    "id": "mount-aws-credentials",
+    "version": "1.0.0",
+    "name": "mount-aws-credentials",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/mount-aws-credentials",
+    "description": "Bind mounts host user ~/.aws directory into container as /.aws and adds configuration environment variables to use mounted credentials.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "mounts": [
+        {
+            "type": "bind",
+            "source": "${localEnv:HOME}/.aws",
+            "target": "/.aws"
+        }
+    ],
+    "containerEnv": {
+        "AWS_CONFIG_FILE": "/.aws/config",
+        "AWS_SHARED_CREDENTIALS_FILE": "/.aws/credentials"
+    }
+}
