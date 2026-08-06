@@ -99,50 +99,55 @@ ensure_nanolayer() {
     local variable_name=$1
 
     local required_version=$2
+    # normalize version
+    if ! [[ $required_version == v* ]]; then
+        required_version=v$required_version
+    fi
 
-    local __nanolayer_location=""
+    local nanolayer_location=""
 
     # If possible - try to use an already installed nanolayer
-    if [ -z "${NANOLAYER_FORCE_CLI_INSTALLATION}" ]; then
-        if [ -z "${NANOLAYER_CLI_LOCATION}" ]; then
+    if [[ -z "${NANOLAYER_FORCE_CLI_INSTALLATION}" ]]; then
+        if [[ -z "${NANOLAYER_CLI_LOCATION}" ]]; then
             if type nanolayer >/dev/null 2>&1; then
                 echo "Found a pre-existing nanolayer in PATH"
-                __nanolayer_location=nanolayer
+                nanolayer_location=nanolayer
             fi
-        elif [ -f "${NANOLAYER_CLI_LOCATION}" ] && [ -x "${NANOLAYER_CLI_LOCATION}" ] ; then
-            __nanolayer_location=${NANOLAYER_CLI_LOCATION}
-            echo "Found a pre-existing nanolayer which were given in env variable: $__nanolayer_location"
+        elif [ -f "${NANOLAYER_CLI_LOCATION}" ] && [ -x "${NANOLAYER_CLI_LOCATION}" ]; then
+            nanolayer_location=${NANOLAYER_CLI_LOCATION}
+            echo "Found a pre-existing nanolayer which were given in env variable: $nanolayer_location"
         fi
 
         # make sure its of the required version
-        if ! [ -z "${__nanolayer_location}" ]; then
+        if ! [[ -z "${nanolayer_location}" ]]; then
             local current_version
-            current_version=$($__nanolayer_location --version)
-
+            current_version=$($nanolayer_location --version)
+            if ! [[ $current_version == v* ]]; then
+                current_version=v$current_version
+            fi
 
             if ! [ $current_version == $required_version ]; then
                 echo "skipping usage of pre-existing nanolayer. (required version $required_version does not match existing version $current_version)"
-                __nanolayer_location=""
+                nanolayer_location=""
             fi
         fi
 
     fi
 
     # If not previuse installation found, download it temporarly and delete at the end of the script
-    if [ -z "${__nanolayer_location}" ]; then
+    if [[ -z "${nanolayer_location}" ]]; then
 
-        if [ "$(uname -sm)" = 'Linux x86_64' ] || [ "$(uname -sm)" = "Linux aarch64" ]; then
+        if [ "$(uname -sm)" == "Linux x86_64" ] || [ "$(uname -sm)" == "Linux aarch64" ]; then
             tmp_dir=$(mktemp -d -t nanolayer-XXXXXXXXXX)
 
-            clean_up () {
+            clean_up() {
                 ARG=$?
                 rm -rf $tmp_dir
                 exit $ARG
             }
             trap clean_up EXIT
 
-
-            if [ -x "/sbin/apk" ] ; then
+            if [ -x "/sbin/apk" ]; then
                 clib_type=musl
             else
                 clib_type=gnu
@@ -155,8 +160,7 @@ ensure_nanolayer() {
 
             tar xfzv $tmp_dir/$tar_filename -C "$tmp_dir"
             chmod a+x $tmp_dir/nanolayer
-            __nanolayer_location=$tmp_dir/nanolayer
-
+            nanolayer_location=$tmp_dir/nanolayer
 
         else
             echo "No binaries compiled for non-x86-linux architectures yet: $(uname -m)"
@@ -165,8 +169,6 @@ ensure_nanolayer() {
     fi
 
     # Expose outside the resolved location
-    export ${variable_name}=$__nanolayer_location
+    declare -g ${variable_name}=$nanolayer_location
 
 }
-
-
