@@ -15,7 +15,7 @@ Zig is a general-purpose programming language and toolchain for maintaining robu
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the Zig version you would like to install | string | latest |
+| version | Select the Zig version you would like to install. `stable` installs the latest stable release, while `latest` installs the most recent version (which may be a development release) | string | stable |
 
 
 
