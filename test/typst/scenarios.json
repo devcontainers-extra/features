@@ -4,5 +4,13 @@
         "features": {
             "typst": {}
         }
+    },
+    "test_specific_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "typst": {
+                "version": "0.13.0"
+            }
+        }
     }
 }
