@@ -21,12 +21,20 @@ fi
 check_packages() {
 	# This is part of devcontainers-extra script library
 	# source: https://github.com/devcontainers-extra/features/tree/v1.1.8/script-library
-	if ! dpkg -s "$@" >/dev/null 2>&1; then
-		if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
-			echo "Running apt-get update..."
-			apt-get update -y
-		fi
-		apt-get -y install --no-install-recommends "$@"
+	if [ -x "/usr/bin/dpkg" ] ; then
+	    if ! dpkg -s "$@" >/dev/null 2>&1; then
+		    if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
+			    echo "Running apt-get update..."
+			    apt-get update -y
+		    fi
+		    apt-get -y install --no-install-recommends "$@"
+	    fi
+	elif [ -x "/usr/bin/dnf" ] ; then
+	    dnf -y update
+	    dnf -y install "$@"
+	else
+	    echo "distro not supported"
+		exit 1
 	fi
 }
 
