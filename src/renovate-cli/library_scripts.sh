@@ -15,6 +15,21 @@ clean_download() {
     tempdir=$(mktemp -d)
     downloader_installed=""
 
+
+    _dnf_get_install() {
+        tempdir=$1
+        dnf update -y
+        dnf install -y wget ca-certificates
+    }
+
+    _dnf_get_cleanup() {
+        tempdir=$1
+
+        echo "removing wget"
+        dnf -y remove wget
+        dnf clean all
+    }
+
     _apt_get_install() {
         tempdir=$1
 
@@ -64,6 +79,8 @@ clean_download() {
             _apt_get_install $tempdir
         elif [ -x "/sbin/apk" ] ; then
             _apk_install $tempdir
+        elif [ -x "/usr/bin/dnf" ] ; then
+            _dnf_get_install $tempdir
         else
             echo "distro not supported"
             exit 1
@@ -85,6 +102,8 @@ clean_download() {
             _apt_get_cleanup $tempdir
         elif [ -x "/sbin/apk" ] ; then
             _apk_cleanup $tempdir
+        elif [ -x "/usr/bin/dnf" ] ; then
+            _dnf_get_cleanup $tempdir
         else
             echo "distro not supported"
             exit 1
@@ -168,5 +187,3 @@ ensure_nanolayer() {
     export ${variable_name}=$__nanolayer_location
 
 }
-
-
