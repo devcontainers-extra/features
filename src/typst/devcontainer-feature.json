@@ -1,6 +1,6 @@
 {
     "id": "typst",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "name": "Typst (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/typst",
     "description": "Typst is a new markup-based typesetting system that is designed to be as powerful as LaTeX while being much easier to learn and use.",
