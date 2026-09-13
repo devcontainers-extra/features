@@ -16,6 +16,13 @@ archive feature-name:
     mv src/{{feature-name}} archive/src/
     mv test/{{feature-name}} archive/test/
 
+archive-issue feature-name:
+    printf '### Feature name\n\n%s\n\n### Archival steps\n\n- [ ] Set `deprecated: true` in `devcontainer-feature.json`\n- [ ] Release final version\n- [ ] Move to `archive/`\n' "{{feature-name}}" \
+        | gh issue create \
+            --title "[Archive]: {{feature-name}}" \
+            --label archive \
+            --body-file -
+
 add feature-name:
     mkdir -p src/{{feature-name}} test/{{feature-name}}
     cp templates/bak/src/* src/{{feature-name}}/
