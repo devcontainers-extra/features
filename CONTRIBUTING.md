@@ -1,5 +1,8 @@
 # Contributing to devcontainers-extra/features
 
+> [!IMPORTANT]
+> This project's maintenance approach is changing - some features may be archived and non-Debian/Ubuntu support may be limited going forward. See [#244](https://github.com/devcontainers-extra/features/issues/244) for details and to share feedback.
+
 Thank you for considering contributing to the devcontainers-extra/features repository! We appreciate your time and effort in helping us improve this project. Below are the guidelines for contributing new features to the repository.
 
 ## Adding a New Feature

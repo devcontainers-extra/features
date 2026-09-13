@@ -4,8 +4,11 @@
 [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) and
 [GitHub Codespaces](https://github.com/features/codespaces)
 
-👀 Don't see your feature here? [🔥 Suggest a new feature! 🔥](https://github.com/devcontainers-extra/features/issues/new?template=suggest-feature.yaml) or [📄 Learn how to add one! 📄](CONTRIBUTING.md) \
 🔍 Found a bug? [🐞 Open a bug report! 🐞](https://github.com/devcontainers-extra/features/issues/new?template=feature-bug-report.yaml)
+
+> [!IMPORTANT]
+> This project's maintenance approach is changing - some features may be archived and non-Debian/Ubuntu support may be limited going forward. See [#244](https://github.com/devcontainers-extra/features/issues/244) for details and to share feedback.
+> If you want to make it easier for me to work on this project, you may consider hitting the Sponsor button [here](https://github.com/sponsors/koralowiec).
 
 ## About This Fork
 
