@@ -1,0 +1,20 @@
+name: 🗃️ Archive a Feature 🗃️
+description: Record archiving a feature
+title: "[Archive]: "
+labels: ["archive"]
+body:
+  - type: input
+    id: feature-name
+    attributes:
+      label: Feature name
+      description: "For example: ansible"
+    validations:
+      required: true
+  - type: checkboxes
+    id: steps
+    attributes:
+      label: Archival steps
+      options:
+        - label: "Set `deprecated: true` in `devcontainer-feature.json`"
+        - label: Release final version
+        - label: Move to `archive/`
