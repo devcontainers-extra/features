@@ -1,0 +1,20 @@
+{
+    "id": "valkey",
+    "version": "1.0.0",
+    "name": "valkey (via build from source)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/valkey",
+    "description": "Valkey is an open source (BSD) high performance key/value datastore. Installs valkey-server and valkey-cli by building from source, following the official valkey-container Dockerfile.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install (full version tag, e.g. 8.1.10, or 'latest').",
+            "proposals": [
+                "latest",
+                "8.1.10",
+                "9.0.6"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": []
+}
