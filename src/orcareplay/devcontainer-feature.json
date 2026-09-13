@@ -1,0 +1,21 @@
+{
+    "id": "orcareplay",
+    "version": "1.0.0",
+    "name": "OrcaReplay (via npm)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/orcareplay",
+    "description": "Records an AI agent's run at the boundary between the agent and its model provider, then replays that recording so the same run happens again with no provider called.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of OrcaReplay to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/npm-package",
+        "ghcr.io/devcontainers/features/node"
+    ]
+}
