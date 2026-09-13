@@ -128,7 +128,7 @@ ensure_nanolayer() {
 
     fi
 
-    # If not previuse installation found, download it temporarly and delete at the end of the script
+    # If not previous installation found, download it temporarly and delete at the end of the script
     if [ -z "${__nanolayer_location}" ]; then
 
         if [ "$(uname -sm)" = 'Linux x86_64' ] || [ "$(uname -sm)" = "Linux aarch64" ]; then
