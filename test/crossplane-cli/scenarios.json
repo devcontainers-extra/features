@@ -1,0 +1,41 @@
+{
+    "test_debian": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "crossplane-cli": {}
+        }
+    },
+    "test_ubuntu": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "crossplane-cli": {}
+        }
+    },
+    "test_stable_current": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "crossplane-cli": {
+                "channel": "stable",
+                "version": "current"
+            }
+        }
+    },
+    "test_preview_current": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "crossplane-cli": {
+                "channel": "preview",
+                "version": "current"
+            }
+        }
+    },
+    "test_master_current": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "crossplane-cli": {
+                "channel": "master",
+                "version": "current"
+            }
+        }
+    }
+}
