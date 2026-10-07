@@ -1,0 +1,23 @@
+{
+    "id": "podman-outside-of-podman",
+    "version": "0.1.0",
+    "name": "Podman Outside-of-Podman",
+    "description": "Installs and configures the Podman CLI for use with an externally managed Podman service.",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/podman-outside-of-podman",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Podman to install.",
+            "proposals": [
+                "latest"
+            ]
+        },
+        "remote": {
+            "type": "boolean",
+            "default": true,
+            "description": "Configure Podman for remote operation with an external Podman service."
+        }
+    },
+    "installsAfter": []
+}

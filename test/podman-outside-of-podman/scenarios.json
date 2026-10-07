@@ -1,0 +1,29 @@
+{
+    "test_podman_installed": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "podman-outside-of-podman": {
+                "version": "latest",
+                "remote": true
+            }
+        }
+    },
+    "test_explicit_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "podman-outside-of-podman": {
+                "version": "4.0.0",
+                "remote": true
+            }
+        }
+    },
+    "test_remote_disabled": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "podman-outside-of-podman": {
+                "version": "latest",
+                "remote": false
+            }
+        }
+    }
+}

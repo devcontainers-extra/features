@@ -1,0 +1,20 @@
+{
+    "id": "x11-wayland",
+    "version": "0.1.0",
+    "name": "X11/Wayland Migration",
+    "description": "Assists with X11/Wayland configuration when migrating from Docker to Podman dev containers. Does not install X11/Wayland runtime dependencies - those are host-provided resources.",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/x11-wayland",
+    "options": {
+        "setupDisplayVars": {
+            "type": "boolean",
+            "default": true,
+            "description": "Configure DISPLAY and XDG_RUNTIME_DIR environment variables for GUI support."
+        },
+        "documentRuntimeDeps": {
+            "type": "boolean",
+            "default": true,
+            "description": "Output diagnostics documenting required host runtime configuration."
+        }
+    },
+    "installsAfter": []
+}

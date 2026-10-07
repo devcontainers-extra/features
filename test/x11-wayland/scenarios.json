@@ -1,0 +1,38 @@
+{
+    "test_x11_enabled": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "x11-wayland": {
+                "installX11": true,
+                "installWayland": false
+            }
+        }
+    },
+    "test_wayland_enabled": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "x11-wayland": {
+                "installX11": false,
+                "installWayland": true
+            }
+        }
+    },
+    "test_both_enabled": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "x11-wayland": {
+                "installX11": true,
+                "installWayland": true
+            }
+        }
+    },
+    "test_x11_disabled": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "x11-wayland": {
+                "installX11": false,
+                "installWayland": false
+            }
+        }
+    }
+}
