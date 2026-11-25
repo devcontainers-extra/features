@@ -1,6 +1,6 @@
 {
     "id": "npm-packages",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "npm-packages",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/npm-packages",
     "description": "",
