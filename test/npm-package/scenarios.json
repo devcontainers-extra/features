@@ -1,6 +1,15 @@
 {
+    "install_markdownlint_cli2": {
+        "image": "debian:bookworm",
+        "features": {
+            "npm-package": {
+                "version": "latest",
+                "package": "markdownlint-cli2"
+            }
+        }
+    },
     "install_angular_cli": {
-        "image": "debian:bullseye",
+        "image": "debian:bookworm",
         "features": {
             "npm-package": {
                 "version": "latest",
@@ -9,7 +18,7 @@
         }
     },
     "install_typescript": {
-        "image": "debian:bullseye",
+        "image": "debian:bookworm",
         "features": {
             "npm-package": {
                 "version": "latest",
@@ -18,7 +27,7 @@
         }
     },
     "test_existing_installation": {
-        "image": "mcr.microsoft.com/devcontainers/typescript-node:18-bullseye",
+        "image": "mcr.microsoft.com/devcontainers/typescript-node:22-bookworm",
         "features": {
             "npm-package": {
                 "version": "8.3.1",
@@ -27,7 +36,7 @@
         }
     },
     "test_existing_installation_different_version": {
-        "image": "mcr.microsoft.com/devcontainers/typescript-node:18-bullseye",
+        "image": "mcr.microsoft.com/devcontainers/typescript-node:22-bookworm",
         "features": {
             "npm-package": {
                 "version": "7.26.3",
