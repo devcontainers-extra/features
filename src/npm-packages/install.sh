@@ -34,7 +34,7 @@ for package in "${PACKAGE_ARRAY[@]}"; do
     $nanolayer_location \
         install \
         devcontainer-feature \
-        "ghcr.io/devcontainers-extra/features/npm-package:1.0.3" \
+        "ghcr.io/devcontainers-extra/features/npm-package:1.0.5" \
         --option package="$name" --option version="$version"
 
 done
