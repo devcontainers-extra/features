@@ -1,6 +1,6 @@
 {
     "id": "pnpm",
-    "version": "2.0.5",
+    "version": "2.0.6",
     "name": "Pnpm (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/pnpm",
     "description": "Pnpm is a fast and disk space efficient package manager.",

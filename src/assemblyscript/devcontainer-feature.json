@@ -1,6 +1,6 @@
 {
     "id": "assemblyscript",
-    "version": "2.0.16",
+    "version": "2.0.17",
     "name": "AssemblyScript (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/assemblyscript",
     "description": "AssemblyScript compiles a variant of TypeScript to WebAssembly using Binaryen.",

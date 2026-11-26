@@ -1,6 +1,6 @@
 {
     "id": "trello-cli",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Trello CLI (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/trello-cli",
     "description": "trello-cli is a CLI tool for Trello. Makes sense, right?",

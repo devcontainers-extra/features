@@ -14,7 +14,7 @@ ensure_nanolayer nanolayer_location "v0.5.5"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/npm-package:1.0.3" \
+    "ghcr.io/devcontainers-extra/features/npm-package:1.0.5" \
     --option package='serverless' --option version="$VERSION"
 
 

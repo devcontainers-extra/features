@@ -1,6 +1,6 @@
 {
     "id": "jsii-rosetta",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "jsii-rosetta (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/jsii-rosetta",
     "description": "jsii-rosetta is a utility to transcribe example code snippets from TypeScript to other jsii languages.",

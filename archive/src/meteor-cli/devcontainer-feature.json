@@ -1,6 +1,6 @@
 {
     "id": "meteor-cli",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Meteor CLI (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/meteor-cli",
     "description": "Meteor is a full-stack JavaScript platform for developing modern web and mobile applications. Meteor includes a key set of technologies for building connected-client reactive applications, a build tool, and a curated set of packages from the Node.js and general JavaScript community.",

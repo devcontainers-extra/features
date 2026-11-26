@@ -1,6 +1,6 @@
 {
     "id": "jsii-diff",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "jsii-diff (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/jsii-diff",
     "description": "jsii-diff compares two jsii assemblies for compatibility.",

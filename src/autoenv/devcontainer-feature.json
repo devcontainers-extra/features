@@ -1,6 +1,6 @@
 {
     "id": "autoenv",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "name": "Autoenv (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/autoenv",
     "description": "Autoenv is a tool which automatically reads and setups configuration from a . env file when you cd to a directory.",

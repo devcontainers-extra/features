@@ -1,6 +1,6 @@
 {
     "id": "expo-cli",
-    "version": "1.0.11",
+    "version": "1.0.12",
     "name": "Expo CLI (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/expo-cli",
     "description": "The Expo CLI is a command-line tool that is the primary interface between a developer and other Expo tools.",

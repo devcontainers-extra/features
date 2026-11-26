@@ -1,6 +1,6 @@
 {
     "id": "jsii",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "jsii compiler (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/jsii",
     "description": "jsii allows code in any language to naturally interact with JavaScript classes. It is the technology that enables the AWS Cloud Development Kit to deliver polyglot libraries from a single codebase!",

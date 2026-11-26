@@ -1,6 +1,6 @@
 {
     "id": "salesforce-sfdx",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Salesforce sfdx (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/salesforce-sfdx",
     "description": "sfdx provide you with the ability to develop and test your apps more easily on Salesforce Platform.",

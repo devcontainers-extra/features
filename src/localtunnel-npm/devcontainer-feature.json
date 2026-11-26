@@ -1,6 +1,6 @@
 {
     "id": "localtunnel-npm",
-    "version": "1.0.11",
+    "version": "1.0.12",
     "name": "Localtunnel (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/localtunnel-npm",
     "description": "Localtunnel allows you to easily share a web service on your local development machine without messing with DNS and firewall settings.",
