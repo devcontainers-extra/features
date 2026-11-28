@@ -1,6 +1,6 @@
 {
     "id": "n8n",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "n8n (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/n8n",
     "description": "n8n is a free and source-available fair-code licensed workflow automation tool.",

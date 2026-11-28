@@ -1,6 +1,6 @@
 {
     "id": "snyk-cli",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Snyk CLI (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/snyk-cli",
     "description": "Snyk CLI scans and monitors your projects for security vulnerabilities.",

@@ -1,6 +1,6 @@
 {
     "id": "cloudflare-wrangler",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Cloudflare Workers CLI (Wrangler) (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/cloudflare-wrangler",
     "description": "The Workers command-line interface, Wrangler, allows you to create, test, and deploy your Workers projects.",

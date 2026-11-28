@@ -1,6 +1,6 @@
 {
     "id": "ts-node",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "ts-node (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ts-node",
     "description": "ts-node is a TypeScript execution engine and REPL for Node.js. It JIT transforms TypeScript into JavaScript, enabling you to directly execute TypeScript on Node.js without precompiling. ",

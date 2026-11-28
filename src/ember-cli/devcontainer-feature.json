@@ -1,6 +1,6 @@
 {
     "id": "ember-cli",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Ember CLI (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ember-cli",
     "description": "The Ember CLI (command line interface) is the official way to create, build, test, and serve the files that make up an Ember app or addon.",

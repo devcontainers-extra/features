@@ -1,6 +1,6 @@
 {
     "id": "firebase-cli",
-    "version": "2.0.16",
+    "version": "2.0.17",
     "name": "Firebase CLI (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/firebase-cli",
     "description": "The Firebase CLI (GitHub) provides a variety of tools for managing, viewing, and deploying to Firebase projects.",

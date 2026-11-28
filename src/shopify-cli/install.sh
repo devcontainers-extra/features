@@ -23,7 +23,7 @@ fi
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/npm-package:1.0.3" \
+    "ghcr.io/devcontainers-extra/features/npm-package:1.0.5" \
     --option package='@shopify/cli' --option version="$VERSION"
 
 
@@ -31,7 +31,7 @@ $nanolayer_location \
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/npm-package:1.0.3" \
+    "ghcr.io/devcontainers-extra/features/npm-package:1.0.5" \
     --option package='@shopify/theme' --option version="$VERSION"
 
 

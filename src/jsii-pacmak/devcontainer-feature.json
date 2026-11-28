@@ -1,6 +1,6 @@
 {
     "id": "jsii-pacmak",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "jsii-pacmak (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/jsii-pacmak",
     "description": "jsii-pacmak generates ready-to-publish language-specific packages for jsii modules, part of the jsii project.",

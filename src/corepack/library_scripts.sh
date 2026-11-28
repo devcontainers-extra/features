@@ -115,12 +115,11 @@ ensure_nanolayer() {
         fi
 
         # make sure its of the required version
-        if ! [ -z "${__nanolayer_location}" ]; then
+        if [ -n "${__nanolayer_location}" ]; then
             local current_version
-            current_version=$($__nanolayer_location --version)
+            current_version=$("$__nanolayer_location" --version)
 
-
-            if ! [ $current_version == $required_version ]; then
+            if [ "${current_version#v}" != "${required_version#v}" ]; then
                 echo "skipping usage of pre-existing nanolayer. (required version $required_version does not match existing version $current_version)"
                 __nanolayer_location=""
             fi
@@ -151,7 +150,7 @@ ensure_nanolayer() {
             tar_filename=nanolayer-"$(uname -m)"-unknown-linux-$clib_type.tgz
 
             # clean download will minimize leftover in case a downloaderlike wget or curl need to be installed
-            clean_download https://github.com/devcontainers-extra/nanolayer/releases/download/$required_version/$tar_filename $tmp_dir/$tar_filename
+            clean_download "https://github.com/devcontainers-extra/nanolayer/releases/download/v${required_version#v}/$tar_filename" "$tmp_dir/$tar_filename"
 
             tar xfzv $tmp_dir/$tar_filename -C "$tmp_dir"
             chmod a+x $tmp_dir/nanolayer

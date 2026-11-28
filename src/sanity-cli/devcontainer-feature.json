@@ -1,6 +1,6 @@
 {
     "id": "sanity-cli",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Sanity.io CLI (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/sanity-cli",
     "description": "The sanity Command Line Interface (CLI) is a collection of tools for managing, developing, debugging, and deploying your Sanity Studio projects.",

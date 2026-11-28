@@ -1,6 +1,6 @@
 {
     "id": "surge-cli",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Surge CLI (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/surge-cli",
     "description": "Publish HTML, CSS, and JS for free, without leaving the command line.",

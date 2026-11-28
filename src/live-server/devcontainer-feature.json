@@ -1,6 +1,6 @@
 {
     "id": "live-server",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "name": "Live Server (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/live-server",
     "description": "Live Server is a little development server with live reload capability. Use it for hacking your HTML/JavaScript/CSS files, but not for deploying the final site.",

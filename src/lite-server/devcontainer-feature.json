@@ -1,6 +1,6 @@
 {
     "id": "lite-server",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "name": "lite-server (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/lite-server",
     "description": "lite-server is a lightweight development only node server that serves a web app, opens it in the browser, refreshes when html or javascript change, injects CSS changes using sockets, and has a fallback page when a route is not found.",

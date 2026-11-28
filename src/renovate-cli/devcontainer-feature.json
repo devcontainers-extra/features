@@ -1,6 +1,6 @@
 {
     "id": "renovate-cli",
-    "version": "2.0.16",
+    "version": "2.0.17",
     "name": "Renovate CLI (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/renovate-cli",
     "description": "Renovate is a universal dependency update tool. Multi-platform and multi-language.",
